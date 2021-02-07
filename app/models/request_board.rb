@@ -1,0 +1,2 @@
+class RequestBoard < ApplicationRecord
+end

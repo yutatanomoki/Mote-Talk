@@ -290,6 +290,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activesupport
   bootsnap (>= 1.1.0)
   bootstrap (~> 4.5)
   byebug
