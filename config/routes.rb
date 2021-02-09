@@ -8,13 +8,14 @@ Rails.application.routes.draw do
   }
 
     namespace :instructor do
-      resources :users,only: [:index,:show,:edit,:update]
-      resources :products, only: [:new, :create, :index, :show, :edit, :update]
       root 'homes#top'
+      resources :users,only: [:index,:show,:edit,:update]
       resources :reservations, only: [:index, :show]
       resources :request_boards, only: [:index, :show] do
         resources :board_comments, only: [:create, :destroy]
       end
+      resources :rooms, only: [:show, :index]
+      resources :direct_messages, only: [:create]
     end
 
     scope module: :public do
