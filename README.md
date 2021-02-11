@@ -1,24 +1,39 @@
-# README
+# モテトーク
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## サイト概要
 
-Things you may want to cover:
+恋愛トーク向上サイト
 
-* Ruby version
+### サイトテーマ
 
-* System dependencies
+サイトにおいて実際に異性と会話を行いフィードバックを行うことによってその後の恋愛に活かす事を目的としています。
+赤の他人だからこそ本音でフィードバックを受けることができ、自分の現状の恋愛トークにおいてどこに改善点があるのかを認知することができます。
 
-* Configuration
+### テーマを選んだ理由
 
-* Database creation
+恋愛コンサルタントをしている知人の手伝いをしていた時にコンサル生の悩みとして、
+実際に会ってデートをしたあと次のデートに繋がらない、LINE のやりとりが突然途切れてしまうなどの悩み相談を受けました。
+とりわけ女性は取り繕うのが上手く本音であまり離さないので男性としてはダメだった原因が中々理解できず、改善できないため同じ失敗を繰り返しがちです。こういった悩みを解決するため恋愛経験豊富な女性講師を揃え、実際に悩みを抱えている男性と会話をした上、その男性のどこに改善点があるのかをフィードバックしてもらいます。
+それによって男性の恋愛トークの改善の手助けをしたいと思いこのテーマを思いつきました。
 
-* Database initialization
+### ターゲットユーザ
 
-* How to run the test suite
+18~20 代男性（とりわけ恋愛経験少なめ）
 
-* Services (job queues, cache servers, search engines, etc.)
+### 主な利用シーン
 
-* Deployment instructions
+デートや異性と話すときに活かせる
 
-* ...
+## 設計書
+
+## 機能一覧
+
+https://docs.google.com/spreadsheets/d/1GwOL7LX8hlbig_iKJ7105J-rfrNsOyZeTrz9snUXmiw/edit#gid=0
+
+## 開発環境
+
+- OS：Linux(CentOS)
+- 言語：HTML,CSS,JavaScript,Ruby,SQL
+- フレームワーク：Ruby on Rails
+- JS ライブラリ：jQuery
+- IDE：Cloud9

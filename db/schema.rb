@@ -54,6 +54,7 @@ ActiveRecord::Schema.define(version: 2021_02_08_031158) do
     t.bigint "from_reservation_id"
     t.datetime "date", null: false
     t.datetime "begin_time", null: false
+    t.datetime "finish_time", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
