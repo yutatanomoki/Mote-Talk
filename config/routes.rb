@@ -11,9 +11,9 @@ Rails.application.routes.draw do
       post 'reservations/verification' => 'reservations#verification'
       get 'reservations/done' => 'reservations#done'
       resources :reservations, only: [:new, :create, :index, :show]
-      resources :request_boards, only: [:new, :create, :index, :show]
+      resources :request_boards, only: [:new, :create, :index, :show] do
+        resources :board_comments, only: [:create, :destroy]
+      end
       resources :rooms, only: [:show, :index]
       resources :direct_messages, only: [:create]
-    end
-
 end
