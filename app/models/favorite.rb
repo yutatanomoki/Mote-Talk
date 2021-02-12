@@ -3,4 +3,7 @@ class Favorite < ApplicationRecord
   belongs_to :to_favorite, class_name: "User", optional: true
   # いいねされる側のUserを「from_favorite」と定義
   belongs_to :from_favorite, class_name: "User", optional: true
+  
+  validates :to_favorite_id, presence: true
+  validates :from_favorite_id, presence: true
 end
