@@ -1,0 +1,3 @@
+$("#request_board_<%= @request_board.id %> .comments-count").html("コメント数: <%= @request_board.board_comments.count %>");
+$(".board_comments").html("<%= j(render 'board_comments/index', request_board: @request_board) %>");
+$("#board_comment_comment").val("");
