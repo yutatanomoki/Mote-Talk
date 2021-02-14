@@ -1,4 +1,4 @@
 class BoardComment < ApplicationRecord
-  belongs_to :user
-  belongs_to :request_boar
+  belongs_to :instructor
+  belongs_to :request_board
 end

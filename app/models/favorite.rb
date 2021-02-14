@@ -1,9 +1,8 @@
 class Favorite < ApplicationRecord
-  # いいねする側のUserを「to_favorite」と定義
-  belongs_to :to_favorite, class_name: "User"
-  # いいねされる側のUserを「from_favorite」と定義
-  belongs_to :from_favorite, class_name: "User"
+  belongs_to :user
+  belongs_to :instructor
   
-  validates :to_favorite_id, presence: true
-  validates :from_favorite_id, presence: true
+  def favorited_by?(user)
+    favorites.where(user_id: user.id).exists?
+  end
 end
