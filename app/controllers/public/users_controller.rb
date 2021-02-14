@@ -1,12 +1,16 @@
 class Public::UsersController < ApplicationController
   before_action :authenticate_user!
   
+  def index
+    @users = User.all
+  end
+  
   def show
-    @user = current_customer
+    @user = User.find(params[:id])
   end
     
   def edit
-    @user = current_customer
+    @user = User.find(params[:id])
   end
     
   def update

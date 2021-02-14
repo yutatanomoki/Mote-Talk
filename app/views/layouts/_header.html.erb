@@ -1,0 +1,29 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/"><span>モテトーク</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+        <% if user_signed_in? %>
+          <li><%= link_to ' モテトークって？',root_path,class: 'fas fa-home nav-link text-left' %></li>
+          <li><%= link_to ' 利用の流れ',homes_about_path,class: 'fas fa-link nav-link text-left' %></li>
+          <li><%= link_to ' 講師を探す', new_user_registration_path,class: 'fas fa-user-plus nav-link text-left' %></li>
+          <li><%= link_to ' 依頼掲示板', new_user_session_path ,class: 'fas fa-sign-in-alt nav-link text-left'%></li>
+          <li><%= link_to ' 講師を探す', new_user_registration_path,class: 'fas fa-user-plus nav-link text-left' %></li>
+          <li><%= link_to ' 依頼掲示板', new_user_session_path ,class: 'fas fa-sign-in-alt nav-link text-left'%></li>
+        <% else %>
+          <li><%= link_to ' モテトークって？',homes_about_path,class: 'fas fa-home nav-link text-right' %></li>
+          <li><%= link_to ' 利用の流れ',homes_about_path,class: 'fas fa-link nav-link text-right' %></li>
+          <li><%= link_to ' 講師を探す', user_path,class: 'fas fa-user-plus nav-link text-right' %></li>
+          <li><%= link_to ' 依頼掲示板', request_boards_path ,class: 'fas fa-sign-in-alt nav-link text-right'%></li>
+          <li><%= link_to ' 新規登録', new_user_registration_path,class: 'fas fa-user-plus nav-link text-right' %></li>
+          <li><%= link_to ' ログイン', new_user_session_path ,class: 'fas fa-sign-in-alt nav-link text-right'%></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

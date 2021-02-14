@@ -10,25 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_08_031158) do
+ActiveRecord::Schema.define(version: 2021_02_14_075655) do
 
   create_table "board_comments", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.integer "request_board_id", null: false
+    t.integer "request_board_id"
+    t.integer "instructor_id"
     t.text "comment", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["request_board_id"], name: "index_board_comments_on_request_board_id"
-    t.index ["user_id"], name: "index_board_comments_on_user_id"
   end
 
   create_table "favorites", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.bigint "to_favorite_id"
-    t.bigint "from_favorite_id"
+    t.integer "instructorr_id"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_favorites_on_user_id"
+  end
+
+  create_table "feedbacks", force: :cascade do |t|
+    t.string "age"
+    t.string "personality"
+    t.string "self_introduction"
+    t.string "message"
+    t.boolean "is_instructor", default: false, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "homes", force: :cascade do |t|
@@ -45,13 +51,14 @@ ActiveRecord::Schema.define(version: 2021_02_08_031158) do
   end
 
   create_table "request_boards", force: :cascade do |t|
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "reservations", force: :cascade do |t|
-    t.bigint "to_reservation_id"
-    t.bigint "from_reservation_id"
+    t.integer "user_id"
+    t.integer "instructor_id"
     t.datetime "date", null: false
     t.datetime "begin_time", null: false
     t.datetime "finish_time", null: false
@@ -74,13 +81,6 @@ ActiveRecord::Schema.define(version: 2021_02_08_031158) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "user_reviews", force: :cascade do |t|
-    t.bigint "to_user_review_id"
-    t.bigint "from_user_review_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "user_rooms", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.bigint "room_id", null: false
@@ -95,12 +95,7 @@ ActiveRecord::Schema.define(version: 2021_02_08_031158) do
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
     t.string "name", null: false
-    t.bigint "image_id"
-    t.string "age"
-    t.string "personality"
-    t.string "self_introduction"
-    t.string "message"
-    t.boolean "is_instructor", default: false, null: false
+    t.integer "profile_image_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
