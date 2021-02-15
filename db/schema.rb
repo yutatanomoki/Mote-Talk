@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_14_075655) do
+ActiveRecord::Schema.define(version: 2021_02_15_011754) do
 
   create_table "board_comments", force: :cascade do |t|
     t.integer "request_board_id"
@@ -38,6 +38,11 @@ ActiveRecord::Schema.define(version: 2021_02_14_075655) do
   end
 
   create_table "homes", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "instructors", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

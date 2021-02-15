@@ -3,15 +3,13 @@ class Public::RequestBoardsController < ApplicationController
     @request_board = RequestBoard.new
   end
 
+  def index
+    @request_boards = RequestBoard.all
+  end
   
   def show
     @request_board = RequestBoard.find(params[:id])
     @board_comment = BoardComment.new
-  end
-
-  def index
-    @user = current_user
-    @request_boards = RequestBoard.all
   end
 
   def create

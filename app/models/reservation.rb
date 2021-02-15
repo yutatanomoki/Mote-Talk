@@ -1,11 +1,10 @@
 class Reservation < ApplicationRecord
   def index
-    @res = Order.page(params[:page])
+    @reservations = Reservation.page(params[:page])
   end
   
   def show
-    @order = Order.find(params[:id])
-    @order_products = @order.order_products.all
+    @reservation = Reservation.find(params[:id])
   end
 
 end
