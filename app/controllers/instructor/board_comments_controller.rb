@@ -3,7 +3,7 @@ class Instructor::BoardCommentsController < ApplicationController
     @request_board = RequestBoard.find(params[:request_board_id])
     @board_comment = BaordComment.new(board_comment_params)
     @board_comment.request_board_id = @request_board.id
-    @board_comment.user_id = current_user.id
+    @board_comment.instru_id = current_user.id
     unless @board_comment.save
       render 'error'  # app/views/book_comments/error.js.erbを参照する ※要件外
     end

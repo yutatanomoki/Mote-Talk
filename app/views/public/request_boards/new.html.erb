@@ -1,0 +1,32 @@
+<div class='container'>
+  <div class='row'>
+    <div class='subtitle-wrap'>
+      <h3 class="subtitle">
+        <a href="/request_boards">
+          <i class="icon far fa-window-restore"></i>
+          依頼一覧掲示板
+        </a>
+        ＞ 依頼投稿画面
+        <span class="ml5 f-size-8">
+          <span></span>
+        </span>
+      </h3>
+    </div>
+    <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0 mx-auto">
+
+      <%= form_with model:@request_board,local:true do |f| %>
+        <div class="form-group">
+          <%= f.label :title %>
+          <%= f.text_field :title, class: 'form-control book_title' %>
+        </div>
+        <div class="form-group">
+          <%= f.label :opinion %>
+          <%= f.text_area :body, class: 'form-control book_body' %>
+        </div>
+        <div class="form-group">
+          <%= f.submit  class: 'btn btn-success' %>
+        </div>
+      <% end %>
+  	</div>
+  </div>
+</div>

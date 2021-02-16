@@ -16,3 +16,63 @@
  @import "bootstrap";
  @import 'font-awesome-sprockets';
  @import 'font-awesome';
+
+
+body{
+    background-color: #f4f1e9;
+}
+
+.top-image{
+    width: 100%;
+    height: 300px;
+    // background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: image-url("image1.jpg");
+}
+
+.main-msg {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    font-size: 1.27vw;
+    padding: 0.278em;
+    letter-spacing: 0.27em;
+    background-color: rgba(255,255,255,0.85);
+    color: #FC676B;
+    font-weight: 500;
+}
+
+.main-msg.top {
+    top: 13.333333333%;
+    left: 2.270663033%;
+}
+
+.main-msg.bottom {
+    top: 24.166666666%;
+    left: 18.165304268%;
+    padding-right: 0;
+}
+
+.subtitle-wrap {
+    width: 100%;
+    padding: 10px;
+    font-size: 2.1rem;
+    background-color: #FCC667;
+    color: #fff;
+}
+
+.subtitle {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+.f-size-8 {
+    font-size: 8px;
+}
+.ml5 {
+    margin-left: 5px;
+}

@@ -56,7 +56,9 @@ ActiveRecord::Schema.define(version: 2021_02_15_011754) do
   end
 
   create_table "request_boards", force: :cascade do |t|
-    t.integer "user_id"
+    t.integer "user_id", null: false
+    t.string "title", null: false
+    t.string "body", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
