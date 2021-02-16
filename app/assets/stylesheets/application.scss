@@ -17,9 +17,48 @@
  @import 'font-awesome-sprockets';
  @import 'font-awesome';
 
+.cover-img {
+	height: 600px;
+	display: table;
+	width: 100%;
+	background-size: cover;
+}
+
+/* ワイドスクリーン用のCSS */
+@media only screen and (min-width: 1500px) {
+	.cover-img {
+		height: 800px;
+	}
+}
+
+/* タブレット用のCSS */
+@media only screen and (min-width : 768px) and (max-width : 1200px) {
+	.cover-img {
+		height: 500px;
+	}
+}
+
+/* スマホ用のCSS */
+@media only screen and (max-width: 479px) {
+	.cover-img {
+		height: 300px;
+	}
+}
+
+.cover-text {
+	display: table-cell;
+	vertical-align: middle;
+  text-align: center;
+}
 
 body{
     background-color: #f4f1e9;
+}
+
+.inner-text {
+    display: inline-block;
+    background-color: rgba(255,255,255,0.85);
+    color: #FC676B;
 }
 
 .top-image{
