@@ -1,53 +1,157 @@
-<div class="container-fulied">
-  <div class="row">
-    <div class="cover-img" style="background-image:url('/assets/image1.jpg');">
-			<div class="cover-text text-center">
-        <p class="inner-text">女性の「ホンネ」</p><br>
-        <p class="inner-text">聞いてみませんか。</p>
-			</div>
-		</div>
+<div class="header-wrap">
+    <header class="header">
+      <div class="header-inner">
 
+        <!-- table-cellで配置せざるえないので、divで囲ってロゴのheightを指定できるようにする(table-cellは高さ調節ができない)       -->
+        <div class="logo-wrap"><a href="/"><h1 class="logo"><span>フレンタ</span></h1></a></div>
+        <nav id="groval-navi" class="clearfix">
+          <ul class="menu-list">
+            <li class="menu-item"><a href="/home/about">フレンタって？</a></li>
+            <li class="menu-item"><a href="/home/guide">ご利用の流れ</a></li>
+            <li class="frend-search-list">
+              <a href="/frends">フレンドを探す</a>
+              <ul>
+                <li class="frend-search-item"><a href="/frends">人気ランキング</a></li>
+                <li class="frend-search-item"><a href="/frends?price=1000">1000円レンタル</a></li>
+                <li class="frend-search-item"><a href="/frends?new_frend=true">新人を検索</a></li>
+                <li class="frend-search-item"><a href="/frends?sex=1">男性を検索</a></li>
+                <li class="frend-search-item"><a href="/frends?sex=2">女性を検索</a></li>
+              </ul>
+            </li>
+            <li class="menu-item"><a href="/bulletin_boards">依頼掲示板</a></li>
+          </ul>
+            <div class="my-menu-wrap">
+              <p class="my-menu-btn" style="background-image: url(https://frenta.s3-ap-northeast-1.amazonaws.com/uploads/user/avatar/3780/line_67754718850298.jpg)"></p>
+              <ul class="my-menu">
+                <li class="my-menu-item"><a href="/talkrooms"><i class="icon far fa-comments"></i>トーク一覧</a></li>
+                <li class="my-menu-item"><a href="/favorites"><i class="icon far fa-heart"></i>お気に入り一覧</a></li>
+                <li class="my-menu-item"><a href="/users/conf"><i class="icon far fa-user-circle"></i>設定</a></li>
+                <li class="my-menu-item"><a data-turbolinks="false" href="/account_upgrade/new"><i class="icon fas fa-user-plus"></i>フレンド会員になる</a></li>
 
-
-      <!--<section class="top-image-wrap">-->
-      <!--  <div class="top-image">-->
-      <!--      <p>-->
-      <!--        <span class="main-msg top">女性のホンネ</span>-->
-      <!--        < class="main-msg bottom">聞いてみませんか？</>-->
-      <!--      </p>-->
-      <!--   <img src="/assets/image1.jpg" class="img-fulied">-->
-      <!--  </div>-->
-      <!--</section>-->
-
-      <div class="container py-4" id="works">
-        <h2>Works</h2>
-        <p>This is sample description.This is sample description.This is sample description.This is sample description.This is sample description.This is sample description.</p>
-        <div class="card-deck">
-            <div class="card">
-              <img src="img/sample4.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Work1</h5>
-                <p class="card-text">This is sample description.This is sample description.This is sample description.This is sample description.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
+                <li class="my-menu-item"><a href="/users/affiliate_home"><i class="icon fas fa-id-badge"></i>紹介者報酬プログラム</a></li>
+                <li class="my-menu-item"><a id="logout" rel="nofollow" data-method="delete" href="/users/sign_out"><i class="icon fas fa-sign-out-alt"></i>ログアウト</a></li>
+              </ul>
             </div>
-            <div class="card">
-              <img src="img/sample4.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Work2</h5>
-                <p class="card-text">This is sample description.This is sample description.This is sample description.This is sample description.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
+            <div class="infomation-btn-wrap" id="infomation-link">
+              <a class="infomation-btn readed" id="infomation-link-btn" href="/infomation">
+                <i class="far fa-bell"></i>
+              </a>
             </div>
-            <div class="card">
-              <img src="img/sample4.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Work3</h5>
-                <p class="card-text">This is sample description.This is sample description.This is sample description.This is sample description.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-        </div>
-    </div>
+        </nav>
+      </div>
+
+      <!--
+      <div class="header-inner">
+          スマフォでのコンテンツ内容
+          <div class="logo-wrap"><h1 class="logo"><span>フレンタ</span></h1></div>
+          <div id="menu-overlay"></div>
+          <a href="javascript:void(0);" id="switch-btn"><span></span><span></span><span></span></a>
+          <nav id="sp-navi">
+              <p>マイメニュー</p>
+              <ul class="sp-my-menu">
+                  <li><a href="" class="simple-btn">新規登録</a></li>
+                  <li><a href="" class="simple-btn">ログイン</a></li>
+              </ul>
+              <p>フレンドを探す</p>
+              <ul>
+                  <li><a href="#">人気ランキング</a></li>
+                  <li><a href="#">新着ページ</a></li>
+                  <li><a href="#">1000円レンタル</a></li>
+                  <li><a href="#">地域検索</a></li>
+              </ul>
+              <p>初めてご利用の方へ</p>
+              <ul>
+                  <li><a href="#">フレンタって？</a></li>
+                  <li><a href="#">ご利用の流れ</a></li>
+              </ul>
+          </nav>
+      </div>
+      -->
+    </header>
+
   </div>
+
+<section class="top-image-wrap">
+    <div class="top-image">
+        <p><span class="main-msg top">女性の「ホンネ」</span><span class="main-msg bottom">聞いてみませんか。</span></p>
+    <!--    <img alt="" src="img/frenta_slice2_11.png">-->
+
+        <picture>
+
+            <img src="/assets/image1.jpg">
+        </picture>
+    </div>
+</section>
+
+<section class="about-frenta">
+    <p class="about-frenta-text"><img alt="フレンタはレンタルしたい人とレンタルされたい人をマッチングするサービスです" src="/assets/frenta-top-frenta-about-text-67334beab48df5cb567b66602ee0fae9df3e41310242478d712a7e8b2c469465.png"></p>
+    <p class="about-frenta-img"><img alt="おじさんレンタルや友達レンタル(レンタルフレンド)、おばさんレンタルなど様々なレンタルに対応しています" src="/assets/frenta-top-frenta-about-754f94aa345081a695feaa8ac98550224cb8c70c46be96c0626b7ab055ee6d69.png"></p>
+</section>
+
+<div class="contents">
+    <script type="text/javascript"></script>
+
+  <section class="frenta-feature-wrap">
+    <h2 class="title"><img src="/assets/feature_title_2x-9984b3266d43accb0144c5557db9ce8da0424ee92e1544ec57044ead21bcac80.png" alt="フレンタの特徴"></h2>
+    <div id="feature-box-wrap" class="box-wrap">
+      <div class="box-inner-wrap">
+        <div class="box one">
+          <div class="sub-title-wrap">
+            <div class="sub-title-inner-wrap">
+              <span class="step-label"></span>
+              <h2 class="sub-title"><img src="/assets/feature_subtitle_1-ac19804e51e0e9d3f87a9e2cb2fb12aeb871f0a57c55f32151952451cc5149d2.png" alt="自分に合わせて色々なレンタルが出来る！"></h2>
+            </div>
+          </div>
+          <p class="feature-img"><img alt="おじさんレンタルや友達レンタル(レンタルフレンド)、おばさんレンタルなど様々なレンタルに対応しています" src="/assets/frenta_about1-e103b1c63411542c0f89ef32052b846113366cd8157112a9f777e96e450ec756.png"></p>
+          <p class="comment">フレンタでは用途に合わせて、様々なレンタルが可能です。レンタル料金は500円/1h～とちょっとしたお願いもしやすいリーズナブルな価格となっています。</p>
+        </div>
+        <div class="box two">
+          <div class="sub-title-wrap">
+            <div class="sub-title-inner-wrap">
+              <span class="step-label"></span>
+              <h2 class="sub-title"><img src="/assets/feature_subtitle_2-4ffe46a925fc9cff0dc1406950ea9f9319ae33b3d2420ddf444059c4a2d7ccc3.png" alt="好きなだけメッセージができる！"></h2>
+            </div>
+          </div>
+          <p class="feature-img"><img alt="おじさんレンタルや友達レンタル(レンタルフレンド)、おばさんレンタルなど様々なレンタルに対応しています" src="/assets/frenta_about2-56bf273bc4c74fb0916f7aea3efd0680dec8bd7ee0fe765c6caf093bddf04a70.png"></p>
+          <p class="comment">フレンタでは複数の相手とメッセージをして、自分に合った相手を見つけてからレンタルすることが可能です。</p>
+        </div>
+        <div class="box three">
+          <div class="sub-title-wrap">
+            <div class="sub-title-inner-wrap">
+              <span class="step-label"></span>
+              <h2 class="sub-title"><img src="/assets/feature_subtitle_3-95fc38f28bb9ae6e5e9f6706aa44342941a610fe85cfb47c6f1e67192b22c31a.png" alt="自分に合わせて色々なレンタルが出来る！"></h2>
+            </div>
+          </div>
+          <p class="feature-img"><img alt="おじさんレンタルや友達レンタル(レンタルフレンド)、おばさんレンタルなど様々なレンタルに対応しています" src="/assets/frenta_about3-5fd9639b7df1aca76ec24ef6964096719a7c120294cf7c8f29c702c3df616388.png"></p>
+          <p class="comment">「ドタキャンされたので、今日会える人を探したい。」急な依頼にもフレンタは対応しています。掲示板に依頼を投稿すると今日会えるフレンドが見つかります。</p>
+        </div>
+        <div class="box four">
+          <div class="sub-title-wrap">
+            <div class="sub-title-inner-wrap">
+              <span class="step-label"></span>
+              <h2 class="sub-title"><img src="/assets/feature_subtitle_4-2f0ae7691b26203fc7b5867d58b1f5cf228dd188a3403e5a36043672b18d9e84.png" alt="自分に合わせて色々なレンタルが出来る！"></h2>
+            </div>
+          </div>
+          <p class="feature-img"><img alt="おじさんレンタルや友達レンタル(レンタルフレンド)、おばさんレンタルなど様々なレンタルに対応しています" src="/assets/frenta_about4-9f1f28ff8347571955022d83e31e5bf421db06727ae98f8f6bf228a6290c713d.png"></p>
+          <p class="comment">外出が難しい時、遠距離で実際に会うことができない時も、サイト内で料金をお支払い頂き、電話レンタル、zoomレンタルをすることが出来ます。</p>
+        </div>
+      </div>
+      <div id="swiper-button-prev" class="swiper-button left"><i class="fas fa-chevron-left"></i></div>
+      <div id="swiper-button-next" class="swiper-button right"><i class="fas fa-chevron-right"></i></div>
+    </div>
+    <a class="large-btn color-red mt20" href="/home/about">もっとみる</a>
+  </section>
 </div>
+    <a class="large-btn color-red mt20" href="/frends">もっとみる</a>
+
+<div class="fix-menu-bar-sp menu-bar">
+  <ul class="menu-bar-list">
+    <li><a href="/home/guide"><i class="fas fa-book-open"></i><br>使い方</a></li>
+    <li><a href="/frends"><i class="fas fa-search"></i><br>探す</a></li>
+    <li><a href="/talkrooms"><i class="far fa-comments"></i><br>トーク</a></li>
+    <li><a href="/favorites"><i class="far fa-heart"></i><br>お気に入り</a></li>
+    <li><a href="/bulletin_boards"><i class="far fa-window-restore"></i><br>掲示板</a></li>
+  </ul>
+</div>
+</div>
+

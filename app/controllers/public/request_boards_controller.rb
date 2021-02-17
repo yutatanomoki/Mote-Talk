@@ -14,7 +14,7 @@ class Public::RequestBoardsController < ApplicationController
 
   def create
     @request_board = RequestBoard.new(request_board_params)
-    @request_board.user_id = current_user.id
+    #@request_board.user_id = current_user.id
     if @request_board.save
       redirect_to request_boards_path, notice: "You have created book successfully."
     else

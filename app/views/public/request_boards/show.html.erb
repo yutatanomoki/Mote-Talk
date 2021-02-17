@@ -1,11 +1,53 @@
-<div class='container'>
-  <div class='row'>
-    <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0 mx-auto">
-  		<h1>Editing Book</h1>
-  		<%= render 'layouts/errors', obj: @book %>
-      <%= render 'form', book: @book %>
-  		<%= link_to 'Show', book_path(@book), class: "book_#{@book.id}" %> |
-  		<%= link_to 'Back', books_path, class: "back" %>
-  	</div	
+<div class="contents">
+    <script type="text/javascript">
+    </script>
+
+
+<a href="/request_boards">一覧へ</a>
+
+
+<div class="bulletin_board-wrap bulletin_board-order-wrap">
+  <div class="bulletin-board bulletin_board-order">
+    <div class="info-wrap clearfix">
+      <span class="right-now">今すぐ</span>
+      <div class="info">
+        <p><i class="icon fas fa-map-marker-alt"></i>埼玉県</p>
+      </div>
+    </div>
+
+    <p class="title">明日のお昼までに。</p>
+    <pre class="content">ガチで助けてくれる人居ませんか？
+冷やかしとか詐欺とか無しで。ガチで困ってます。
+助けてくれた方にはきちんと話し合ってお礼はします。性的な事とか犯罪はしません。
+真面目な方メールお願いします。</pre>
+
+    <div class="user">
+      <p class="avatar" style="background-image: url(/assets/avatar_default-2341dd6cfd79c270be95e3c853249f39db36e89de2f8d496b640372c70e1c3a0.png) "></p>
+      <p class="name">パンダ</p>
+    </div>
+    <p class="datetime">2021年2月17日 1時23分</p>
   </div>
+
+    <div class="frend-comment-wrap">
+      <h2 class="subtitle"><i class="icon far fa-comment"></i>フレンドからのコメント 2件</h2>
+          <div class="frend-comment">
+            <div class="clearfix">
+              <a class="user" href="/frends/6240">
+                <p class="avatar" style="background-image: url(https://frenta.s3.ap-northeast-1.amazonaws.com/uploads-v2/user/avatar/6240/user6240_avatar.jpeg) "></p>
+                <p class="name">かける</p>
+</a>              <div class="info">
+                <p><i class="icon fas fa-yen-sign"></i>1000円</p>
+                <p><i class="icon fas fa-map-marker-alt"></i>東京都</p>
+              </div>
+            </div>
+            <pre class="content">初めまして！
+もしよろしければ一度メッセージお待ちしております！
+お話聞かせていただいた上で僕でも助けれそうならば是非お力になりたいです。</pre>
+            <p class="datetime">2月17日 3時03分</p>
+          </div>
+          
+    </div>
+
 </div>
+
+  </div>

@@ -1,3 +1,42 @@
+
+
+<div class="contents">
+    <script type="text/javascript">
+    </script>
+
+
+<div class="order-post">
+  <ul class="description">
+    <li>依頼掲示板では、自分のしてほしい依頼を掲示板に投稿し、フレンドユーザーから提案を受けることが出来ます。</li>
+    <li><span class="marker_yellow">依頼を頼みたい日付が今日・明日など、すぐに提案が欲しい場合は「今すぐ」を「はい」に設定してください。</span></li>
+  </ul>
+
+  <%= form_with model:@request_board,local:true do |f| %>
+    <div class="textbox-wrap">
+      <!--<input class="textbox" placeholder="依頼のタイトル" data-tippy="100字以内で入力してください。" type="text" name="bulletin_board[title]">-->
+      <%= f.label :"依頼のタイトル" %>
+      <%= f.text_field :title, class: "textbox" %>
+      <p class="error-msg"></p>
+    </div>
+
+    <div class="textarea-wrap">
+      <!--<textarea class="textarea" placeholder="依頼内容" name="bulletin_board[contents]"></textarea>-->
+      <%= f.label :"依頼内容" %>
+      <%= f.text_area :body, class: "textarea" %>
+      <p class="error-msg"></p>
+    </div>
+    <%= f.submit  "投稿する", class: "post-btn" %>
+  <% end %>
+</div>
+
+<!-- 更新中画面 -->
+<!-- 更新中画面 -->
+<div id="tallContent" style="display:none">
+  <p>投稿中...</p>
+  <p><img src="/assets/icon_loader-01854b4c459cd32890796f7c6e38769b245ecb3473dea85b81c5f77ab8e68ba7.gif" alt="読み込み中" id="loader-img"></p>
+</div>
+
+</div>
 <div class='container'>
   <div class='row'>
     <div class='subtitle-wrap'>
