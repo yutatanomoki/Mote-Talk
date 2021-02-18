@@ -17,7 +17,6 @@ class Instructor::InstructorsController < ApplicationController
     if @instructor.save
       redirect_to instructors_path, notice: "You have created book successfully."
     else
-      @request_board = RequestBoard.all
       render 'new'
     end
   end
