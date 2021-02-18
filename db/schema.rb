@@ -28,11 +28,6 @@ ActiveRecord::Schema.define(version: 2021_02_15_011754) do
   end
 
   create_table "feedbacks", force: :cascade do |t|
-    t.string "age"
-    t.string "personality"
-    t.string "self_introduction"
-    t.string "message"
-    t.boolean "is_instructor", default: false, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -43,6 +38,10 @@ ActiveRecord::Schema.define(version: 2021_02_15_011754) do
   end
 
   create_table "instructors", force: :cascade do |t|
+    t.integer "age"
+    t.string "personality"
+    t.string "self_introduction"
+    t.string "message"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

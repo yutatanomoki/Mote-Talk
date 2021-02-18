@@ -1,0 +1,14 @@
+<% request_board.board_comments.each do |board_comment| %>
+  <div class="frend-comment">
+    <div class="clearfix">
+      <div class="avatar">
+        <%= attachment_image_tag request_board.user, :profile_image, fallback: "no_image.jpg" %>
+      </div>
+      <div class="name">
+        <%= board_comment.user.name %>
+      </div>
+      <%= board_comment.user.name %>
+      <%= board_comment.created_at.strftime('%Y/%m/%d') %><%= board_comment.comment %>
+    </div>
+  </div>
+<% end %>

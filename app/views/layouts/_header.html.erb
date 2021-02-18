@@ -1,33 +1,65 @@
-<div class="header">
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="/">
-        <img src="/assets/icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        モテトーク
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+<div class="header-wrap">
+    <header class="header">
+      <div class="header-inner">
+
+        <!-- table-cellで配置せざるえないので、divで囲ってロゴのheightを指定できるようにする(table-cellは高さ調節ができない)       -->
+        <div class="logo-wrap"><a href="/"><h1 class="logo"><span>フレンタ</span></h1></a></div>
+        <nav id="groval-navi" class="clearfix">
+          <ul class="menu-list">
+              <li><%= link_to ' モテトークって？',homes_about_path,class: 'fas fa-home menu-item' %></li>
+              <li><%= link_to ' 利用の流れ',homes_about_path,class: 'fas fa-link menu-item' %></li>
+              <li><%= link_to ' 講師を探す', user_path,class: 'fas fa-user-plus menu-item' %></li>
+              <li><%= link_to ' 依頼掲示板', request_boards_path ,class: 'fas fa-clipboard-list menu-item' %></li>
+          </ul>
           <% if user_signed_in? %>
-            <li><%= link_to ' モテトークって？',root_path,class: 'fas fa-home nav-link text-left' %></li>
-            <li><%= link_to ' 利用の流れ',homes_about_path,class: 'fas fa-link nav-link text-left' %></li>
-            <li><%= link_to ' 講師を探す', new_user_registration_path,class: 'fas fa-user-plus nav-link text-left' %></li>
-            <li><%= link_to ' 依頼掲示板', new_user_session_path ,class: 'fas fa-sign-in-alt nav-link text-left'%></li>
-            <li><%= link_to ' 講師を探す', new_user_registration_path,class: 'fas fa-user-plus nav-link text-left' %></li>
-            <li><%= link_to ' 依頼掲示板', new_user_session_path ,class: 'fas fa-sign-in-alt nav-link text-left'%></li>
+            <div class="my-menu-wrap">
+              <p class="my-menu-btn" style="background-image: url(https://frenta.s3-ap-northeast-1.amazonaws.com/uploads/user/avatar/3780/line_67754718850298.jpg)"></p>
+              <%#= attachment_image_tag(@user, :profile_image, fallback: "no-image-icon.jpg"), class: "my-menu-btn" %>
+              <ul class="my-menu">
+                <li class="my-menu-item"><a href="/talkrooms"><i class="icon far fa-comments"></i>トーク一覧</a></li>
+                <li class="my-menu-item"><a href="/favorites"><i class="icon far fa-heart"></i>お気に入り一覧</a></li>
+                <li class="my-menu-item"><a href="/users/conf"><i class="icon far fa-user-circle"></i>設定</a></li>
+                <li class="my-menu-item"><a data-turbolinks="false" href="/account_upgrade/new"><i class="icon fas fa-user-plus"></i>講師登録する</a></li>
+                <li class="my-menu-item"><a href="/users/affiliate_home"><i class="icon fas fa-id-badge"></i>紹介者報酬プログラム</a></li>
+                <li class="my-menu-item"><a id="logout" rel="nofollow" data-method="delete" href="/users/sign_out"><i class="icon fas fa-sign-out-alt"></i>ログアウト</a></li>
+              </ul>
+            </div>
           <% else %>
-            <li><%= link_to ' モテトークって？',homes_about_path,class: 'fas fa-home nav-link text-left' %></li>
-            <li><%= link_to ' 利用の流れ',homes_about_path,class: 'fas fa-link nav-link text-right' %></li>
-            <li><%= link_to ' 講師を探す', user_path,class: 'fas fa-user-plus nav-link text-right' %></li>
-            <li><%= link_to ' 依頼掲示板', request_boards_path ,class: 'fas fa-sign-in-alt nav-link text-right'%></li>
-            <li><%= link_to ' 新規登録', new_user_registration_path,class: 'fas fa-user-plus nav-link text-right' %></li>
-            <li><%= link_to ' ログイン', new_user_session_path ,class: 'fas fa-sign-in-alt nav-link text-right'%></li>
+            <ul class="login-menu">
+              <li class="my-menu-item"><a class="simple-btn" href="/users/sign_up">無料登録</a></li>
+              <li class="my-menu-item"><a class="simple-btn" href="/users/sign_in">ログイン</a></li>
+            </ul>
           <% end %>
-        </ul>
+        </nav>
       </div>
-    </nav>
-  </div>
+
+      <!--
+      <div class="header-inner">
+          スマフォでのコンテンツ内容
+          <div class="logo-wrap"><h1 class="logo"><span>フレンタ</span></h1></div>
+          <div id="menu-overlay"></div>
+          <a href="javascript:void(0);" id="switch-btn"><span></span><span></span><span></span></a>
+          <nav id="sp-navi">
+              <p>マイメニュー</p>
+              <ul class="sp-my-menu">
+                  <li><a href="" class="simple-btn">新規登録</a></li>
+                  <li><a href="" class="simple-btn">ログイン</a></li>
+              </ul>
+              <p>フレンドを探す</p>
+              <ul>
+                  <li><a href="#">人気ランキング</a></li>
+                  <li><a href="#">新着ページ</a></li>
+                  <li><a href="#">1000円レンタル</a></li>
+                  <li><a href="#">地域検索</a></li>
+              </ul>
+              <p>初めてご利用の方へ</p>
+              <ul>
+                  <li><a href="#">フレンタって？</a></li>
+                  <li><a href="#">ご利用の流れ</a></li>
+              </ul>
+          </nav>
+      </div>
+      -->
+    </header>
 </div>
+

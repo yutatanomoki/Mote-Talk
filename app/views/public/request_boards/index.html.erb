@@ -11,7 +11,7 @@
     <script type="text/javascript">
     </script>
 <div class="bulletin-board-wrap">
-  <% request_boards.each do |request_board| %>
+  <% @request_boards.each do |request_board| %>
     <div class="bulletin-board">
       <div class="info-wrap clearfix">
         <div class="info">
@@ -19,34 +19,29 @@
           <p><i class="icon far fa-comment-alt"></i>0</p>
         </div>
       </div>
-        <%= request_board.name class: "title" %>
-        <p class="content">ガチで助けてくれる人居ませんか？</p>
-
+      <div class="title">
+        <%= request_board.title %>
+      </div>
+      <div class="content">
+        <%= request_board.body %>
+      </div>
         <div class="user">
-          <p class="avatar" style="background-image: url(/assets/avatar_default-2341dd6cfd79c270be95e3c853249f39db36e89de2f8d496b640372c70e1c3a0.png) "></p>
-          <p class="name">パンダ</p>
+          <div class="avatar">
+            <%= attachment_image_tag request_board.user, :profile_image, fallback: "no_image.jpg" %>
+          </div>
+          <div class="name">
+            <%= request_board.user.name %>
+          </div>
         </div>
         <a class="to-ansawor" href="/bulletin_boards/841"><span>回答へ</span></a>
     </div>
   <% end %>
  </div>
 
-<% users.each do |user| %>
-      <tr>
-        <td><%= attachment_image_tag(user, :profile_image, :fill, 50, 50, fallback: "no-image-icon.jpg") %></td>
-        <td><%= request_board.name, class="title" %></td>
-        <td><%= "フォロー数:#{user.followings.count}" %></td>
-        <td><%= "フォロワー数:#{user.followers.count}" %></td>
-        <td>
-          <%= render 'users/follow_button', user: user %>
-        </td>
-        <td><%= link_to 'Show', user_path(user), class: "user_#{user.id}" %></td>
-      </tr>
-<p class="pagination">  </p><nav class="pagination">
+<p class="pagination"></p>
+<nav class="pagination">
 
-        <span class="page current">
-  1
-</span>
+  <span class="page current">1</span>
 
         <span class="page">
   <a rel="next" href="/bulletin_boards?page=2">2</a>

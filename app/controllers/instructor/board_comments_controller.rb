@@ -1,7 +1,7 @@
 class Instructor::BoardCommentsController < ApplicationController
   def create
     @request_board = RequestBoard.find(params[:request_board_id])
-    @board_comment = BaordComment.new(board_comment_params)
+    @board_comment = BoardComment.new(board_comment_params)
     @board_comment.request_board_id = @request_board.id
     @board_comment.instru_id = current_user.id
     unless @board_comment.save
