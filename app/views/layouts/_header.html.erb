@@ -7,9 +7,9 @@
         <nav id="groval-navi" class="clearfix">
           <ul class="menu-list">
               <li><%= link_to ' モテトークって？',homes_about_path,class: 'fas fa-home menu-item' %></li>
-              <li><%= link_to ' 利用の流れ',homes_about_path,class: 'fas fa-link menu-item' %></li>
-              <li><%= link_to ' 講師を探す', user_path,class: 'fas fa-user-plus menu-item' %></li>
+              <li><%= link_to ' 講師を探す', instructors_path,class: 'fas fa-user-plus menu-item' %></li>
               <li><%= link_to ' 依頼掲示板', request_boards_path ,class: 'fas fa-clipboard-list menu-item' %></li>
+              <li><%= link_to ' 講師登録はこちら',new_instructor_path,class: 'fas fa-link menu-item' %></li>
           </ul>
           <% if user_signed_in? %>
             <div class="my-menu-wrap">
@@ -20,7 +20,6 @@
                 <li class="my-menu-item"><a href="/favorites"><i class="icon far fa-heart"></i>お気に入り一覧</a></li>
                 <li class="my-menu-item"><a href="/users/conf"><i class="icon far fa-user-circle"></i>設定</a></li>
                 <li class="my-menu-item"><a data-turbolinks="false" href="/account_upgrade/new"><i class="icon fas fa-user-plus"></i>講師登録する</a></li>
-                <li class="my-menu-item"><a href="/users/affiliate_home"><i class="icon fas fa-id-badge"></i>紹介者報酬プログラム</a></li>
                 <li class="my-menu-item"><a id="logout" rel="nofollow" data-method="delete" href="/users/sign_out"><i class="icon fas fa-sign-out-alt"></i>ログアウト</a></li>
               </ul>
             </div>

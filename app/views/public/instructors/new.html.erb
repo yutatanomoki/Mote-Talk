@@ -5,7 +5,7 @@
       <li><span class="marker_yellow">必要事項のご記入をお願い致します。</span></li>
     </ul>
 
-    <%= form_with model:@instructor,local:true do |f| %>
+    <%= form_with model: @instructor, local:true do |f| %>
       <div class="textbox-wrap">
         <%= f.label :"年齢" %>
         <%= f.text_field :age, class: "textbox" %>

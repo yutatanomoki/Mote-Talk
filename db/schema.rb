@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 2021_02_15_011754) do
   end
 
   create_table "instructors", force: :cascade do |t|
+    t.integer "user_id"
     t.integer "age"
     t.string "personality"
     t.string "self_introduction"

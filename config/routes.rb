@@ -6,14 +6,14 @@ Rails.application.routes.draw do
   scope module: :public do
     get 'user/quit' => 'users#quit'
     patch 'user/goodbye' => 'users#goodbye'
-    resource :user, only: [:show, :edit, :update] 
-    resource :instructor, only: [:new, :create, :index, :show] do
+    resource :user, only: [:show, :edit, :update]
+    resources :instructors, only: [:new, :create, :index, :show] do
       resources :favorites, only: [:create, :destroy]
     end
     post 'reservations/verification' => 'reservations#verification'
     get 'reservations/done' => 'reservations#done'
     resources :reservations, only: [:new, :create, :index, :show]
-    resources :request_boards, only: [:new, :create, :index, :show] 
+    resources :request_boards, only: [:new, :create, :index, :show]
     resources :rooms, only: [:show, :index]
     resources :direct_messages, only: [:create]
   end
@@ -22,7 +22,7 @@ Rails.application.routes.draw do
     get 'user/quit' => 'users#quit'
     patch 'user/goodbye' => 'users#goodbye'
     resource :user, only: [:show, :edit, :update]
-    resource :instructor, only: [:index, :show]
+    resources :instructor, only: [:index, :show]
     resources :reservations, only: [:index, :show]
     resources :request_boards, only: [:index, :show] do
       resources :board_comments, only: [:create, :destroy]

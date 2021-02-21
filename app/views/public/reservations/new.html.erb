@@ -1,0 +1,44 @@
+<div class="contents">
+
+<div class="order-post">
+  <ul class="description">
+    <li>依頼掲示板では、自分のしてほしい依頼を掲示板に投稿し、フレンドユーザーから提案を受けることが出来ます。</li>
+    <li><span class="marker_yellow">依頼を頼みたい日付が今日・明日など、すぐに提案が欲しい場合は「今すぐ」を「はい」に設定してください。</span></li>
+  </ul>
+  <!--<tr class="instructor-name">-->
+  <!--  <td>-->
+  <!--      <span class="avatar"><%#= attachment_image_tag @instructor.user, :profile_image, fallback: "no_image.jpg" %></span>-->
+  <!--      <span><%#= @instructor.name %></span>-->
+  <!--  </td>-->
+</tr>
+</div>
+
+
+<div class="reservation-screen" style="left: 50%; top: 50%; margin-left: -310px; margin-top: -120px; display: block;">
+    <h3 class="reservation-title"><i class="icon fas fa-chalkboard-teacher"></i><span id="reservation-title-text">予約画面</span></h3>
+    <%#= link_to "講師詳細へ", instructor_path(@instructor), class: "fas fa-times close-btn"%>
+        <div id="input-screen">
+        <%= form_with model: @reservation, url: reservations_verification_path, method: :post, local: true do |f| %>
+            <table class="reservation-table">
+                <tbody>
+                    <tr>
+                      <td>日にち</td>
+                      <td class="textbox"><%= f.date_field :date, autofocus: true, autocomplete: "date" %></td>
+                    </tr>
+                    <tr>
+                      <td scope="row">開始時間</td>
+                      <td class="textbox">&emsp;<%= f.time_field :begin_time, autofocus: true, autocomplete: "start_time" %></td>
+                    </tr>
+                    <tr>
+                      <td>終了時間</td>
+                      <td class="textbox">&emsp;<%= f.time_field :finish_time, autofocus: true, autocomplete: "finish_time" %></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="send-reservation-btn2">
+                <%= f.submit  "投稿する", class: "send-reservation-btn" %>
+            </p>
+        <% end %>
+    </div>
+</div>
+

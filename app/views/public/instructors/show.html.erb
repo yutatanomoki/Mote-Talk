@@ -1,0 +1,48 @@
+<div class="instructor-photos-wrap">
+  <%= attachment_image_tag @instructor.user, :profile_image, fallback: "no_image.jpg" %>
+</div>
+
+<div class="instructor-name-photo">
+      <div class="instructor-name-photo-inner clearfix">
+        <div class="instructor-name-wrap">
+          <p class="instructor-name"><%= @instructor.user.name %></p>
+          <p class="instructor-sub-info"><span class="age-sex-info"><i class="icon far fa-user"></i><%= @instructor.age %></span></p>
+        </div>
+      </div>
+</div>
+
+<div class="contents">
+    <div class="instructor-msg-info-wrap">
+      <div class="instructor-text-box self-introduction-wrap">
+        <h3 class="instructor-text-title self-introduction-title">自己紹介</h3>
+          <%= @instructor.self_introduction %>
+      </div>
+      <div class="instructor-text-box msg-to-customers-wrap">
+        <h3 class="instructor-text-title msg-to-customers-title">講師からのメッセージ</h3>
+        <pre class="msg-to-customers-text"><%= @instructor.message %></pre>
+      </div>
+    </div>
+  </div>
+
+    <div class="fix-menu fix-menu-bar">
+      <!-- お気に入りボタンの実装 -->
+      <div class="favorite_btn">
+          <a id="favorite_user_3013" data-remote="true" rel="nofollow" data-method="post" href="/favorites?target_user=3013">
+      <i class="not-favorite-icon far fa-heart"><span class="display-none">お気に入りに追加<span></span></span></i>
+     </a>
+        </p>
+        お気に入り
+      </div>
+
+      <!-- トークボタンの実装 -->
+
+      <%= link_to ' 予約画面へ',new_reservation_path, class: 'talk_btn far fa-handshake' %>
+
+      <a class="talk_btn" rel="nofollow" data-method="post" href="/talkrooms?instructor_id=3013">
+        <i class="icon far fa-comments"></i>予約画面へ
+      </a>
+    </div>
+<!--新規登録ボタン-->
+
+
+  </div>

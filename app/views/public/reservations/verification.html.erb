@@ -1,0 +1,37 @@
+<div id="confirm-screen">
+    <table class="buy-table">
+        <tbody><tr class="instructor-name">
+            <td>
+              <span class="avatar"><%= attachment_image_tag instructor.user, :profile_image, fallback: "no_image.jpg" %></span>
+              <span><%= @instructor.name %></span>
+            </td>
+        </tr>
+        <tr>
+            <td>予約日</td>
+            <td id="confirm-date"><%= @reservation.date %></td>
+        </tr>
+
+        <tr>
+            <td>開始時間</td>
+            <td><span id="confirm-use-time"></span><%= @reservation.begin_time %></td>
+        </tr>
+        <tr>
+            <td>終了時間</td>
+            <td><span id="confirm-use-time"></span><%= @reservation.finish_time %></td>
+        </tr>
+
+        <tr>
+            <td>合計時間</td>
+            <td><span id="confirm-total-price"></span>時間</td>
+        </tr>
+    </tbody>
+    </table>
+    <%= f.hidden_field :date %>
+    <%= f.hidden_field :begin_time %>
+    <%= f.hidden_field :finish_time %>
+    <div class="send-buy-btn2">
+        <button type="button" class="send-buy-btn" id="buy-confirm-btn">予約を確定する</button>
+        <p id="back-input-screen-btn">入力画面へ戻る</p>
+    </div>
+    <% end %>
+</div>

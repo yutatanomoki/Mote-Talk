@@ -10,6 +10,7 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require jquery-ui/datepicker
  *= require_tree .
  *= require_self
  */
@@ -1582,7 +1583,7 @@ strong {
     width: 148px;
     height: 35px;
     padding: 0 0 10px 0;
-    background-image: url(/assets/frenta_logo-3c0206bda3d1452051e26f46497518c696874c3cc7fcbef67a2f832b5348e6c8.png);
+    background-image: url(/assets/icon3.png);
     background-size: contain;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -1622,11 +1623,11 @@ strong {
     color: #fff
 }
 
-.frend-search-list {
+.instructor-search-list {
     position: relative
 }
 
-.frend-search-list>ul {
+.instructor-search-list>ul {
     position: absolute;
     top: 22px;
     left: 0;
@@ -1635,17 +1636,17 @@ strong {
     overflow: hidden
 }
 
-.frend-search-list:hover>ul {
+.instructor-search-list:hover>ul {
     background-color: #fff;
     display: inherit
 }
 
-.frend-search-list>ul>li {
+.instructor-search-list>ul>li {
     background-color: #fff;
     white-space: nowrap
 }
 
-.frend-search-list>ul>li a {
+.instructor-search-list>ul>li a {
     display: block;
     width: 100%;
     height: 100%;
@@ -1653,12 +1654,12 @@ strong {
     color: #666
 }
 
-.frend-search-list>ul>li:hover {
+.instructor-search-list>ul>li:hover {
     background-color: #FC676B;
     color: #fff
 }
 
-.frend-search-list>ul>li:hover a {
+.instructor-search-list>ul>li:hover a {
     color: #fff
 }
 
@@ -3117,7 +3118,7 @@ img#loader-img {
     }
 }
 
-.frend-upgrade-contents {
+.instructor-upgrade-contents {
     width: 100%;
     max-width: 640px;
     margin: 0 auto;
@@ -3126,11 +3127,11 @@ img#loader-img {
     line-height: 1.6em
 }
 
-.frend-upgrade-contents ul.nomal-list {
+.instructor-upgrade-contents ul.nomal-list {
     font-size: 12px
 }
 
-.frend-upgrade-contents .title-wrap {
+.instructor-upgrade-contents .title-wrap {
     width: 80%;
     padding: 10px 0;
     margin: 10px auto;
@@ -3138,24 +3139,24 @@ img#loader-img {
     border-radius: 10px
 }
 
-.frend-upgrade-contents .top-view {
+.instructor-upgrade-contents .top-view {
     width: 100%;
     max-width: 640px
 }
 
-.frend-upgrade-contents .top-view img {
+.instructor-upgrade-contents .top-view img {
     width: 100%;
     vertical-align: middle
 }
 
-.frend-upgrade-contents .what-is-frenta {
+.instructor-upgrade-contents .what-is-frenta {
     width: 100%;
     padding: 30px 20px;
     background: url("what_is_frenta_back_ground.png") no-repeat center;
     background-size: cover
 }
 
-.frend-upgrade-contents .what-is-frenta .what-is-frenta-inner {
+.instructor-upgrade-contents .what-is-frenta .what-is-frenta-inner {
     width: 95%;
     margin: 0 auto;
     padding: 30px 15px;
@@ -3166,23 +3167,23 @@ img#loader-img {
     text-align: center
 }
 
-.frend-upgrade-contents .what-is-frenta .what-is-frenta-inner .subtitle {
+.instructor-upgrade-contents .what-is-frenta .what-is-frenta-inner .subtitle {
     text-align: center;
     margin: 0 0 10px 0
 }
 
-.frend-upgrade-contents .what-is-frenta .what-is-frenta-inner .subtitle img {
+.instructor-upgrade-contents .what-is-frenta .what-is-frenta-inner .subtitle img {
     width: 80%;
     max-width: 232px
 }
 
-.frend-upgrade-contents .past-case {
+.instructor-upgrade-contents .past-case {
     width: 100%;
     margin: 0 0 60px 0;
     padding: 20px
 }
 
-.frend-upgrade-contents .past-case .hukidasi {
+.instructor-upgrade-contents .past-case .hukidasi {
     display: inline-block;
     position: relative;
     margin: 0 0 10px 0;
@@ -3192,7 +3193,7 @@ img#loader-img {
     border-radius: 8px
 }
 
-.frend-upgrade-contents .past-case .hukidasi::after {
+.instructor-upgrade-contents .past-case .hukidasi::after {
     content: "";
     position: absolute;
     top: 6px;
@@ -3201,36 +3202,36 @@ img#loader-img {
     border-right: 10px solid #A3D749
 }
 
-.frend-upgrade-contents .past-case .subtitle {
+.instructor-upgrade-contents .past-case .subtitle {
     text-align: center;
     margin: 0 0 20px 0
 }
 
-.frend-upgrade-contents .past-case .subtitle img {
+.instructor-upgrade-contents .past-case .subtitle img {
     width: 168px
 }
 
-.frend-upgrade-contents .feature {
+.instructor-upgrade-contents .feature {
     width: 100%;
     margin: 0 0 60px 0
 }
 
-.frend-upgrade-contents .feature .subtitle {
+.instructor-upgrade-contents .feature .subtitle {
     text-align: center;
     margin: 0 0 20px 0
 }
 
-.frend-upgrade-contents .feature .subtitle img {
+.instructor-upgrade-contents .feature .subtitle img {
     width: 201px
 }
 
-.frend-upgrade-contents .feature .minititle {
+.instructor-upgrade-contents .feature .minititle {
     font-size: 1.6rem;
     text-align: center;
     margin: 0 0 15px 0
 }
 
-.frend-upgrade-contents .feature .feature-box {
+.instructor-upgrade-contents .feature .feature-box {
     width: 95%;
     max-width: 420px;
     margin: 0 auto 20px auto;
@@ -3240,59 +3241,59 @@ img#loader-img {
     box-shadow: 2px 3px 6px rgba(0,0,0,0.2)
 }
 
-.frend-upgrade-contents .feature .feature-box img {
+.instructor-upgrade-contents .feature .feature-box img {
     display: block;
     margin: 0 auto 20px auto
 }
 
-.frend-upgrade-contents .feature .feature-box.box1 {
+.instructor-upgrade-contents .feature .feature-box.box1 {
     background-color: #FC676B
 }
 
-.frend-upgrade-contents .feature .feature-box.box1 img {
+.instructor-upgrade-contents .feature .feature-box.box1 img {
     display: block;
     width: 171px;
     margin: 0 auto 20px auto
 }
 
-.frend-upgrade-contents .feature .feature-box.box2 {
+.instructor-upgrade-contents .feature .feature-box.box2 {
     background-color: #29ABE2
 }
 
-.frend-upgrade-contents .feature .feature-box.box2 img {
+.instructor-upgrade-contents .feature .feature-box.box2 img {
     width: 241px
 }
 
-.frend-upgrade-contents .feature .feature-box.box3 {
+.instructor-upgrade-contents .feature .feature-box.box3 {
     background-color: #A3D749
 }
 
-.frend-upgrade-contents .feature .feature-box.box3 img {
+.instructor-upgrade-contents .feature .feature-box.box3 img {
     width: 316px
 }
 
-.frend-upgrade-contents .feature .feature-box.box4 {
+.instructor-upgrade-contents .feature .feature-box.box4 {
     background-color: #F6D76B
 }
 
-.frend-upgrade-contents .feature .feature-box.box4 img {
+.instructor-upgrade-contents .feature .feature-box.box4 img {
     width: 238px
 }
 
-.frend-upgrade-contents .member-voice {
+.instructor-upgrade-contents .member-voice {
     margin: 0 0 60px 0
 }
 
-.frend-upgrade-contents .member-voice .subtitle {
+.instructor-upgrade-contents .member-voice .subtitle {
     text-align: center;
     margin: 0 0 20px 0
 }
 
-.frend-upgrade-contents .member-voice .subtitle img {
+.instructor-upgrade-contents .member-voice .subtitle img {
     width: 224px
 }
 
-.frend-upgrade-contents .member-voice .member-voice-box {
+.instructor-upgrade-contents .member-voice .member-voice-box {
     width: 95%;
     max-width: 420px;
     margin: 0 auto 20px auto;
@@ -3302,68 +3303,68 @@ img#loader-img {
     border-radius: 10px
 }
 
-.frend-upgrade-contents .member-voice .member-voice-box .status {
+.instructor-upgrade-contents .member-voice .member-voice-box .status {
     text-align: center;
     font-size: 1.6rem
 }
 
-.frend-upgrade-contents .member-voice .member-voice-box .reward {
+.instructor-upgrade-contents .member-voice .member-voice-box .reward {
     text-align: center;
     font-size: 1.2rem;
     margin: 0 0 30px 0
 }
 
-.frend-upgrade-contents .member-voice .member-voice-box img {
+.instructor-upgrade-contents .member-voice .member-voice-box img {
     display: block;
     margin: 0 auto 20px auto;
     width: 174px
 }
 
-.frend-upgrade-contents .member-voice .minititle {
+.instructor-upgrade-contents .member-voice .minititle {
     margin: 0 0 10px 0;
     font-weight: bold
 }
 
-.frend-upgrade-contents .member-voice .text {
+.instructor-upgrade-contents .member-voice .text {
     margin: 0 0 25px 0
 }
 
-.frend-upgrade-contents .payment .subtitle {
+.instructor-upgrade-contents .payment .subtitle {
     margin: 0 0 20px 0;
     text-align: center
 }
 
-.frend-upgrade-contents .payment .subtitle img {
+.instructor-upgrade-contents .payment .subtitle img {
     width: 168px
 }
 
-.frend-upgrade-contents .payment .frend-upgrade-title img {
+.instructor-upgrade-contents .payment .instructor-upgrade-title img {
     width: 100%;
     max-width: 640px;
     margin: 0 auto 3px auto;
     vertical-align: middle
 }
 
-.frend-upgrade-contents .payment .text {
+.instructor-upgrade-contents .payment .text {
     padding: 0 20px;
     margin: 0 auto 20px 0;
     font-size: 1.2rem
 }
 
-.frend-upgrade-contents .payment .colona {
+.instructor-upgrade-contents .payment .colona {
     padding: 20px
 }
 
-.frend-upgrade-contents .payment .colona .text {
+.instructor-upgrade-contents .payment .colona .text {
     margin: 0 0 10px 0
 }
 
-.frend-upgrade-contents .payment .colona .list {
+.instructor-upgrade-contents .payment .colona .list {
     font-size: 1.2rem;
     padding: 0 20px
 }
 
-.frend-upgrade-contents .payment .colona .list li {
+.instructor-upgrade-contents .payment .colona .list li {
     display: inline-block;
     background-color: #FC676B;
     padding: 3px 6px;
@@ -3372,20 +3373,20 @@ img#loader-img {
     border-radius: 5px
 }
 
-.frend-upgrade-contents .payment .coupon-wrap {
+.instructor-upgrade-contents .payment .coupon-wrap {
     width: 90%;
     max-width: 520px;
     margin: 0 auto 20px auto
 }
 
-.frend-upgrade-contents .payment .coupon-wrap .minititle {
+.instructor-upgrade-contents .payment .coupon-wrap .minititle {
     padding: 15px 0;
     text-align: center;
     font-size: 1.6rem;
     font-weight: bold
 }
 
-.frend-upgrade-contents .payment .coupon-wrap .coupon {
+.instructor-upgrade-contents .payment .coupon-wrap .coupon {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -3396,17 +3397,17 @@ img#loader-img {
     color: #fff
 }
 
-.frend-upgrade-contents .payment .coupon-wrap .coupon .content {
+.instructor-upgrade-contents .payment .coupon-wrap .coupon .content {
     font-size: 1.2rem;
     padding-right: 10px
 }
 
-.frend-upgrade-contents .payment .coupon-wrap .coupon .content .name {
+.instructor-upgrade-contents .payment .coupon-wrap .coupon .content .name {
     font-size: 1.4rem;
     font-weight: bold
 }
 
-.frend-upgrade-contents .payment .coupon-wrap .coupon .use-btn {
+.instructor-upgrade-contents .payment .coupon-wrap .coupon .use-btn {
     padding: 5px 6px;
     white-space: nowrap;
     background-color: #1c98cd;
@@ -3418,17 +3419,17 @@ img#loader-img {
     cursor: pointer
 }
 
-.frend-upgrade-contents .payment .coupon-wrap .coupon.used {
+.instructor-upgrade-contents .payment .coupon-wrap .coupon.used {
     color: #ddd
 }
 
-.frend-upgrade-contents .payment .coupon-wrap .coupon.used .use-btn {
+.instructor-upgrade-contents .payment .coupon-wrap .coupon.used .use-btn {
     color: #fff;
     background-color: transparent;
     border-bottom: none
 }
 
-.frend-upgrade-contents .payment .to-registration {
+.instructor-upgrade-contents .payment .to-registration {
     width: 95%;
     margin: 30px auto;
     padding: 20px 10px;
@@ -3437,7 +3438,7 @@ img#loader-img {
     border-radius: 10px
 }
 
-.frend-upgrade-contents .payment .to-registration .medium-btn {
+.instructor-upgrade-contents .payment .to-registration .medium-btn {
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
     max-width: 320px;
     padding: 18px;
@@ -3446,67 +3447,67 @@ img#loader-img {
     border-color: #FC676B
 }
 
-.frend-upgrade-contents .payment .to-registration .medium-btn:hover {
+.instructor-upgrade-contents .payment .to-registration .medium-btn:hover {
     box-shadow: none
 }
 
-.frend-upgrade-contents .payment .to-registration .text {
+.instructor-upgrade-contents .payment .to-registration .text {
     margin: 20px 0 0 0;
     font-size: 1.2rem;
     color: #fff
 }
 
-.frend-upgrade-contents .payment .to-registration .text a {
+.instructor-upgrade-contents .payment .to-registration .text a {
     color: #fff
 }
 
-.frend-upgrade-contents .payment .marker_yellow {
+.instructor-upgrade-contents .payment .marker_yellow {
     line-height: 1.8em;
     font-size: 5vw
 }
 
-.frend-upgrade-contents .payment .box-frame {
+.instructor-upgrade-contents .payment .box-frame {
     margin-bottom: 50px
 }
 
-.frend-upgrade-contents .payment .charge-title {
+.instructor-upgrade-contents .payment .charge-title {
     width: 29.375%;
     height: 0;
     padding-top: 4.6875%;
     margin: 0 auto;
-    background: url(/assets/frend-upgrade-charge_2x-9e6fc86ae52b0793a9f90206c3320ce4b7d7eb271d34dadae68f85075921559b.png) no-repeat;
+    background: url(/assets/instructor-upgrade-charge_2x-9e6fc86ae52b0793a9f90206c3320ce4b7d7eb271d34dadae68f85075921559b.png) no-repeat;
     background-size: contain;
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap
 }
 
-.frend-upgrade-contents .payment .charge .normal-table {
+.instructor-upgrade-contents .payment .charge .normal-table {
     width: 80%;
     max-width: 420px;
     margin-bottom: 30px
 }
 
-.frend-upgrade-contents .payment .charge .normal-table tr {
+.instructor-upgrade-contents .payment .charge .normal-table tr {
     border-top: 1px solid #ddd
 }
 
-.frend-upgrade-contents .payment .charge .normal-table td:first-child {
+.instructor-upgrade-contents .payment .charge .normal-table td:first-child {
     background-color: #FC676B;
     color: #fff
 }
 
-.frend-upgrade-contents .payment .charge .table-title {
+.instructor-upgrade-contents .payment .charge .table-title {
     text-align: center;
     color: #666;
     margin: 0 0 10px 0
 }
 
-.frend-upgrade-contents .payment .charge p {
+.instructor-upgrade-contents .payment .charge p {
     font-size: 14px
 }
 
-.frend-upgrade-contents .payment .charge .frend-upgrade-pay-btn {
+.instructor-upgrade-contents .payment .charge .instructor-upgrade-pay-btn {
     background: none;
     border: none;
     outline: none;
@@ -3518,20 +3519,20 @@ img#loader-img {
     margin: 0 auto 30px auto
 }
 
-.frend-upgrade-contents .payment .charge .frend-upgrade-pay-btn img {
+.instructor-upgrade-contents .payment .charge .instructor-upgrade-pay-btn img {
     width: 100%
 }
 
-.frend-upgrade-contents .payment .tab-wrap .tab-contents p {
+.instructor-upgrade-contents .payment .tab-wrap .tab-contents p {
     margin: 0 0 30px 0;
     font-size: 1.2rem
 }
 
-.frend-upgrade-contents .payment .tab-wrap .tab-contents .nomal-list {
+.instructor-upgrade-contents .payment .tab-wrap .tab-contents .nomal-list {
     border-radius: 3px
 }
 
-.frend-upgrade-contents .payment .card.coupon-used {
+.instructor-upgrade-contents .payment .card.coupon-used {
     width: 0;
     height: 0;
     opacity: 0;
@@ -3539,18 +3540,18 @@ img#loader-img {
     transition: opacity 2s ease-out
 }
 
-.frend-upgrade-contents .payment .bank.coupon-used {
+.instructor-upgrade-contents .payment .bank.coupon-used {
     display: none
 }
 
 @media only screen and (min-width: 640px) {
-    .frend-upgrade-contents .marker_yellow {
+    .instructor-upgrade-contents .marker_yellow {
         font-size:32px
     }
 }
 
 @media only screen and (max-width: 640px) {
-    .frend-upgrade-pay-btn {
+    .instructor-upgrade-pay-btn {
         margin-bottom:15px
     }
 }
@@ -4191,25 +4192,25 @@ img#loader-img {
     display: block
 }
 
-.bulletin_board-order-wrap .frend-comment-wrap {
+.bulletin_board-order-wrap .instructor-comment-wrap {
     margin: 0 0 50px 0;
     padding: 10px;
     padding: 30px 10px 10px 10px;
     border-top: 3px solid #F5F1E9
 }
 
-.frend-comment-wrap .subtitle {
+.instructor-comment-wrap .subtitle {
     font-size: 1.8rem;
     font-weight: bold;
     margin: 0 0 20px 0
 }
 
-.frend-comment-wrap .frend-comment {
+.instructor-comment-wrap .instructor-comment {
     position: relative;
     margin: 0 0 20px 0
 }
 
-.frend-comment-wrap .frend-comment::before {
+.instructor-comment-wrap .instructor-comment::before {
     content: "";
     position: absolute;
     top: 30px;
@@ -4219,7 +4220,7 @@ img#loader-img {
     z-index: 1
 }
 
-.frend-comment .user {
+.instructor-comment .user {
     height: 30px;
     float: left;
     vertical-align: center;
@@ -4227,12 +4228,12 @@ img#loader-img {
     margin: 0 0 15px 0
 }
 
-.frend-comment-wrap .user>* {
+.instructor-comment-wrap .user>* {
     display: inline-block;
     vertical-align: middle
 }
 
-.frend-comment-wrap .user .avatar {
+.instructor-comment-wrap .user .avatar {
     width: 30px;
     height: 30px;
     background-size: cover;
@@ -4240,17 +4241,17 @@ img#loader-img {
     margin: 0 1px 0 0
 }
 
-.frend-comment-wrap .user .name {
+.instructor-comment-wrap .user .name {
     vertical-align: center;
     font-size: 1.4rem
 }
 
-.frend-comment .info {
+.instructor-comment .info {
     float: right;
     padding: 5px 0 0 0
 }
 
-.frend-comment .info>* {
+.instructor-comment .info>* {
     display: inline-block;
     margin: 0 3px 0 0;
     padding: 5px 7px;
@@ -4260,7 +4261,7 @@ img#loader-img {
     font-size: 1.0rem
 }
 
-.frend-comment-wrap .content {
+.instructor-comment-wrap .content {
     position: relative;
     font-size: 1.3rem;
     padding: 10px;
@@ -4269,7 +4270,7 @@ img#loader-img {
     margin: 0px 0 5px 0
 }
 
-.frend-comment-wrap .datetime {
+.instructor-comment-wrap .datetime {
     font-size: 1.0rem;
     text-align: right
 }
@@ -4362,11 +4363,11 @@ img#loader-img {
     cursor: pointer
 }
 
-.frend-box-wrap {
+.instructor-box-wrap {
     text-align: center
 }
 
-.frend-box {
+.instructor-box {
     position: relative;
     width: 300px;
     height: 380px;
@@ -4380,7 +4381,7 @@ img#loader-img {
     text-align: left
 }
 
-.frend-box .frend-avatar {
+.instructor-box .instructor-avatar {
     width: 300px;
     height: 300px
 }
@@ -4450,7 +4451,7 @@ img#loader-img {
     margin: 0 3px 0 0
 }
 
-.frend-info {
+.instructor-info {
     position: absolute;
     width: 300px;
     height: 43px;
@@ -4462,16 +4463,16 @@ img#loader-img {
     text-align: left
 }
 
-.frend-info>* {
+.instructor-info>* {
     display: inline-block;
     margin: 0 10px 0 0
 }
 
-.frend-info i {
+.instructor-info i {
     margin-right: 5px
 }
 
-.frend-box .tag-wrap {
+.instructor-box .tag-wrap {
     width: 300px;
     position: absolute;
     top: 278px;
@@ -4480,7 +4481,7 @@ img#loader-img {
     font-size: 0
 }
 
-.frend-box .tag-wrap .tag {
+.instructor-box .tag-wrap .tag {
     display: inline-block;
     padding: 4px;
     border-radius: 10px;
@@ -4490,7 +4491,7 @@ img#loader-img {
     margin: 0 0 0 2px
 }
 
-.frend-msg {
+.instructor-msg {
     position: relative;
     width: 100%;
     margin: -3px 0 0 0;
@@ -4500,7 +4501,7 @@ img#loader-img {
     line-height: 1.5em
 }
 
-.frend-msg:before {
+.instructor-msg:before {
     content: "";
     position: absolute;
     top: -8px;
@@ -4526,7 +4527,7 @@ img#loader-img {
     z-index: 2
 }
 
-.frend-box .pickup-tag-wrap {
+.instructor-box .pickup-tag-wrap {
     width: 200px;
     position: absolute;
     top: 5px;
@@ -4534,7 +4535,7 @@ img#loader-img {
     overflow: hidden
 }
 
-.frend-box .pickup-tag {
+.instructor-box .pickup-tag {
     display: block;
     float: right;
     margin: 0 0 5px 0;
@@ -4544,15 +4545,15 @@ img#loader-img {
     font-size: 1.0rem
 }
 
-.frend-box .verified {
+.instructor-box .verified {
     background-color: #81bc73
 }
 
-.frend-box .online-rental {
+.instructor-box .online-rental {
     background-color: #29ABE2
 }
 
-.frend-photos-wrap {
+.instructor-photos-wrap {
     position: relative;
     width: 100%;
     height: auto;
@@ -4561,13 +4562,13 @@ img#loader-img {
     box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.1)
 }
 
-.frend-photos-wrap::after {
+.instructor-photos-wrap::after {
     content: "";
     display: block;
     padding: 0 0 500px 0
 }
 
-.frend-photos-wrap img {
+.instructor-photos-wrap img {
     position: absolute;
     left: 0;
     right: 0;
@@ -4577,13 +4578,13 @@ img#loader-img {
     z-index: 1
 }
 
-.frend-name-photo {
+.instructor-name-photo {
     width: 100%;
     background-color: #fff;
     margin: 0 0 10px 0
 }
 
-.frend-name-photo-inner {
+.instructor-name-photo-inner {
     max-width: 1100px;
     width: 100%;
     margin: 0 auto;
@@ -4607,20 +4608,20 @@ img#loader-img {
     cursor: pointer
 }
 
-.frend-name-wrap {
+.instructor-name-wrap {
     width: 50%;
     float: left;
     padding: 0 0 0 10px
 }
 
-.frend-name {
+.instructor-name {
     background-color: white;
     font-size: 2.1rem;
     color: #ff4c4c;
     margin: 0 0 10px 0
 }
 
-.frend-name-photo .verified {
+.instructor-name-photo .verified {
     display: inline-block;
     padding: 2px 4px;
     background-color: #81bc73;
@@ -4629,22 +4630,22 @@ img#loader-img {
     font-size: 1.0rem
 }
 
-.frend-sub-info {
+.instructor-sub-info {
     color: #666;
     font-size: 1.4rem;
     margin: 0 0 10px 0
 }
 
-.frend-sub-info .age-sex-info {
+.instructor-sub-info .age-sex-info {
     padding: 0 0 0 10px
 }
 
-.frend-name-wrap .tag-wrap {
+.instructor-name-wrap .tag-wrap {
     text-align: left;
     font-size: 0
 }
 
-.frend-name-wrap .tag-wrap .tag {
+.instructor-name-wrap .tag-wrap .tag {
     display: inline-block;
     padding: 5px;
     border-radius: 15px;
@@ -4658,17 +4659,17 @@ img#loader-img {
     background-color: #555
 }
 
-.frend-main-info-wrap {
+.instructor-main-info-wrap {
     position: relative;
     width: 100%
 }
 
-.frend-side-info-wrap {
+.instructor-side-info-wrap {
     width: 27%;
     float: right
 }
 
-.frend-side-info-inner-wrap {
+.instructor-side-info-inner-wrap {
     width: 100%;
     border-radius: 5px
 }
@@ -4732,7 +4733,7 @@ img#loader-img {
 }
 
 
-.frend-text-box {
+.instructor-text-box {
     width: 100%;
     margin: 20px 0 0 0;
     background-color: #fff;
@@ -4741,7 +4742,7 @@ img#loader-img {
     padding: 20px
 }
 
-.frend-text-box .frend-text-title {
+.instructor-text-box .instructor-text-title {
     position: relative;
     padding: 0.6em;
     background: #29ABE2;
@@ -4751,7 +4752,7 @@ img#loader-img {
     border-radius: 3px
 }
 
-.frend-text-box .frend-text-title:after {
+.instructor-text-box .instructor-text-title:after {
     content: '';
     position: absolute;
     top: 100%;
@@ -4762,7 +4763,7 @@ img#loader-img {
     height: 0
 }
 
-.frend-msg-info-wrap {
+.instructor-msg-info-wrap {
     float: left;
     width: 70%
 }
@@ -4831,7 +4832,7 @@ img#loader-img {
     font-size: 16px
 }
 
-a.talk_btn {
+.talk_btn {
     display: inline-block;
     width: 150px;
     height: 32px;
@@ -4841,20 +4842,15 @@ a.talk_btn {
     border-bottom: 3px solid #146c91;
     border-radius: 8px;
     text-align: center;
-    font-size: 14px
-}
-
-.talk_btn i {
-    font-size: 16px;
-    color: #fff
+    font-size: 16px
 }
 
 @media only screen and (max-width: 768px) {
-    .frend-main-info-wrap {
+    .instructor-main-info-wrap {
         font-size:1.3rem
     }
 
-    .frend-photos-wrap::after {
+    .instructor-photos-wrap::after {
         content: "";
         display: block;
         padding: 0 0 350px 0
@@ -4866,17 +4862,17 @@ a.talk_btn {
         float: none
     }
 
-    .frend-name-wrap {
+    .instructor-name-wrap {
         width: 100%
     }
 
-    .frend-side-info-wrap {
+    .instructor-side-info-wrap {
         width: 100%;
         float: none;
         margin: 0 0 20px 0
     }
 
-    .frend-side-info-wrap {
+    .instructor-side-info-wrap {
         text-align: center
     }
 
@@ -4897,12 +4893,12 @@ a.talk_btn {
         font-size: 1.6em
     }
 
-    .frend-msg-info-wrap {
+    .instructor-msg-info-wrap {
         float: none;
         width: 100%
     }
 
-    .frend-text-box {
+    .instructor-text-box {
         margin-top: 0
     }
 
@@ -4916,7 +4912,7 @@ a.talk_btn {
         padding: 5px
     }
 
-    .frend-text-box .frend-text-title {
+    .instructor-text-box .instructor-text-title {
         font-size: 1.6rem
     }
 }
@@ -5700,7 +5696,7 @@ a.talk_btn {
     margin-bottom: 30px
 }
 
-.guide-buy-result-img {
+.guide-reservation-result-img {
     margin-bottom: 20px
 }
 
@@ -6007,7 +6003,7 @@ a.talk_btn {
     }
 }
 
-.frend-guide-box {
+.instructor-guide-box {
     width: 100%;
     max-width: 640px;
     margin: 33px auto 0 auto;
@@ -6015,18 +6011,18 @@ a.talk_btn {
     padding: 10px 20px 50px 20px
 }
 
-.frend-guide-box p {
+.instructor-guide-box p {
     line-height: 1.8em;
     margin: 0 0 10px 0;
     padding: 0 0.5em
 }
 
-.frend-guide-box strong {
+.instructor-guide-box strong {
     font-weight: bold;
     color: #FC676B
 }
 
-.frend-guide-box .subtitle {
+.instructor-guide-box .subtitle {
     position: relative;
     padding: 10px;
     margin: 50px 0 8px 0;
@@ -6038,11 +6034,11 @@ a.talk_btn {
     border-radius: 8px
 }
 
-.frend-guide-box .subtitle.first {
+.instructor-guide-box .subtitle.first {
     margin-top: 0
 }
 
-.frend-guide-box .subtitle::before {
+.instructor-guide-box .subtitle::before {
     content: "";
     display: block;
     position: absolute;
@@ -6052,31 +6048,31 @@ a.talk_btn {
     border-top: solid 10px #FC676B
 }
 
-.frend-guide-box .minititle {
+.instructor-guide-box .minititle {
     color: #FC676B;
     padding: 6px;
     border-left: 3px solid #FC676B;
     margin: 30px 0 10px 0
 }
 
-.frend-guide-box .small-btn {
+.instructor-guide-box .small-btn {
     margin-bottom: 10px
 }
 
-.frend-guide-box .frend-guide-img {
+.instructor-guide-box .instructor-guide-img {
     width: 230px;
     border-radius: 8px;
     border: 1px solid #eee;
     margin: 0 0 30px 0
 }
 
-.frend-guide-box .aside-text {
+.instructor-guide-box .aside-text {
     margin-top: 20px;
     font-size: 1.2rem
 }
 
 @media only screen and (min-width: 640px) {
-    .frend-guide-box {
+    .instructor-guide-box {
         padding-top:30px
     }
 }
@@ -7078,7 +7074,7 @@ a.talk_btn {
     line-height: 1.7em
 }
 
-.frends-wrap {
+.instructors-wrap {
     text-align: center;
     margin: 0 auto 100px 0
 }
@@ -7162,7 +7158,7 @@ a.talk_btn {
     line-height: 1.7em
 }
 
-.otherrental-index .frends-wrap {
+.otherrental-index .instructors-wrap {
     text-align: center;
     margin: 0 auto 100px 0
 }
@@ -7484,7 +7480,7 @@ a.remove_fields {
     text-align: center
 }
 
-.rentalfrend-header {
+.rentalinstructor-header {
     width: 100%;
     padding: 20px;
     background-color: #fc676b;
@@ -7492,14 +7488,14 @@ a.remove_fields {
     color: #fff
 }
 
-.rentalfrend-header .title img {
+.rentalinstructor-header .title img {
     display: block;
     width: 180px;
     margin: 0 auto;
     padding: 20px 0
 }
 
-.rentalfrend-header .white-btn {
+.rentalinstructor-header .white-btn {
     display: block;
     width: 240px;
     margin: 0 auto;
@@ -7510,25 +7506,25 @@ a.remove_fields {
     box-shadow: 1px 3px 6px rgba(0,0,0,0.25)
 }
 
-.rentalfrend-header p {
+.rentalinstructor-header p {
     line-height: 1.7em
 }
 
-.frends-wrap {
+.instructors-wrap {
     text-align: center;
     margin: 0 auto 100px 0
 }
 
-.frendrental-area-wrap .subtitle {
+.instructorrental-area-wrap .subtitle {
     margin-bottom: 20px;
     text-align: center
 }
 
-.frendrental-area-wrap .subtitle img {
+.instructorrental-area-wrap .subtitle img {
     width: 319px
 }
 
-.frendrental-area-wrap .area-box-wrap {
+.instructorrental-area-wrap .area-box-wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -7540,41 +7536,41 @@ a.remove_fields {
     background-color: #fc676b
 }
 
-.frendrental-area-wrap .area-box-wrap .area-box {
+.instructorrental-area-wrap .area-box-wrap .area-box {
     width: 120px;
     padding: 20px
 }
 
-.frendrental-area-wrap .area-box-wrap .mini-title {
+.instructorrental-area-wrap .area-box-wrap .mini-title {
     color: #fff;
     font-size: 1.8rem;
     margin-bottom: 10px
 }
 
-.frendrental-area-wrap .area-box-wrap li {
+.instructorrental-area-wrap .area-box-wrap li {
     list-style: none
 }
 
-.frendrental-area-wrap .area-box-wrap a {
+.instructorrental-area-wrap .area-box-wrap a {
     color: #fff
 }
 
 @media only screen and (max-width: 768px) {
-    .frendrental-area-wrap {
+    .instructorrental-area-wrap {
         margin-bottom:-50px
     }
 
-    .frendrental-area-wrap .area-box-wrap {
+    .instructorrental-area-wrap .area-box-wrap {
         width: 100%;
         border-radius: 0;
         font-size: 1.4rem
     }
 
-    .frendrental-area-wrap .area-box-wrap .area-box {
+    .instructorrental-area-wrap .area-box-wrap .area-box {
         width: 110px
     }
 
-    .frendrental-area-wrap .area-box-wrap .mini-title {
+    .instructorrental-area-wrap .area-box-wrap .mini-title {
         font-size: 1.6rem
     }
 }
@@ -7928,7 +7924,7 @@ a.remove_fields {
     vertical-align: middle
 }
 
-.input-text-area .buy-btn {
+.input-text-area .reservation-btn {
     position: relative;
     width: 56px;
     height: 27px;
@@ -7938,7 +7934,7 @@ a.remove_fields {
     background-color: #fd3c40
 }
 
-.input-text-area .buy-btn::before {
+.input-text-area .reservation-btn::before {
     content: '予約';
     display: block;
     width: 28px;
@@ -7949,7 +7945,7 @@ a.remove_fields {
     font-size: 14px
 }
 
-.input-text-area .buy-btn i {
+.input-text-area .reservation-btn i {
     color: #fa3f36;
     font-size: 16px;
     line-height: 1;
@@ -7959,12 +7955,12 @@ a.remove_fields {
     color: #fff
 }
 
-.input-text-area .buy-btn.color-grey {
+.input-text-area .reservation-btn.color-grey {
     background-color: #666;
     cursor: default
 }
 
-.input-text-area .buy-btn.color-grey i {
+.input-text-area .reservation-btn.color-grey i {
     color: #fff
 }
 
@@ -8021,13 +8017,14 @@ a.remove_fields {
     background-color: rgba(100,100,100,0.6)
 }
 
-.buy-screen {
+.reservation-screen {
     display: none;
     position: fixed;
     overflow: hidden;
     top: 120px;
     width: 90%;
     max-width: 620px;
+    margin-top: 100px;
     margin: 0 auto;
     z-index: 4;
     background: #fff;
@@ -8038,7 +8035,7 @@ a.remove_fields {
     -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.1)
 }
 
-.buy-screen .buy-title {
+.reservation-screen .reservation-title {
     padding: 15px;
     font-size: 1.8rem;
     margin: 0 0 10px 0;
@@ -8048,49 +8045,49 @@ a.remove_fields {
     letter-spacing: 3px
 }
 
-.buy-screen #close-btn {
+.reservation-screen #close-btn {
     position: absolute;
     right: 10px;
     top: 15px;
     cursor: pointer
 }
 
-.buy-screen #close-btn i {
+.reservation-screen #close-btn i {
     font-size: 20px;
     color: #fff
 }
 
-.buy-screen .buy-table {
+.reservation-screen .reservation-table {
     width: 90%;
     border-collapse: collapse;
     margin: 10px auto
 }
 
-.buy-screen .buy-table tr:first-child {
+.reservation-screen .reservation-table tr:first-child {
     border-bottom: 1px solid #ddd
 }
 
-.buy-screen .buy-table tr:nth-child(2) td {
+.reservation-screen .reservation-table tr:nth-child(2) td {
     padding-top: 12px
 }
 
-.buy-screen .buy-table tr td:first-child {
+.reservation-screen .reservation-table tr td:first-child {
     text-align: left
 }
 
-.buy-screen .buy-table td {
+.reservation-screen .reservation-table td {
     padding: 6px;
     text-align: right;
     vertical-align: middle
 }
 
-.buy-screen .buy-table .frend-name td {
+.reservation-screen .reservation-table .instructor-name td {
     font-weight: bold;
     font-size: 1.3rem;
     color: #666
 }
 
-.buy-screen .buy-table .frend-name td span {
+.reservation-screen .reservation-table .instructor-name td span {
     display: inline-block;
     max-width: 80px;
     vertical-align: middle;
@@ -8099,7 +8096,7 @@ a.remove_fields {
     white-space: nowrap
 }
 
-.buy-screen .buy-table .frend-name .avatar {
+.reservation-screen .reservation-table .instructor-name .avatar {
     display: inline-block;
     width: 30px;
     height: 30px;
@@ -8108,15 +8105,13 @@ a.remove_fields {
     margin: 0 3px 0 0
 }
 
-.buy-screen .buy-table td:nth-child(odd) {
+.reservation-screen .reservation-table td:nth-child(odd) {
     white-space: nowrap
 }
 
-.buy-screen .buy-table td .selectbox {
-    float: right
-}
 
-.buy-screen .buy-table .coupon-select-btn {
+
+.reservation-screen .reservation-table .coupon-select-btn {
     display: inline-block;
     cursor: pointer;
     padding: 6px 12px;
@@ -8126,13 +8121,13 @@ a.remove_fields {
     box-shadow: 1px 2px 5px rgba(0,0,0,0.2)
 }
 
-.buy-screen #total-price {
+.reservation-screen #total-price {
     font-weight: bold;
     color: #fd3c40;
     font-size: 21px
 }
 
-.buy-screen .send-buy-btn {
+.reservation-screen .send-reservation-btn {
     background-color: #FC676B;
     padding: 8px 50px;
     color: #fff;
@@ -8145,11 +8140,11 @@ a.remove_fields {
     font-size: 1.6rem
 }
 
-.send-buy-btn2 {
+.send-reservation-btn2 {
     text-align: center
 }
 
-.buy-screen .coupon-select-screen {
+.reservation-screen .coupon-select-screen {
     overflow: hidden;
     display: block;
     position: absolute;
@@ -8164,7 +8159,7 @@ a.remove_fields {
     box-shadow: 1px 3px 6px rgba(0,0,0,0.2)
 }
 
-.buy-screen .coupon-select-screen .coupon-title {
+.reservation-screen .coupon-select-screen .coupon-title {
     height: 50px;
     margin: 0 0 10px 0;
     padding: 0 10px 10px 10px;
@@ -8176,13 +8171,13 @@ a.remove_fields {
     background-color: #A3D749
 }
 
-.buy-screen .coupon-select-screen .coupon-wrap {
+.reservation-screen .coupon-select-screen .coupon-wrap {
     width: 100%;
     height: calc(100% - 50px - 10px - 44px - 37px - 20px);
     overflow-y: scroll
 }
 
-.buy-screen .coupon-select-screen .coupon-row {
+.reservation-screen .coupon-select-screen .coupon-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -8200,40 +8195,40 @@ a.remove_fields {
     box-shadow: 1px 3px 6px rgba(0,0,0,0.2)
 }
 
-.buy-screen .coupon-select-screen .coupon-row input[type="checkbox"] {
+.reservation-screen .coupon-select-screen .coupon-row input[type="checkbox"] {
     display: inline-block
 }
 
-.buy-screen .coupon-select-screen .coupon-row .coupon-contents {
+.reservation-screen .coupon-select-screen .coupon-row .coupon-contents {
     padding: 0 5px 0 15px
 }
 
-.buy-screen .coupon-select-screen .coupon-row .coupon-contents .coupon-name {
+.reservation-screen .coupon-select-screen .coupon-row .coupon-contents .coupon-name {
     display: block;
     font-weight: bold;
     margin: 0 0 6px 0
 }
 
-.buy-screen .coupon-select-screen .coupon-row .coupon-contents .coupon-description {
+.reservation-screen .coupon-select-screen .coupon-row .coupon-contents .coupon-description {
     display: block;
     margin: 0 0 6px 0;
     line-height: 1.5em;
     font-size: 1.2rem
 }
 
-.buy-screen .coupon-select-screen .coupon-row .coupon-contents .use-period {
+.reservation-screen .coupon-select-screen .coupon-row .coupon-contents .use-period {
     display: block;
     font-size: 1.2rem
 }
 
-.buy-screen .coupon-select-screen .coupon-row .coupon-price {
+.reservation-screen .coupon-select-screen .coupon-row .coupon-price {
     display: inline-block;
     text-align: right;
     width: 6em;
     font-weight: bold
 }
 
-.buy-screen .coupon-select-screen .total-discount-text {
+.reservation-screen .coupon-select-screen .total-discount-text {
     height: 44px;
     text-align: right;
     font-weight: bold;
@@ -8241,18 +8236,18 @@ a.remove_fields {
     padding: 10px 10px 10px 0
 }
 
-.buy-screen .coupon-select-screen .total-discount-text .total-discount {
+.reservation-screen .coupon-select-screen .total-discount-text .total-discount {
     padding-right: 5px;
     color: #fd3c40;
     font-size: 21px
 }
 
-.buy-screen .coupon-select-screen .send-buy-btn {
+.reservation-screen .coupon-select-screen .send-reservation-btn {
     display: block;
     margin: 10px auto
 }
 
-.buy-screen .coupon-select-screen.open {
+.reservation-screen .coupon-select-screen.open {
     top: 0px;
     left: 0px;
     bottom: 0;
@@ -8263,7 +8258,7 @@ a.remove_fields {
     opacity: 1.0
 }
 
-.buy-screen .coupon-select-screen.display {
+.reservation-screen .coupon-select-screen.display {
     width: 97%;
     height: 97%;
     transition: all 0.1s ease-in
@@ -8273,77 +8268,47 @@ a.remove_fields {
     display: none
 }
 
-.buy-screen .error-msg {
+.reservation-screen .error-msg {
     display: inline-block;
     font-size: 1.0rem;
     color: red
 }
 
-.buy-screen #confirm-screen .buy-table {
+.reservation-screen #confirm-screen .reservation-table {
     margin-bottom: 30px
 }
 
-.buy-screen #confirm-screen .buy-table tr:last-child {
+.reservation-screen #confirm-screen .reservation-table tr:last-child {
     border-top: 1px solid #ddd
 }
 
-.buy-screen #confirm-screen .buy-table tr:last-child td {
+.reservation-screen #confirm-screen .reservation-table tr:last-child td {
     padding-top: 20px;
     font-weight: bold
 }
 
-.buy-screen #confirm-screen .buy-table #confirm-total-price {
+.reservation-screen #confirm-screen .reservation-table #confirm-total-price {
     font-weight: bold;
     color: #fd3c40;
     font-size: 21px
 }
 
-.buy-screen #confirm-screen .send-buy-btn {
+.reservation-screen #confirm-screen .send-reservation-btn {
     margin-bottom: 20px
 }
 
-.buy-screen #confirm-screen #back-input-screen-btn {
+.reservation-screen #confirm-screen #back-input-screen-btn {
     cursor: pointer;
     margin-bottom: 20px
 }
 
-.buy-screen #payment-screen #back-confirm-screen-btn {
-    cursor: pointer;
-    margin-bottom: 20px
-}
 
-.buy-screen #payment-screen .save-payment-wrap {
-    margin: 0 0 20px 0
-}
-
-#payment-screen {
-    display: none
-}
-
-#payment-screen .buy-table {
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ddd
-}
-
-#payment-screen .payment-form-wrap {
-    width: 90%;
-    margin: 0 auto 30px auto
-}
-
-#payment-screen #payment-form {
-    display: none
-}
-
-.buy-screen #payment-screen .error-msg {
-    margin-top: 8px
-}
-
-.buy-screen .registered-wrap {
+.reservation-screen .registered-wrap {
     width: 90%;
     margin: 0 auto 40px auto
 }
 
-.buy-screen .card-frame {
+.reservation-screen .card-frame {
     margin: 0 0 10px 0;
     padding: 20px 10px;
     border: 1px solid #ddd;
@@ -8352,17 +8317,17 @@ a.remove_fields {
     line-height: 1.8em
 }
 
-.buy-screen #card_last4 {
+.reservation-screen #card_last4 {
     padding: 2px;
     border-radius: 2px;
     background-color: #eee
 }
 
-.buy-screen #another-card {
+.reservation-screen #another-card {
     font-size: 1.0rem
 }
 
-.buy-messege {
+.reservation-messege {
     width: 80%;
     max-width: 540px;
     overflow: hidden;
@@ -8372,7 +8337,7 @@ a.remove_fields {
     border-radius: 10px
 }
 
-.buy-messege p {
+.reservation-messege p {
     background-color: #fa3f36;
     text-align: center;
     margin: 0 0 10px 0;
@@ -8381,16 +8346,16 @@ a.remove_fields {
     line-height: 2.0
 }
 
-.buy-messege table {
+.reservation-messege table {
     width: 100%
 }
 
-.buy-messege table td {
+.reservation-messege table td {
     padding: 5px;
     line-height: 1.1em
 }
 
-.buy-messege .paid {
+.reservation-messege .paid {
     display: inline-block;
     margin-top: 3px;
     font-size: 1.0rem;
@@ -8467,18 +8432,18 @@ a.remove_fields {
         padding: 5px 2px 5px 3px
     }
 
-    .input-text-area .buy-btn {
+    .input-text-area .reservation-btn {
         width: 29px;
         height: 26px;
         border-radius: 10px;
         margin: 0 1px 0 0
     }
 
-    .input-text-area .buy-btn::before {
+    .input-text-area .reservation-btn::before {
         display: none
     }
 
-    .input-text-area .buy-btn i {
+    .input-text-area .reservation-btn i {
         font-size: 15px;
         top: 5px;
         left: 8px
@@ -8495,19 +8460,19 @@ a.remove_fields {
         margin: 0 0 0 0
     }
 
-    .buy-screen {
+    .reservation-screen {
         font-size: 1.4rem
     }
 
-    .buy-screen .selectbox {
+    .reservation-screen .selectbox {
         width: 100%
     }
 
-    .buy-screen .textbox {
+    .reservation-screen .textbox {
         width: 100%
     }
 
-    .buy-messege {
+    .reservation-messege {
         font-size: 1.4rem
     }
 }
