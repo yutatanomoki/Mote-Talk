@@ -13,21 +13,23 @@
 ActiveRecord::Schema.define(version: 2021_02_15_011754) do
 
   create_table "board_comments", force: :cascade do |t|
-    t.integer "request_board_id"
-    t.integer "instructor_id"
+    t.integer "request_board_id", null: false
+    t.integer "instructor_id", null: false
     t.text "comment", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "favorites", force: :cascade do |t|
-    t.integer "instructorr_id"
-    t.integer "user_id"
+    t.integer "instructorr_id", null: false
+    t.integer "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "feedbacks", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.integer "instructor_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -38,18 +40,18 @@ ActiveRecord::Schema.define(version: 2021_02_15_011754) do
   end
 
   create_table "instructors", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "age"
-    t.string "personality"
-    t.string "self_introduction"
-    t.string "message"
+    t.integer "user_id", null: false
+    t.integer "age", null: false
+    t.string "personality", null: false
+    t.string "self_introduction", null: false
+    t.string "message", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "messages", force: :cascade do |t|
-    t.bigint "user_id", null: false
-    t.bigint "room_id", null: false
+    t.integer "user_id", null: false
+    t.integer "room_id", null: false
     t.string "message", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -75,12 +77,10 @@ ActiveRecord::Schema.define(version: 2021_02_15_011754) do
 
   create_table "reviews", force: :cascade do |t|
     t.integer "user_id", null: false
-    t.integer "user_reviews_id", null: false
+    t.integer "instructor_id", null: false
     t.text "content", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_reviews_on_user_id"
-    t.index ["user_reviews_id"], name: "index_reviews_on_user_reviews_id"
   end
 
   create_table "rooms", force: :cascade do |t|
