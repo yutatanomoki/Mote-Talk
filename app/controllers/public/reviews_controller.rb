@@ -16,4 +16,5 @@ class Public::ReviewsController < ApplicationController
   def review_params
     params.require(:review).permit(:instructor_id, :score, :content)
   end
+  
 end

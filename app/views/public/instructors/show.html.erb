@@ -12,6 +12,36 @@
 </div>
 
 <div class="contents">
+    <div class="frend-side-info-wrap">
+      <div class="frend-side-info-inner-wrap">
+        <div class="info-box">
+          <h3 class="info-box-title"><i class="icon fas fa-crown"></i>ランキング</h3>
+          <p class="info-box-text">1位</p>
+        </div>
+
+        <div class="info-box favorite-info">
+          <h3 class="info-box-title"><i class="icon far fa-heart"></i>お気に入り数</h3>
+          <p class="info-box-text">
+            <span id="favorite_cnt_4149">
+              83
+            </span>
+          </p>
+        </div>
+
+        <div class="info-box price-info">
+          <h3 class="info-box-title">レビュー</h3>
+            <p class="info-box-text">
+              <div class="star-rating mb-2">
+                <div class="star-rating-front" style="width: <%= @instructor.review_score_percentage %>%">★★★★★</div>
+                <div class="star-rating-back">★★★★★</div>
+              </div>
+              <div class="average-score-display ml-3 pt-2">
+                <%= @instructor.avg_score %>点（<%= @instructor.reviews.count %>件のレビュー）
+              </div>
+            </p>
+        </div>
+      </div>
+    </div>
     <div class="instructor-msg-info-wrap">
       <div class="instructor-text-box self-introduction-wrap">
         <h3 class="instructor-text-title self-introduction-title">自己紹介</h3>

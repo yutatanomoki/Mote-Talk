@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     resource :user, only: [:show, :edit, :update]
     resources :instructors, only: [:new, :create, :index, :show] do
       resources :favorites, only: [:create, :destroy]
+      resources :reviews, only[:create, :destroy]
     end
     post 'reservations/verification' => 'reservations#verification'
     get 'reservations/done' => 'reservations#done'
