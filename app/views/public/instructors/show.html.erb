@@ -12,8 +12,8 @@
 </div>
 
 <div class="contents">
-    <div class="frend-side-info-wrap">
-      <div class="frend-side-info-inner-wrap">
+    <div class="instructor-side-info-wrap">
+      <div class="instructor-side-info-inner-wrap">
         <div class="info-box">
           <h3 class="info-box-title"><i class="icon fas fa-crown"></i>ランキング</h3>
           <p class="info-box-text">1位</p>
@@ -33,7 +33,6 @@
             <p class="info-box-text">
               <div class="star-rating mb-2">
                 <div class="star-rating-front" style="width: <%= @instructor.review_score_percentage %>%">★★★★★</div>
-                <div class="star-rating-back">★★★★★</div>
               </div>
               <div class="average-score-display ml-3 pt-2">
                 <%= @instructor.avg_score %>点（<%= @instructor.reviews.count %>件のレビュー）

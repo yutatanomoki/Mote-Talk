@@ -4,6 +4,7 @@ class Instructor < ApplicationRecord
   has_many :reviews, dependent: :destroy
   has_many :board_comments, dependent: :destroy
   has_many :favorites, dependent: :destroy
+  accepts_nested_attributes_for :favorites
 
   def avg_score
     unless self.reviews.empty?

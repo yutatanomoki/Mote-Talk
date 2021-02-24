@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+RequestBoard.create!(
+  title: "ブサイクだけどモテますか？",
+  body:  "ブサイクなのでモテません。やっぱり女性も顔なのでしょうか？他にどこを女性は見ているのか知りたいです"
+  )

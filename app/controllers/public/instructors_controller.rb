@@ -4,7 +4,7 @@ class Public::InstructorsController < ApplicationController
   end
 
   def index
-    @instructors = Instructor.all
+    @instructors = Instructor.page(params[:page]).reverse_order
   end
 
   def show

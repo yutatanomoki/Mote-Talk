@@ -18,8 +18,6 @@
  @import 'font-awesome-sprockets';
  @import 'font-awesome';
 
-
-/*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 *,::before,::after {
     box-sizing: border-box;
     border-style: solid;
@@ -1927,13 +1925,13 @@ strong {
     color: #fff
 }
 
-.footer .frenta-about-wrap {
+.footer .mote-about-wrap {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap
 }
 
-.frenta-about {
+.mote-about {
     margin-bottom: 30px
 }
 
@@ -1985,7 +1983,7 @@ strong {
 }
 
 @media only screen and (max-width: 768px) {
-    .footer .frenta-about-wrap>* {
+    .footer .mote-about-wrap>* {
         width:50%;
         padding: 10px 0px 10px 10px
     }
@@ -3149,14 +3147,14 @@ img#loader-img {
     vertical-align: middle
 }
 
-.instructor-upgrade-contents .what-is-frenta {
+.instructor-upgrade-contents .what-is-mote {
     width: 100%;
     padding: 30px 20px;
-    background: url("what_is_frenta_back_ground.png") no-repeat center;
+    background: url("what_is_mote_back_ground.png") no-repeat center;
     background-size: cover
 }
 
-.instructor-upgrade-contents .what-is-frenta .what-is-frenta-inner {
+.instructor-upgrade-contents .what-is-mote .what-is-mote-inner {
     width: 95%;
     margin: 0 auto;
     padding: 30px 15px;
@@ -3167,12 +3165,12 @@ img#loader-img {
     text-align: center
 }
 
-.instructor-upgrade-contents .what-is-frenta .what-is-frenta-inner .subtitle {
+.instructor-upgrade-contents .what-is-mote .what-is-mote-inner .subtitle {
     text-align: center;
     margin: 0 0 10px 0
 }
 
-.instructor-upgrade-contents .what-is-frenta .what-is-frenta-inner .subtitle img {
+.instructor-upgrade-contents .what-is-mote .what-is-mote-inner .subtitle img {
     width: 80%;
     max-width: 232px
 }
@@ -5018,7 +5016,7 @@ img#loader-img {
     }
 }
 
-.about-frenta {
+.about-mote {
     width: 100%;
     padding: 40px 5% 20px 5%;
     text-align: center;
@@ -5029,43 +5027,43 @@ img#loader-img {
     margin: 0 0 100px 0
 }
 
-.about-frenta .about-frenta-text {
+.about-mote .about-mote-text {
     margin-bottom: 50px
 }
 
-.about-frenta .about-frenta-text img {
+.about-mote .about-mote-text img {
     display: block;
     width: 100%;
     max-width: 420px;
     margin: 0 auto
 }
 
-.about-frenta .about-frenta-img img {
+.about-mote .about-mote-img img {
     display: block;
     width: 100%;
     max-width: 640px;
     margin: 0 auto
 }
 
-.about-frenta.common {
+.about-mote.common {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px
 }
 
 @media only screen and (max-width: 1100px) {
-    .about-frenta.common {
+    .about-mote.common {
         border-radius:0px
     }
 }
 
 @media only screen and (max-width: 420px) {
-    .about-frenta {
+    .about-mote {
         font-size:16px;
         padding: 40px 5%;
         font-weight: bold
     }
 
-    .about-frenta .about-frenta-text {
+    .about-mote .about-mote-text {
         margin-bottom: 30px
     }
 }
@@ -5078,19 +5076,19 @@ img#loader-img {
 }
 
 @media only screen and (min-width: 769px) {
-    .frenta-use-image {
+    .mote-use-image {
         display:none
     }
 }
 
-.frenta-use-image {
+.mote-use-image {
     width: 100%;
     max-width: 520px;
     margin: 0 auto 0px auto;
     text-align: center
 }
 
-.frenta-use-image .headline {
+.mote-use-image .headline {
     margin: 50px 0
 }
 
@@ -5102,7 +5100,7 @@ img#loader-img {
     margin: 0 0 30px 0
 }
 
-.frenta-use-image .comment {
+.mote-use-image .comment {
     font-size: 1.4rem;
     width: 95%;
     padding: 5px;
@@ -5122,22 +5120,22 @@ img#loader-img {
     border-radius: 10px
 }
 
-.frenta-feature-wrap {
+.mote-feature-wrap {
     width: 100%;
     margin: 0 0 100px 0
 }
 
-.frenta-feature-wrap .title {
+.mote-feature-wrap .title {
     margin-bottom: 30px
 }
 
-.frenta-feature-wrap .title img {
+.mote-feature-wrap .title img {
     display: block;
     width: 274px;
     margin: 0 auto
 }
 
-.frenta-feature-wrap .box {
+.mote-feature-wrap .box {
     width: 95%;
     max-width: 420px;
     margin: 0 auto 20px auto;
@@ -5147,15 +5145,15 @@ img#loader-img {
     border-radius: 10px
 }
 
-.frenta-feature-wrap .box .sub-title-wrap {
+.mote-feature-wrap .box .sub-title-wrap {
     text-align: center
 }
 
-.frenta-feature-wrap .box .sub-title-wrap .sub-title-inner-wrap {
+.mote-feature-wrap .box .sub-title-wrap .sub-title-inner-wrap {
     display: inline-block
 }
 
-.frenta-feature-wrap .box .sub-title-wrap .sub-title-inner-wrap .step-label {
+.mote-feature-wrap .box .sub-title-wrap .sub-title-inner-wrap .step-label {
     display: block;
     margin: 0 0 5px 0;
     background-size: contain;
@@ -5163,64 +5161,64 @@ img#loader-img {
     height: 28px
 }
 
-.frenta-feature-wrap .box .sub-title-wrap .sub-title-inner-wrap .sub-title {
+.mote-feature-wrap .box .sub-title-wrap .sub-title-inner-wrap .sub-title {
     margin-bottom: 15px
 }
 
-.frenta-feature-wrap .box .sub-title-wrap .sub-title-inner-wrap .sub-title img {
+.mote-feature-wrap .box .sub-title-wrap .sub-title-inner-wrap .sub-title img {
     display: block;
     width: 232px
 }
 
-.frenta-feature-wrap .box .feature-img {
+.mote-feature-wrap .box .feature-img {
     margin: 0 0 15px 0
 }
 
-.frenta-feature-wrap .box .feature-img img {
+.mote-feature-wrap .box .feature-img img {
     width: 100%;
     border-top: 3px solid #fff;
     border-bottom: 3px solid #fff
 }
 
-.frenta-feature-wrap .box .comment {
+.mote-feature-wrap .box .comment {
     font-size: 1.4rem;
     line-height: 1.7em;
     color: #555
 }
 
-.frenta-feature-wrap .box.one .sub-title-wrap .sub-title-inner-wrap .sub-title img {
+.mote-feature-wrap .box.one .sub-title-wrap .sub-title-inner-wrap .sub-title img {
     width: 232px
 }
 
-.frenta-feature-wrap .box.one .step-label {
+.mote-feature-wrap .box.one .step-label {
     background-image: url(feature_1.png)
 }
 
-.frenta-feature-wrap .box.two .sub-title-wrap .sub-title-inner-wrap .sub-title img {
+.mote-feature-wrap .box.two .sub-title-wrap .sub-title-inner-wrap .sub-title img {
     width: 252px
 }
 
-.frenta-feature-wrap .box.two .step-label {
+.mote-feature-wrap .box.two .step-label {
     background-image: url(feature_2.png)
 }
 
-.frenta-feature-wrap .box.three .sub-title-wrap .sub-title-inner-wrap .sub-title img {
+.mote-feature-wrap .box.three .sub-title-wrap .sub-title-inner-wrap .sub-title img {
     width: 190px
 }
 
-.frenta-feature-wrap .box.three .step-label {
+.mote-feature-wrap .box.three .step-label {
     background-image: url(feature_3.png)
 }
 
-.frenta-feature-wrap .box.four .sub-title-wrap .sub-title-inner-wrap .sub-title img {
+.mote-feature-wrap .box.four .sub-title-wrap .sub-title-inner-wrap .sub-title img {
     width: 274px
 }
 
-.frenta-feature-wrap .box.four .step-label {
+.mote-feature-wrap .box.four .step-label {
     background-image: url(feature_4.png)
 }
 
-.frenta-feature-wrap .swiper-button {
+.mote-feature-wrap .swiper-button {
     display: none
 }
 
@@ -5237,13 +5235,13 @@ img#loader-img {
 }
 
 @media only screen and (min-width: 768px) {
-    .frenta-feature-wrap {
+    .mote-feature-wrap {
         position:relative;
         width: 100%;
         margin: 0 0 100px 0
     }
 
-    .frenta-feature-wrap .box-wrap {
+    .mote-feature-wrap .box-wrap {
         position: relative;
         width: 100%;
         padding: 20px 10px;
@@ -5252,7 +5250,7 @@ img#loader-img {
         overflow-x: hidden
     }
 
-    .frenta-feature-wrap .box-wrap .box-inner-wrap {
+    .mote-feature-wrap .box-wrap .box-inner-wrap {
         display: flex;
         width: 1320px;
         position: relative;
@@ -5260,12 +5258,12 @@ img#loader-img {
         transition: all 0.3s ease-out
     }
 
-    .frenta-feature-wrap .box-wrap .box-inner-wrap .box {
+    .mote-feature-wrap .box-wrap .box-inner-wrap .box {
         width: 320px;
         margin-bottom: 0
     }
 
-    .frenta-feature-wrap .swiper-button {
+    .mote-feature-wrap .swiper-button {
         display: block;
         position: absolute;
         top: calc(50% - 40px);
@@ -5274,17 +5272,17 @@ img#loader-img {
         cursor: pointer
     }
 
-    .frenta-feature-wrap .swiper-button i {
+    .mote-feature-wrap .swiper-button i {
         font-size: 80px;
         color: rgba(102,102,102,0.5)
     }
 
-    .frenta-feature-wrap .swiper-button.left {
+    .mote-feature-wrap .swiper-button.left {
         display: none;
         left: 10px
     }
 
-    .frenta-feature-wrap .swiper-button.right {
+    .mote-feature-wrap .swiper-button.right {
         right: 10px
     }
 }
@@ -5293,28 +5291,28 @@ img#loader-img {
     margin-bottom: 50px
 }
 
-.frenta-about-firstview {
+.mote-about-firstview {
     width: 100%;
     background-color: #FC676B
 }
 
-.frenta-about-firstview img {
+.mote-about-firstview img {
     width: 100%;
     max-width: 768px;
     display: block;
     margin: 0 auto
 }
 
-.frenta-about-wrap {
+.mote-about-wrap {
     margin: 20px 0 50px 0
 }
 
-.frenta-about-box {
+.mote-about-box {
     width: 100%;
     margin: 0 0 20px 0
 }
 
-.frenta-about-box>* {
+.mote-about-box>* {
     display: inline-block;
     vertical-align: top
 }
@@ -5361,11 +5359,11 @@ img#loader-img {
     position: relative
 }
 
-.frenta_admin {
+.mote_admin {
     width: 169px;
     height: 32px;
     margin: 20px auto 0px auto;
-    background-image: url(frenta_admin.png);
+    background-image: url(mote_admin.png);
     background-size: contain
 }
 
@@ -5398,7 +5396,7 @@ img#loader-img {
     position: absolute;
     top: 30px;
     left: 5px;
-    background-image: url(frenta_question_1.png);
+    background-image: url(mote_question_1.png);
     background-size: contain
 }
 
@@ -5422,7 +5420,7 @@ img#loader-img {
     position: absolute;
     top: 30px;
     left: 5px;
-    background-image: url(frenta_question_2.png);
+    background-image: url(mote_question_2.png);
     background-size: contain
 }
 
@@ -5446,7 +5444,7 @@ img#loader-img {
     position: absolute;
     top: 10px;
     left: 5px;
-    background-image: url(frenta_question_3.png);
+    background-image: url(mote_question_3.png);
     background-size: contain
 }
 
@@ -5470,7 +5468,7 @@ img#loader-img {
     position: absolute;
     top: 30px;
     left: 5px;
-    background-image: url(frenta_question_4.png);
+    background-image: url(mote_question_4.png);
     background-size: contain
 }
 
@@ -5494,7 +5492,7 @@ img#loader-img {
     position: absolute;
     top: 30px;
     left: 5px;
-    background-image: url(frenta_question_5.png);
+    background-image: url(mote_question_5.png);
     background-size: contain
 }
 
@@ -5513,11 +5511,11 @@ img#loader-img {
 }
 
 @media only screen and (max-width: 640px) {
-    .frenta-about-wrap {
+    .mote-about-wrap {
         margin-top:0
     }
 
-    .frenta-about-box {
+    .mote-about-box {
         margin-bottom: 0
     }
 
@@ -5537,7 +5535,7 @@ img#loader-img {
 }
 
 @media only screen and (max-width: 540px) {
-    .frenta-about-firstview img {
+    .mote-about-firstview img {
         max-width:420px
     }
 }
@@ -5669,7 +5667,7 @@ img#loader-img {
     margin-top: 30px
 }
 
-.frenta-img {
+.mote-img {
     width: 220px;
     height: auto;
     margin: 10px 0 0 0
@@ -5997,8 +5995,8 @@ img#loader-img {
         background-size: contain
     }
 
-    .about-frenta .top-subtitle {
-        background: url(frenta-top-subtitle_2x.png) no-repeat;
+    .about-mote .top-subtitle {
+        background: url(mote-top-subtitle_2x.png) no-repeat;
         background-size: contain
     }
 }
@@ -6178,15 +6176,15 @@ img#loader-img {
     color: #fff
 }
 
-.affiliate-contents .what-is-frenta {
+.affiliate-contents .what-is-mote {
     width: 100%;
     margin: 0 0 60px 0;
     padding: 30px 10px;
-    background: url("what_is_frenta_back_ground.png") no-repeat center;
+    background: url("what_is_mote_back_ground.png") no-repeat center;
     background-size: cover
 }
 
-.affiliate-contents .what-is-frenta .what-is-frenta-inner {
+.affiliate-contents .what-is-mote .what-is-mote-inner {
     width: 100%;
     max-width: 640px;
     margin: 0 auto;
@@ -6199,23 +6197,23 @@ img#loader-img {
     line-height: 1.6em
 }
 
-.affiliate-contents .what-is-frenta .what-is-frenta-inner .subtitle {
+.affiliate-contents .what-is-mote .what-is-mote-inner .subtitle {
     text-align: center;
     margin: 0 0 10px 0
 }
 
-.affiliate-contents .what-is-frenta .what-is-frenta-inner .subtitle img {
+.affiliate-contents .what-is-mote .what-is-mote-inner .subtitle img {
     width: 80%;
     max-width: 232px
 }
 
-.affiliate-contents .what-is-frenta .medium-btn {
+.affiliate-contents .what-is-mote .medium-btn {
     margin-top: 20px;
     border: none;
     box-shadow: 1px 3px 6px rgba(0,0,0,0.25)
 }
 
-.affiliate-contents .what-is-frenta .medium-btn:hover {
+.affiliate-contents .what-is-mote .medium-btn:hover {
     background-color: #FCC667
 }
 

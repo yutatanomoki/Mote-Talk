@@ -8,8 +8,8 @@ Rails.application.routes.draw do
     patch 'user/goodbye' => 'users#goodbye'
     resource :user, only: [:show, :edit, :update]
     resources :instructors, only: [:new, :create, :index, :show] do
-      resources :favorites, only: [:create, :destroy]
-      resources :reviews, only[:create, :destroy]
+      resources :favorites, only: [:create,:index, :destroy]
+      resources :reviews, only:[:create]
     end
     post 'reservations/verification' => 'reservations#verification'
     get 'reservations/done' => 'reservations#done'

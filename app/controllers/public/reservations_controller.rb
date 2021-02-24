@@ -4,22 +4,20 @@ class Public::ReservationsController < ApplicationController
 
     def new
         #@reservation.name = current_user.name
-
         @reservation = Reservation.new
     end
 
     def verification
 
-    @instructor　= Instructor.find(params[:id])
+    #@instructor　= Instructor.find(params[:id])
     #@reservation.name = current_user.name
-    @reservation = Reservation.new
+    @reservation = Reservation.new(reservation_params)
     end
 
     def create
-        # binding.pry
         @reservation = current_user.reservation.new(reservation_params)
         @reservation.save
-        redirect_to reservationss_done_path
+        redirect_to reservations_done_path
     end
 
     def index

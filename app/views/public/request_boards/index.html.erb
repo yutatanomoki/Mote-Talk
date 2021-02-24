@@ -10,52 +10,38 @@
 <div class="contents">
 <div class="bulletin-board-wrap">
   <% @request_boards.each do |request_board| %>
-    <div class="bulletin-board">
-      <div class="info-wrap clearfix">
-        <div class="info">
-          <p><i class="icon far fa-comment-alt"></i>0</p>
-          <p><i class="icon far fa-comment-alt"></i>0</p>
-        </div>
-      </div>
-      <div class="title">
-        <%= request_board.title %>
-      </div>
-      <div class="content">
-        <%= request_board.body %>
-      </div>
-        <div class="user">
-          <div class="avatar">
-            <%= attachment_image_tag request_board.user, :profile_image, fallback: "no_image.jpg" %>
-          </div>
-          <div class="name">
-            <%= request_board.user.name %>
+    <%= link_to request_board_path(request_board) do %>
+      <div class="bulletin-board">
+        <div class="info-wrap clearfix">
+          <div class="info">
+            <p><i class="icon far fa-comment-alt"></i>0</p>
           </div>
         </div>
-        <a class="to-ansawor" href="/bulletin_boards/841"><span>回答へ</span></a>
-    </div>
+        <div class="title">
+          <%= request_board.title %>
+        </div>
+        <div class="content">
+          <%= request_board.body %>
+        </div>
+          <div class="user">
+            <div class="avatar">
+              <%= attachment_image_tag request_board.user, :profile_image, fallback: "no_image.jpg" %>
+            </div>
+            <div class="name">
+              <%= request_board.user.name %>
+            </div>
+          </div>
+      </div>
+    <% end %>
   <% end %>
  </div>
 
 <p class="pagination"></p>
 <nav class="pagination">
+<span class="page current">1</span>
+<%= paginate @request_boards %>
+</nav>
 
-  <span class="page current">1</span>
-
-        <span class="page">
-  <a rel="next" href="/bulletin_boards?page=2">2</a>
-</span>
-
-        <span class="page">
-  <a href="/bulletin_boards?page=3">3</a>
-</span>
-
-        <span class="page gap">...</span>
-
-    <span class="last">
-  <a href="/bulletin_boards?page=29">»</a>
-</span>
-
-  </nav>
 <p></p>
 <div class="fix-menu-bar-sp menu-bar">
   <ul class="menu-bar-list">
@@ -67,5 +53,4 @@
   </ul>
 </div>
 
-
-  </div>
+</div>

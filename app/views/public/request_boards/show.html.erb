@@ -4,10 +4,7 @@
 <div class="bulletin_board-wrap bulletin_board-order-wrap">
   <div class="bulletin-board bulletin_board-order">
     <div class="info-wrap clearfix">
-      <span class="right-now">今すぐ</span>
-      <div class="info">
-        <p><i class="icon fas fa-map-marker-alt"></i>埼玉県</p>
-      </div>
+
     </div>
     <div class="title">
       <%= @request_board.title %>
@@ -28,12 +25,12 @@
 
     <div class="frend-comment-wrap">
       <h2 class="subtitle"><i class="icon far fa-comment"></i>講師からのコメント<%= @request_board.board_comments.count %>件</h2>
-        <%= render 'board_comments/board_comment', request_board: @request_board, board_comment: @board_comment %>
+        <%= render 'board_comments/board_comment', board_comments: @board_comment %>
     <div class="bulletin_board-order-wrap">
       <div class="answer-post">
-        <%= form_with model:[:instructor, @request_board, @board_comment] do |f| %>
+        <%= form_with model:[:instructor, @request_board, BoardComment.new] do |f| %>
           <div class="textarea">
-            <!--<input class="textbox" placeholder="依頼のタイトル" data-tippy="100字以内で入力してください。" type="text" name="bulletin_board[title]">-->
+            <input class="textbox" placeholder="依頼のタイトル" data-tippy="100字以内で入力してください。" type="text" name="bulletin_board[title]">
             <%= f.text_field :comment %>
             <p class="error-msg"></p>
           </div>
