@@ -50,28 +50,21 @@
         <h3 class="instructor-text-title msg-to-customers-title">講師からのメッセージ</h3>
         <pre class="msg-to-customers-text"><%= @instructor.message %></pre>
       </div>
+
+      <%= render 'reviews/review', review: @review, instructor: @instructor %>
+
     </div>
   </div>
 
     <div class="fix-menu fix-menu-bar">
       <!-- お気に入りボタンの実装 -->
       <div class="favorite_btn">
-          <a id="favorite_user_3013" data-remote="true" rel="nofollow" data-method="post" href="/favorites?target_user=3013">
-      <i class="not-favorite-icon far fa-heart"><span class="display-none">お気に入りに追加<span></span></span></i>
-     </a>
-        </p>
-        お気に入り
+          <%= render 'favorites/favorite-btn', favorite: @favorite, instructor: @instructor %>
       </div>
-
       <!-- トークボタンの実装 -->
-
+      <div class="talk_btn">
       <%= link_to ' 予約画面へ',new_reservation_path, class: 'talk_btn far fa-handshake' %>
-
-      <a class="talk_btn" rel="nofollow" data-method="post" href="/talkrooms?instructor_id=3013">
-        <i class="icon far fa-comments"></i>予約画面へ
-      </a>
+      </div>
     </div>
-<!--新規登録ボタン-->
-
 
   </div>

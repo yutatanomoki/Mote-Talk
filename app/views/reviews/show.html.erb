@@ -1,0 +1,27 @@
+<section class="section mt-6">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-5">
+        <div class="card mb-6">
+          <header class="card-header">
+            <p class="card-header-title">
+              <%= @instructor.usename %>
+            </p>
+          </header>
+          <div class="card-content">
+            <div class="content average-score">
+              <div class="star-rating mb-2">
+                <div class="star-rating-front" style="width: <%= @instructor.review_score_percentage %>%">★★★★★</div>
+                <div class="star-rating-back">★★★★★</div>
+              </div>
+              <div class="average-score-display ml-3 pt-2">
+                <%= @instructor.avg_score %>点（<%= @instructor.reviews.count %>件のレビュー）
+              </div>
+            </div>
+          </div>
+        </div>
+        <%= render 'review', review: @review, instructor: @instructor %>
+      </div>
+    </div>
+  </div>
+</section>

@@ -6,10 +6,10 @@ Rails.application.routes.draw do
   scope module: :public do
     get 'user/quit' => 'users#quit'
     patch 'user/goodbye' => 'users#goodbye'
-    resource :user, only: [:show, :edit, :update]
+    resources :user, only: [:show, :edit, :update]
     resources :instructors, only: [:new, :create, :index, :show] do
-      resources :favorites, only: [:create,:index, :destroy]
-      resources :reviews, only:[:create]
+      resources :favorites, only: [:create, :index, :destroy]
+      resources :reviews, only:[:create, :show]
     end
     post 'reservations/verification' => 'reservations#verification'
     get 'reservations/done' => 'reservations#done'

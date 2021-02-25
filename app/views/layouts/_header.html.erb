@@ -13,12 +13,12 @@
           </ul>
           <% if user_signed_in? %>
             <div class="my-menu-wrap">
-              <p class="my-menu-btn" style="background-image: url(https://frenta.s3-ap-northeast-1.amazonaws.com/uploads/user/avatar/3780/line_67754718850298.jpg)"></p>
+              <p class="my-menu-btn" style="no_image.jpg"></p>
               <%#= attachment_image_tag(@user, :profile_image, fallback: "no-image-icon.jpg"), class: "my-menu-btn" %>
               <ul class="my-menu">
-                <li class="my-menu-item"><a href="/talkrooms"><i class="icon far fa-comments"></i>トーク一覧</a></li>
-                <li class="my-menu-item"><a href="/favorites"><i class="icon far fa-heart"></i>お気に入り一覧</a></li>
-                <li class="my-menu-item"><a href="/users/edit"><i class="icon far fa-user-circle"></i>設定</a></li>
+                <!--<li class="my-menu-item"><a href="/talkrooms"><i class="icon far fa-comments"></i>トーク一覧</a></li>-->
+                <!--<li class="my-menu-item"><a href="/favorites"><i class="icon far fa-heart"></i>お気に入り一覧</a></li>-->
+                <li class="my-menu-item"><a href="/user/edit"><i class="icon far fa-user-circle"></i>設定</a></li>
                 <li class="my-menu-item"><a data-turbolinks="false" href="/instructors/new"><i class="icon fas fa-user-plus"></i>講師登録する</a></li>
                 <li class="my-menu-item"><a id="logout" rel="nofollow" data-method="delete" href="/users/sign_out"><i class="icon fas fa-sign-out-alt"></i>ログアウト</a></li>
               </ul>
