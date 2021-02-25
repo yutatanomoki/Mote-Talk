@@ -1,12 +1,12 @@
 $(document).ready(function(){
 
 	// class = "ratings"の子要素を取得
-	const stars = document.querySelector(".ratings").children;
+	let stars = document.querySelector(".ratings").children;
 	// const stars = document.getElementsByClassName("ratings").children;
 	// id = "rating-value"の要素を取得
-	const ratingValue = document.getElementById("rating-value");
+	let ratingValue = document.getElementById("rating-value");
 	// id = "rating-value-display"の要素を取得
-	const ratingValueDisplay = document.getElementById("rating-value-display");
+	let ratingValueDisplay = document.getElementById("rating-value-display");
 	// indexという変数を定義
 	let index;
 
