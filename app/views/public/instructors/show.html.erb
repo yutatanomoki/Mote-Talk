@@ -1,5 +1,5 @@
 <div class="instructor-photos-wrap">
-  <%= attachment_image_tag @instructor.user, :profile_image, fallback: "no_image.jpg" %>
+  <p class="instructor-photos-wrap">><%= attachment_image_tag @instructor.user, :profile_image, fallback: "no_image.jpg" %></p>
 </div>
 
 <div class="instructor-name-photo">
@@ -12,32 +12,29 @@
 </div>
 
 <div class="contents">
+  <div class="instructor-main-info-wrap">
     <div class="instructor-side-info-wrap">
       <div class="instructor-side-info-inner-wrap">
         <div class="info-box">
           <h3 class="info-box-title"><i class="icon fas fa-crown"></i>ランキング</h3>
           <p class="info-box-text">1位</p>
         </div>
-
         <div class="info-box favorite-info">
           <h3 class="info-box-title"><i class="icon far fa-heart"></i>お気に入り数</h3>
           <p class="info-box-text">
-            <span id="favorite_cnt_4149">
-              83
-            </span>
+            <%= @instructor.favorites.count %>
           </p>
         </div>
-
-        <div class="info-box price-info">
+        <div class="info-box review-info">
           <h3 class="info-box-title">レビュー</h3>
-            <p class="info-box-text">
-              <div class="star-rating mb-2">
-                <div class="star-rating-front" style="width: <%= @instructor.review_score_percentage %>%">★★★★★</div>
-              </div>
-              <div class="average-score-display ml-3 pt-2">
-                <%= @instructor.avg_score %>点（<%= @instructor.reviews.count %>件のレビュー）
-              </div>
-            </p>
+          <p class="info-box-text">
+            <div class="star-rating mb-2">
+              <div class="star-rating-front" style="width: <%= @instructor.review_score_percentage %>%">★★★★★</div>
+            </div>
+            <div class="average-score-display ml-3 pt-2">
+              <%= @instructor.avg_score %>点（<%= @instructor.reviews.count %>件のレビュー）
+            </div>
+          </p>
         </div>
       </div>
     </div>
@@ -50,21 +47,20 @@
         <h3 class="instructor-text-title msg-to-customers-title">講師からのメッセージ</h3>
         <pre class="msg-to-customers-text"><%= @instructor.message %></pre>
       </div>
-
-      <%= render 'reviews/review', review: @review, instructor: @instructor %>
-
-    </div>
-  </div>
-
-    <div class="fix-menu fix-menu-bar">
-      <!-- お気に入りボタンの実装 -->
-      <div class="favorite_btn">
-          <%= render 'favorites/favorite-btn', favorite: @favorite, instructor: @instructor %>
-      </div>
-      <!-- トークボタンの実装 -->
-      <div class="talk_btn">
-      <%= link_to ' 予約画面へ',new_reservation_path, class: 'talk_btn far fa-handshake' %>
+        <%= render 'reviews/review', review: @review, instructor: @instructor %>
       </div>
     </div>
-
   </div>
+  <div class="fix-menu fix-menu-bar">
+    <!-- お気に入りボタンの実装 -->
+    <div  class="favorite_btn">
+      <p>
+        <%= render 'favorites/favorite-btn', favorite: @favorite, instructor: @instructor %>お気に入り
+      </p>
+    </div>
+    <!-- トークボタンの実装 -->
+    <p class="talk_btn">
+      <i class="icon far fa-comments"></i><%= link_to ' 予約画面へ',new_reservation_path(instructor_id: @instructor.id)%>
+    </p>
+  </div>
+ </div>

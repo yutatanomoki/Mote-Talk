@@ -4,18 +4,19 @@ class Public::ReservationsController < ApplicationController
 
     def new
         #@reservation.name = current_user.name
-        @reservation = Reservation.new
+        @instructor = Instructor.find(params[:instructor_id])
+        @reservation = @instructor.reservations.build
     end
 
     def verification
-
-    #@instructor　= Instructor.find(params[:id])
-    #@reservation.name = current_user.name
-    @reservation = Reservation.new(reservation_params)
+        @instructor = Instructor.find(params[:reservation][:instructor_id])
+        #@instructor　= Instructor.find(params[:id])
+        #@reservation.name = current_user.name
+        @reservation = Reservation.new(reservation_params)
     end
 
     def create
-        @reservation = current_user.reservation.new(reservation_params)
+        @reservation = current_user.reservations.new(reservation_params)
         @reservation.save
         redirect_to reservations_done_path
     end
@@ -32,7 +33,7 @@ class Public::ReservationsController < ApplicationController
     end
 
     private
-  def order_params
-  params.require(:reservation).permit(:date, :begin_time, :finish_time )
+  def reservation_params
+  params.require(:reservation).permit(:date, :begin_time, :finish_time, :instructor_id)
   end
 end

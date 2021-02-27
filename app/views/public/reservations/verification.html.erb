@@ -11,16 +11,16 @@
             <!--</tr>-->
             <tr>
                 <td>予約日</td>
-                <td id="confirm-date"><%= @reservation.date %></td>
+                <td id="confirm-date"><%= @reservation.date.strftime("%Y-%m-%d") %></td>
             </tr>
 
             <tr>
                 <td>開始時間</td>
-                <td><span id="confirm-use-time"></span><%= @reservation.begin_time %></td>
+                <td><span id="confirm-use-time"></span><%= @reservation.begin_time.strftime("%H:%M") %></td>
             </tr>
             <tr>
                 <td>終了時間</td>
-                <td><span id="confirm-use-time"></span><%= @reservation.finish_time %></td>
+                <td><span id="confirm-use-time"></span><%= @reservation.finish_time.strftime("%H:%M") %></td>
             </tr>
 
             <tr>
@@ -33,6 +33,7 @@
             <%= f.hidden_field :date %>
             <%= f.hidden_field :begin_time %>
             <%= f.hidden_field :finish_time %>
+            <%= f.hidden_field :instructor_id, value: @instructor.id %>
             <p class="send-reservation-btn2">
                 <%= f.submit  "予約確定する", class: "send-reservation-btn" %>
             </p>

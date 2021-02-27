@@ -4566,7 +4566,7 @@ img#loader-img {
     padding: 0 0 500px 0
 }
 
-.instructor-photos-wrap img {
+.instructor-photos-wrap p{
     position: absolute;
     left: 0;
     right: 0;
@@ -4840,7 +4840,7 @@ img#loader-img {
     border-bottom: 3px solid #146c91;
     border-radius: 8px;
     text-align: center;
-    font-size: 16px
+    font-size: 14px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -6071,11 +6071,11 @@ img#loader-img {
     margin-bottom: 30px
 }
 
-.affiliate-contents .affiliate-price-subtitle img {
+.affiliate-contents .affiliate-review-subtitle img {
     width: 186px
 }
 
-.affiliate-contents .affiliate-price-subtitle img {
+.affiliate-contents .affiliate-review-subtitle img {
     width: 112px
 }
 
@@ -6307,12 +6307,12 @@ img#loader-img {
     margin-bottom: 35px
 }
 
-.affiliate-contents .affiliate-price-wrap {
+.affiliate-contents .affiliate-review-wrap {
     width: 90%;
     margin: 0 auto 100px auto
 }
 
-.affiliate-contents .affiliate-price-wrap ul {
+.affiliate-contents .affiliate-review-wrap ul {
     max-width: 640px;
     margin: 0 auto;
     padding-left: 20px;
@@ -6320,18 +6320,18 @@ img#loader-img {
     line-height: 1.4em
 }
 
-.affiliate-contents .affiliate-price-wrap ul li {
+.affiliate-contents .affiliate-review-wrap ul li {
     margin-bottom: 10px
 }
 
-.affiliate-contents .affiliate-price-wrap .text {
+.affiliate-contents .affiliate-review-wrap .text {
     max-width: 640px;
     margin: 20px auto;
     font-size: 1.4rem;
     line-height: 1.6em
 }
 
-.affiliate-contents .affiliate-price-wrap .bold {
+.affiliate-contents .affiliate-review-wrap .bold {
     font-weight: bold;
     color: #FC676B
 }
@@ -7115,7 +7115,7 @@ img#loader-img {
     margin: 0 auto 100px 0
 }
 
-.otherrental-header.low_price .title img {
+.otherrental-header.low_review .title img {
     width: 216px
 }
 
@@ -7124,7 +7124,7 @@ img#loader-img {
     font-size: 1.6rem
 }
 
-.payout-box .payout-amount .price {
+.payout-box .payout-amount .review {
     margin: 0 0 0 10px;
     padding: 6px;
     letter-spacing: 0.3em;
@@ -8073,7 +8073,7 @@ a.remove_fields {
     box-shadow: 1px 2px 5px rgba(0,0,0,0.2)
 }
 
-.reservation-screen #total-price {
+.reservation-screen #total-review {
     font-weight: bold;
     color: #fd3c40;
     font-size: 21px
@@ -8173,7 +8173,7 @@ a.remove_fields {
     font-size: 1.2rem
 }
 
-.reservation-screen .coupon-select-screen .coupon-row .coupon-price {
+.reservation-screen .coupon-select-screen .coupon-row .coupon-review {
     display: inline-block;
     text-align: right;
     width: 6em;
@@ -8239,7 +8239,7 @@ a.remove_fields {
     font-weight: bold
 }
 
-.reservation-screen #confirm-screen .reservation-table #confirm-total-price {
+.reservation-screen #confirm-screen .reservation-table #confirm-total-review {
     font-weight: bold;
     color: #fd3c40;
     font-size: 21px
@@ -8910,19 +8910,19 @@ a.remove_fields {
     font-size: 1.2rem
 }
 
-.affiliate-user .affiliate-price-subtitle {
+.affiliate-user .affiliate-review-subtitle {
     margin-top: 50px
 }
 
-.affiliate-user .affiliate-price-subtitle img {
+.affiliate-user .affiliate-review-subtitle img {
     width: 112px
 }
 
-.affiliate-user .affiliate-price-wrap {
+.affiliate-user .affiliate-review-wrap {
     margin: 0 auto 50px auto
 }
 
-.affiliate-user .affiliate-price-wrap ul {
+.affiliate-user .affiliate-review-wrap ul {
     width: 100%;
     max-width: 800px;
     margin: 0 auto 20px auto;
@@ -8931,49 +8931,49 @@ a.remove_fields {
     line-height: 1.6em
 }
 
-.affiliate-user .affiliate-price-wrap ul li {
+.affiliate-user .affiliate-review-wrap ul li {
     margin-bottom: 10px
 }
 
-.affiliate-user .affiliate-price-wrap .text {
+.affiliate-user .affiliate-review-wrap .text {
     max-width: 640px;
     margin: 20px auto
 }
 
-.affiliate-user .affiliate-price-wrap .bold {
+.affiliate-user .affiliate-review-wrap .bold {
     font-weight: bold;
     color: #FC676B
 }
 
-.affiliate-user .affiliate-price-wrap .normal-table {
+.affiliate-user .affiliate-review-wrap .normal-table {
     margin-bottom: 20px
 }
 
-.affiliate-user .affiliate-price-wrap .normal-table tr:first-child {
+.affiliate-user .affiliate-review-wrap .normal-table tr:first-child {
     background-color: #FC676B;
     color: #fff
 }
 
-.affiliate-user .affiliate-price-wrap .normal-table td {
+.affiliate-user .affiliate-review-wrap .normal-table td {
     font-size: 1.2rem
 }
 
-.affiliate-user .affiliate-price-wrap .normal-table .bold {
+.affiliate-user .affiliate-review-wrap .normal-table .bold {
     color: #FC676B;
     font-weight: bold
 }
 
-.affiliate-user .affiliate-price-wrap .normal-table.color-around {
+.affiliate-user .affiliate-review-wrap .normal-table.color-around {
     border-top: 1px solid #ddd;
     line-height: 1.6em
 }
 
-.affiliate-user .affiliate-price-wrap .normal-table.color-around tr:first-child {
+.affiliate-user .affiliate-review-wrap .normal-table.color-around tr:first-child {
     background-color: #fff;
     color: #666
 }
 
-.affiliate-user .affiliate-price-wrap .normal-table.color-around td:first-child {
+.affiliate-user .affiliate-review-wrap .normal-table.color-around td:first-child {
     background-color: #FC676B;
     color: #fff
 }
@@ -8999,7 +8999,7 @@ a.remove_fields {
 }
 
 @media only screen and (min-width: 768px) {
-    .affiliate-user .affiliate-price-wrap ul {
+    .affiliate-user .affiliate-review-wrap ul {
         width:80%
     }
 

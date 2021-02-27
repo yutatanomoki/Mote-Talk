@@ -1,1 +1,32 @@
+<div class="wrap-login-form">
+  <h2 class="title">ユーザー編集</h2>
 
+  <%= form_with model:@user, local:true do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+    <div class="field">
+    <%= f.label :"名前" %><br />
+    <%= f.text_field :name, autofocus: true, class: "textbox" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :"プロフィール写真" %><br />
+      <%= f.attachment_field :profile_image, class: "textbox user_image" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :"メールアドレス" %><br />
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "textbox" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :"更新のためパスワードを入力してください" %><br />
+      <%= f.password_field :password, autocomplete: "current-password", class: "textbox" %>
+    </div>
+
+    <p class="border-line"></p>
+    <div class="actions">
+      <%= f.submit "更新する", class: "small-btn" %>
+    </div>
+  <% end %>
+</div>

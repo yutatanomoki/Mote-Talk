@@ -11,18 +11,13 @@ class Public::UsersController < ApplicationController
 
   def edit
     @user = User.find(params[:id])
-    if @user == current_user
-      render "edit"
-    else
-      redirect_to users_path
-    end
   end
 
 
   def update
-    customer = current_customer
-    customer.update(customer_params)
-    redirect_to user_path
+    user = current_user
+    user.update(user_params)
+    redirect_to root_path
   end
 
   def quit
@@ -38,6 +33,6 @@ class Public::UsersController < ApplicationController
 
   private
   def user_params
-    params.require(:user).permit(:name, :email, :image_id)
+    params.require(:user).permit(:name, :email, :profile_image)
   end
 end
