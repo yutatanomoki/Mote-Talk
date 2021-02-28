@@ -6,7 +6,7 @@
 <div class="contents">
   <div class="instructor-box-wrap sub-header-mergin">
     <% @instructors.each do |instructor| %>
-      <%= link_to instructor_path(instructor) do %>
+      <%= link_to instructor_path(instructor), data: {"turbolinks" => "false"} do %>
         <div class="instructor-box">
           <%= attachment_image_tag instructor.user, :profile_image, fallback: "no_image.jpg", class: "instructor-avatar" %>
           <p class="user-name"><%= instructor.user.name %>

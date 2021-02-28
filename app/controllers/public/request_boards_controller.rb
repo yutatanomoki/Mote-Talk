@@ -5,6 +5,8 @@ class Public::RequestBoardsController < ApplicationController
 
   def index
     @request_boards = RequestBoard.page(params[:page]).reverse_order
+    @board_comment = BoardComment.joins("INNER JOIN instructors ON instructors.id = board_comments.instructor_id INNER JOIN users ON instructors.user_id = users.id ")
+                     .where(request_board_id: params[:id]).select("board_comments.*, users.*")
   end
 
   def show

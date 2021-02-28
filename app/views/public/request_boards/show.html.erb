@@ -1,5 +1,7 @@
+<div class="subtitle-wrap">
+  <h2 class="subtitle"><a href="/request_boards">＜ <i class="icon far fa-window-restore"></i>一覧へ戻る</a><span class="ml5 f-size-8"><span></span></span></h2>
+</div>
 <div class="contents">
-<a href="/request_boards">一覧へ</a>
 
 <div class="bulletin_board-wrap bulletin_board-order-wrap">
   <div class="bulletin-board bulletin_board-order">
@@ -22,21 +24,24 @@
       </div>
       <p class="datetime">投稿日時：<%= @request_board.created_at.strftime('%Y/%m/%d') %></p>
     </div>
+  </div>
 
-    <div class="frend-comment-wrap">
-      <h2 class="subtitle"><i class="icon far fa-comment"></i>講師からのコメント<%= @request_board.board_comments.count %>件</h2>
-        <%= render 'board_comments/board_comment', board_comments: @board_comment %>
-    <div class="bulletin_board-order-wrap">
-      <div class="answer-post">
-        <%= form_with model:[:instructor, @request_board, BoardComment.new] do |f| %>
-          <div class="textarea">
-            <input class="textbox" placeholder="依頼のタイトル" data-tippy="100字以内で入力してください。" type="text" name="bulletin_board[title]">
-            <%= f.text_field :comment %>
-            <p class="error-msg"></p>
-          </div>
-          <%= f.submit  "投稿する", class: "post-btn" %>
-        <% end %>
-      </div>
+
+  <h2 class="subtitle"><i class="icon far fa-comment"></i>講師からのコメント<%= @request_board.board_comments.count %>件</h2>
+  <div class="board_comments">
+    <%= render 'board_comments/board_comment', board_comments: @board_comment %>
+  </div>
+
+    
+  <div class="bulletin_board-order-wrap">
+    <div class="answer-post">
+      <%= form_with model:[:instructor, @request_board, BoardComment.new] do |f| %>
+        <div class="textarea">
+          <%= f.text_field :comment %>
+          <p class="error-msg"></p>
+        </div>
+        <%= f.submit  "投稿する", class: "post-btn" %>
+      <% end %>
     </div>
   </div>
 </div>

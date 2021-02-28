@@ -14,7 +14,7 @@
       <div class="bulletin-board">
         <div class="info-wrap clearfix">
           <div class="info">
-            <p><i class="icon far fa-comment-alt"></i>0</p>
+            <p><i class="icon far fa-comment-alt"></i><%= request_board.board_comments.count %></p>
           </div>
         </div>
         <div class="title">
@@ -38,7 +38,6 @@
 
 <p class="pagination"></p>
 <nav class="pagination">
-<span class="page current">1</span>
 <%= paginate @request_boards %>
 </nav>
 

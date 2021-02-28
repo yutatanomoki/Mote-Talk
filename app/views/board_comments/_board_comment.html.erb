@@ -1,14 +1,15 @@
+<div class="instructor-comment-wrap">
 <% board_comments.each do |board_comment| %>
-  <div class="frend-comment">
+  <div class="instructor-comment">
     <div class="clearfix">
       <div class="avatar">
-        <%= attachment_image_tag board_comment.profile_image_id, :profile_image, fallback: "no_image.jpg" %>
+        <%#= attachment_image_tag board_comment.profile_image, :profile_image, fallback: "no_image.jpg" %>
       </div>
       <div class="name">
         <%= board_comment.name %>
       </div>
-      <%= board_comment.name %>
       <%= board_comment.created_at.strftime('%Y/%m/%d') %><%= board_comment.comment %>
     </div>
   </div>
 <% end %>
+</div>

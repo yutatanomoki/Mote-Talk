@@ -1,7 +1,13 @@
 $(document).ready(function(){
 
-	// class = "ratings"の子要素を取得
+	let tmp = document.querySelector(".ratings");
+	if (tmp == null) {
+		return
+	}
+	
+  // class = "ratings"の子要素を取得
 	let stars = document.querySelector(".ratings").children;
+	
 	// const stars = document.getElementsByClassName("ratings").children;
 	// id = "rating-value"の要素を取得
 	let ratingValue = document.getElementById("rating-value");
