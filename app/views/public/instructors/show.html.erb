@@ -62,5 +62,9 @@
     <p class="talk_btn">
       <i class="icon far fa-comments"></i><%= link_to ' 予約画面へ',new_reservation_path(instructor_id: @instructor.id)%>
     </p>
+
+    <p class="talk_btn">
+      <i class="icon far fa-comments"></i><%= link_to ' トーク画面へ',room_path(instructor_id: @instructor.id)%>
+    </p>
   </div>
  </div>

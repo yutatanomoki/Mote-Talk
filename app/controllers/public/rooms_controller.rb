@@ -1,5 +1,5 @@
 class Public::RoomsController < ApplicationController
-  
+
   def index
     @members = current_user.matchers
   end
@@ -8,7 +8,7 @@ class Public::RoomsController < ApplicationController
     # 相手A
     @user = User.find(params[:id])
     # 自分(current_user)の中間テーブル(entry)を全て取り出しpluckメソッドで:room_idを配列にしたものがroom。この時点では相手A以外の人との中間テーブル(entry)も含まれる
-    rooms = current_user.entries.pluck(:room_id)
+    rooms = current_user.user_rooms.pluck(:room_id)
     # user_id:が相手Aでroom_idが roomsのもの（自分との部屋）を取り出す（これが自分と相手Aとの部屋）
     user_room = UserRoom.find_by(user_id: @user.id, room_id: rooms)
     if user_room.nil?
@@ -21,11 +21,9 @@ class Public::RoomsController < ApplicationController
       @room = user_room.room
     end
     # dmを新規作成
-    @dm = DirectMessage.new(room_id: @room.id)
+    @dm = Message.new(room_id: @room.id)
     # 自分と相手Aとの部屋のdmの全て
-    @dms = @room.direct_messages
+    @dms = @room.messages
   end
-
-  private
 
 end
