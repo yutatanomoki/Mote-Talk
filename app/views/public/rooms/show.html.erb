@@ -1,92 +1,50 @@
-<div class="body dm-body">
-    <div class="heading dm-show-heading sticky-top">
-      <%# S3+Lambdaで表示 %>
-      <div class="heading__image"><%= link_to user_path(@user),class:"" do %><%= attachment_image_tag @user, :profile_image, fallback: "no_image.jpg", class: "my-menu-btn" %><% end %></div>
-      <div class="heading__name"><%= link_to user_path(@user),style:"font-size:3rem" do %><%= @user.name %><% end %></div>
-    </div>
-    <div class="content dm-content">
-      <div class="content__block--exchange">
-        <%# 下記の条件分岐は、メッセージがない状態だと入力フォームが上に来てしまうため %>
-        <% if @dms.present?%>
-          <% @dms.each do |dm| %>
-            <% if dm.user_id == current_user.id %>
-              <div class="self">
-                <p  class="self__message nomal-font responsive-font-sm" style="text-align: right; color:#fff; background-color:#a6c2b8;"><%= dm.message %></p>
-              </div>
-            <% else %>
-              <div class="other">
-                <%= attachment_image_tag @user, :image, format: 'jpeg',fallback: "no_image.jpg", class:"other__image" %>
-                <p class="other__message nomal-font responsive-font-sm" style="text-align: left; color:#1b515c;"><%= dm.message %></p>
-              </div>
-            <% end %>
-          <% end %>
-        <% else %>
-          <%# メッセージが何もない場合 %>
-          <div class="dm-no-content"></div>
-        <% end %>
-      </div>
-      <div class="content__block--dm-form">
-        <%= form_with model: @dm, data: {remote: true}, url: direct_messages_path, class:"chat-form" do |f| %>
-          <%= f.text_field :message, class:"dm-form__textarea" %>
-          <%= f.hidden_field :room_id %>
-          <%# 767px以下のみ表示 %>
-          <%= f.button type: "submit", class:"btn green-btn btn-sm"  do %><i class="far fa-paper-plane public-search-btn"></i><% end %>
-        <% end %>
-      </div>
-    </div>
-  </div>
-  
-  
+
 <div class="contents talk-room-frame">
-    <script type="text/javascript">
-    </script>
-
-      <script>
-//<![CDATA[
-window.gon={};gon.current_user_id=3780;gon.cv_action_init_message="submit_init_message";gon.stripe_publish_key="pk_live_juU3HVUGTqi0iNH2hDiYhnFN";gon.talk_room_id=3708;gon.is_talk_user_frend=true;gon.is_support_insite_payment=true;
-//]]>
-</script>
-
-
-
-<div class="talk-messages sub-header-mergin" id="messages" ,="" data-talk-room-id="3708" data-user-id="3780">
+  <div class="talk-messages">
+    <%# 下記の条件分岐は、メッセージがない状態だと入力フォームが上に来てしまうため %>
+    <% if @dms.present?%>
+      <% @dms.each do |dm| %>
+        <% if dm.user_id == current_user.id %>
           <div class="right-messege">
-  <div class="msg-wrap">
-  <div class="talk-msg">
-    <pre class="talk-msg-text"><%= dm.message %></pre>
-      <p class="send-time">3月1日 20時33分</p>
-  </div>
-  </div>
-</div>
-
+            <div class="msg-wrap">
+              <div class="talk-msg">
+                <pre class="talk-msg-text"><%= dm.message %></pre>
+                <p class="send-time"><%= dm.created_at.strftime("%Y-%m-%d:%H:%M") %></p>
+              </div>
+            </div>
+          </div>
+          <!--<div class="self">-->
+          <!--  <p  class="self__message nomal-font responsive-font-sm" style="text-align: right; color:#fff; background-color:#a6c2b8;"><%#= dm.message %></p>-->
+          <!--</div>-->
+        <% else %>
           <div class="left-messege">
-    <div class="msg-wrap">
-    <p class="avatar" style="background-image: url(https://frenta.s3.ap-northeast-1.amazonaws.com/uploads-v2/user/avatar/5965/user5965_avatar.png) "></p>
-  <div class="talk-msg">
-    <pre class="talk-msg-text">もきおさん、メッセージありがとうございます！！
-よろしくお願いします😊</pre>
-      <p class="send-time">3月1日 20時52分</p>
+            <div class="msg-wrap">
+              <p class="avatar"></p>
+              <div class="talk-msg">
+                <pre class="talk-msg-text"><%= dm.message %></pre>
+                <p class="send-time"><%= dm.created_at.strftime("%Y-%m-%d:%H:%M") %></p>
+              </div>
+            </div>
+          </div>
+          <!--<div class="other">-->
+          <!--  <%#= attachment_image_tag @user, :image, format: 'jpeg',fallback: "no_image.jpg", class:"other__image" %>-->
+          <!--  <p class="other__message nomal-font responsive-font-sm" style="text-align: left; color:#1b515c;"><%#= dm.message %></p>-->
+          <!--</div>-->
+        <% end %>
+      <% end %>
+    <% else %>
+    <%# メッセージが何もない場合 %>
+    <div class="dm-no-content"></div>
+  <% end %>
   </div>
+  <div class="dm-form">
+    <p class="reservation-btn"><i class="far fa-calendar-alt">予約</i></p>
+    <%= form_with model: @dm, data: {remote: true}, url: direct_messages_path do |f| %>
+        <%= f.text_field :message, class: "text-area" %>
+        <%= f.hidden_field :room_id %>
+        <%# 767px以下のみ表示 %>
+        <%= f.button type: "submit", class:"btn green-btn btn-sm" do %><i class="far fa-paper-plane send-btn"></i><% end %>
+    <% end %>
   </div>
 </div>
 
- 
-</div>
-
-<div class="input-text-area" id="msg-input-area-box">
-
-<p class="buy-btn " id="buy-screen-open-btn"><i class="far fa-calendar-alt"></i><span></span></p>
-    <form>
-            <textarea class="text-area" id="msg-input-area" name="test1" value="3"></textarea>
-            <input type="button" class="send-btn" id="msg-send-btn" value="送信">
-    </form>
-</div>
-
-<!-- 予約画面 -->
-<div id="buy-screen-wrap"></div>
-
-<!-- 予約画面読み込み中画面 -->
-<div class="loading-blockui" style="z-index: 3">
-    <p><img src="/assets/icon_loader-01854b4c459cd32890796f7c6e38769b245ecb3473dea85b81c5f77ab8e68ba7.gif" alt="読み込み中" id="loader-img"></p>
-</div>
-  </div>

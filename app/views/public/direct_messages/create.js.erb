@@ -1,5 +1,5 @@
 <%# .appendは引数を追加するメソッド %>
-$('.content__block--exchange').append(" <div class='self'><p class='message self__message nomal-font responsive-font-sm' style='text-align: right; color:#fff; background-color: #a6c2b8;'><%= @dm.message %></p></div>");
+$('.talk-messages').append("<div class='talk-msg'><pre class='talk-msg-text'><%= @dm.message %></pre><p class='send-time'><%= @dm.created_at.strftime('%Y-%m-%d:%H:%M') %></p></div>");
 <%# valメソッドはコメント送信後のコメント入力フォームを空に %>
 $('input[type=text]').val("");
 $('div').removeClass('dm-no-content');
