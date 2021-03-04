@@ -76,3 +76,4 @@ gem "refile", require: "refile/rails", github: 'manfe/refile'
 gem "refile-mini_magick"
 gem 'activesupport'
 gem 'jquery-ui-rails'
+gem 'dotenv-rails'
