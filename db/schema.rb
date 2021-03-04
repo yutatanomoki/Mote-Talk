@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_15_011754) do
+ActiveRecord::Schema.define(version: 2021_03_04_084952) do
 
   create_table "board_comments", force: :cascade do |t|
     t.integer "request_board_id", null: false
@@ -63,6 +63,7 @@ ActiveRecord::Schema.define(version: 2021_02_15_011754) do
     t.string "body", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.decimal "score", precision: 5, scale: 3
   end
 
   create_table "reservations", force: :cascade do |t|

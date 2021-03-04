@@ -23,6 +23,7 @@
         <div class="content">
           <%= request_board.body %>
         </div>
+        <span class="sentiment-score">本文の感情分析スコア<%= request_board.score %></span>
           <div class="user">
             <div class="avatar">
               <%= attachment_image_tag request_board.user, :profile_image, fallback: "no_image.jpg" %>

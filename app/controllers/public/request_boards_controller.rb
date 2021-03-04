@@ -17,6 +17,7 @@ class Public::RequestBoardsController < ApplicationController
 
   def create
     @request_board = RequestBoard.new(request_board_params)
+    @request_board.score = Language.get_data(request_board_params[:body])
     @request_board.user_id = current_user.id
     if @request_board.save
       redirect_to request_boards_path, notice: "You have created book successfully."
@@ -29,7 +30,7 @@ class Public::RequestBoardsController < ApplicationController
   private
 
   def request_board_params
-    params.require(:request_board).permit(:title,:body)
+    params.require(:request_board).permit(:title, :body, :score)
   end
 
 end
