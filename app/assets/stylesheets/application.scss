@@ -417,16 +417,6 @@ template {
 }
 
 
-/*!
- * jQuery UI Datepicker 1.12.1
- * http://jqueryui.com
- *
- * Copyright jQuery Foundation and other contributors
- * Released under the MIT license.
- * http://jquery.org/license
- *
- * http://api.jqueryui.com/datepicker/#theming
- */
 .ui-datepicker {
     width: 17em;
     padding: .2em .2em 0;
@@ -719,7 +709,7 @@ strong {
     width: 148px;
     height: 35px;
     padding: 0 0 10px 0;
-    background-image: image-url('/assets/icon3.png');
+    background-image: image-url('icon3.png');
     background-size: contain;
     background-repeat: no-repeat;
     overflow: hidden;
