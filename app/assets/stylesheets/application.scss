@@ -4524,7 +4524,7 @@ img#loader-img {
     position: absolute;
     top: 30px;
     left: 5px;
-    background-image: url(question1-removebg-preview.png);
+    background-image: image-url('question1-removebg-preview.png');
     background-size: contain
 }
 
@@ -4548,7 +4548,7 @@ img#loader-img {
     position: absolute;
     top: 30px;
     left: 5px;
-    background-image: url(question2-removebg-preview.png);
+    background-image: image-url('question2-removebg-preview.png');
     background-size: contain
 }
 
@@ -4572,7 +4572,7 @@ img#loader-img {
     position: absolute;
     top: 10px;
     left: 5px;
-    background-image: url(question3-removebg-preview.png);
+    background-image: image-url('question3-removebg-preview.png');
     background-size: contain
 }
 
