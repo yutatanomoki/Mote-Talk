@@ -5,16 +5,16 @@
 <div class="contents">
   <div class="talk-room-list sub-header-mergin">
     <% @messages.each do |message| %>
-      <%= link_to request_board_path(request_board) do %>
+      <%= link_to message_path(message) do %>
         <div class="talk-user clearfix">
           <p class="avatar">
-            <%= attachment_image_tag request_board.user, :profile_image, fallback: "no_image.jpg" %>
+            <%= attachment_image_tag message.user, :profile_image, fallback: "no_image.jpg" %>
           </p>
           <div class="latest-msg-box">
-            <p class="talk-user-name"></p>
-            <p class="latest-msg"></p>
+            <p class="talk-user-name"><%= message.user.name %></p>
+            <p class="latest-msg"><%= message %></p>
           </div>
-          <p class="msg-date">3月7日</p>
+          <p class="msg-date"><%= message.created_at %></p>
       <% end %>
     <% end %>
   </div>
