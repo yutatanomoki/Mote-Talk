@@ -8,7 +8,9 @@
             <li><%= link_to ' モテトークって？',homes_about_path,class: 'fas fa-home menu-item' %></li>
             <li><%= link_to ' 講師を探す', instructors_path,class: 'fas fa-user-plus menu-item' %></li>
             <li><%= link_to ' 依頼掲示板', request_boards_path ,class: 'fas fa-clipboard-list menu-item' %></li>
-            <li><%= link_to ' 講師登録はこちら',new_instructor_path,class: 'fas fa-link menu-item' %></li>
+            <% if user_signed_in? %>
+              <li><%= link_to ' 講師登録はこちら',new_instructor_path,class: 'fas fa-link menu-item' %></li>
+            <% end %>
         </ul>
         <% if user_signed_in? %>
           <div class="my-menu-wrap">
