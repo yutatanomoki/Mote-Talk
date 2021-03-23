@@ -1,7 +1,7 @@
 class Public::RoomsController < ApplicationController
 
   def index
-    @members = current_user.matchers
+    @rooms = Room.all
   end
 
   def show

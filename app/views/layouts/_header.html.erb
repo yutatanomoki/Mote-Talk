@@ -16,7 +16,7 @@
           <div class="my-menu-wrap">
             <p class="my-menu-btn"><%= attachment_image_tag @user, :profile_image, fallback: "no_image.jpg", class: "my-menu-btn" %></p>
             <ul class="my-menu">
-              <!--<li class="my-menu-item"><a href="/talkrooms"><i class="icon far fa-comments"></i>トーク一覧</a></li>-->
+              <li class="my-menu-item"><%= link_to 'トーク一覧', rooms_path(current_user.id) ,class: 'icon far fa-comments' %></li>
               <!--<li class="my-menu-item"><a href="/favorites"><i class="icon far fa-heart"></i>お気に入り一覧</a></li>-->
               <li class="my-menu-item"><%= link_to '設定', edit_user_path(current_user.id) ,class: 'icon far fa-user-circle' %></li>
               <li class="my-menu-item"><a data-turbolinks="false" href="/instructors/new"><i class="icon fas fa-user-plus"></i>講師登録する</a></li>
