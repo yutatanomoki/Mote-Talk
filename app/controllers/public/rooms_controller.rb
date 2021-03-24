@@ -1,7 +1,9 @@
 class Public::RoomsController < ApplicationController
 
   def index
-    @rooms = Room.all
+    room_ids = current_user.user_rooms.pluck(:room_id)
+    user_ids = UserRoom.where(room_id: room_ids).where.not(user_id: current_user.id).pluck(:user_id)
+    @messages = Message.where(user_id: user_ids).order(created_at: :desc).group(:user_id)
   end
 
   def show

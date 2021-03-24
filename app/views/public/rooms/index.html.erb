@@ -5,14 +5,14 @@
 <div class="contents">
   <div class="talk-room-list sub-header-mergin">
     <% @messages.each do |message| %>
-      <%= link_to message_path(message) do %>
+      <%= link_to room_path(message) do %>
         <div class="talk-user clearfix">
           <p class="avatar">
-            <%= attachment_image_tag message.user, :profile_image, fallback: "no_image.jpg" %>
+            <%= attachment_image_tag message.user, :profile_image, :fill, 40, 40, fallback: "no_image.jpg" %>
           </p>
           <div class="latest-msg-box">
             <p class="talk-user-name"><%= message.user.name %></p>
-            <p class="latest-msg"><%= message %></p>
+            <p class="latest-msg"><%= message.message %></p>
           </div>
           <p class="msg-date"><%= message.created_at %></p>
       <% end %>

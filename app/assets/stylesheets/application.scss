@@ -4127,7 +4127,8 @@ img#loader-img {
     top: 10px;
     left: 5px;
     background-image: image-url('question3-removebg-preview.png');
-    background-size: contain
+    // background-size: contain
+    background-size: 100% auto;
 }
 
 .question-msg-3 {
