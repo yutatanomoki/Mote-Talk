@@ -27,6 +27,7 @@
           <ul class="login-menu">
             <li class="my-menu-item"><a class="simple-btn" href="/users/sign_up">無料登録</a></li>
             <li class="my-menu-item"><a class="simple-btn" href="/users/sign_in">ログイン</a></li>
+            <li class="my-menu-item"><%= link_to 'ゲストログイン（閲覧用）', homes_guest_sign_in_path, method: :post, class: "simple-btn" %></li>
           </ul>
         <% end %>
       </nav>

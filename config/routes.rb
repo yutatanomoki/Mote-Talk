@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   root 'homes#top'
   get 'homes/about' => 'homes#about'
-
+  post '/homes/guest_sign_in', to: 'homes#guest_sign_in'
+  
   devise_for :users
   scope module: :public do
     get 'user/quit' => 'users#quit'
