@@ -5,6 +5,8 @@ class Instructor < ApplicationRecord
   has_many :board_comments, dependent: :destroy
   has_many :favorites, dependent: :destroy
   accepts_nested_attributes_for :favorites
+  
+  
 
   def avg_score
     unless self.reviews.empty?
@@ -25,5 +27,7 @@ class Instructor < ApplicationRecord
   def favorited_by?(user)
     favorites.where(user_id: user.id).exists?
   end
+  
+ 
 
 end
