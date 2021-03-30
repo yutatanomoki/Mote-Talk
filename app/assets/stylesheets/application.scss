@@ -4079,7 +4079,7 @@ img#loader-img {
     top: 30px;
     left: 5px;
     background-image: image-url('question1-removebg-preview.png');
-    background-size: contain
+    background-size: cover;
 }
 
 .question-msg-1 {
@@ -4103,7 +4103,7 @@ img#loader-img {
     top: 30px;
     left: 5px;
     background-image: image-url('question2-removebg-preview.png');
-    background-size: contain
+    background-size: cover;
 }
 
 .question-msg-2 {
@@ -4127,8 +4127,8 @@ img#loader-img {
     top: 10px;
     left: 5px;
     background-image: image-url('question3-removebg-preview.png');
-    // background-size: contain
-    background-size: 100% auto;
+    background-size: cover;
+
 }
 
 .question-msg-3 {

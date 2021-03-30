@@ -27,14 +27,17 @@
   </div>
 
 
+
   <h2 class="subtitle"><i class="icon far fa-comment"></i>講師からのコメント<%= @request_board.board_comments.count %>件</h2>
   <div class="board_comments">
     <%= render 'board_comments/board_comment', board_comments: @board_comment %>
   </div>
 
-    
-  <div class="bulletin_board-order-wrap">
-    <div class="answer-post">
+  <% if user_signed_in? %>
+  <% if current_user.instructor.present?%>
+
+  <!--<div class="bulletin_board-order-wrap">-->
+  <!--  <div class="answer-post">-->
       <%= form_with model:[:instructor, @request_board, BoardComment.new] do |f| %>
         <div class="textarea">
           <%= f.text_field :comment %>
@@ -42,6 +45,8 @@
         </div>
         <%= f.submit  "投稿する", class: "post-btn" %>
       <% end %>
-    </div>
-  </div>
-</div>
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+<% end %>
+<% end %>
