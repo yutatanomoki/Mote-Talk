@@ -1,5 +1,6 @@
 class Public::InstructorsController < ApplicationController
   def new
+    
     @instructor = Instructor.new
   end
 
