@@ -54,12 +54,10 @@
   <div class="fix-menu fix-menu-bar">
     <!-- お気に入りボタンの実装 -->
     <div  class="favorite_btn">
-      <p>
-        <%= render 'favorites/favorite-btn', favorite: @favorite, instructor: @instructor %>お気に入り
-      </p>
+        <%= render 'favorites/favorite-btn', favorite: @favorite, instructor: @instructor %>
     </div>
     <p class="talk_btn">
-      <i class="icon far fa-comments"></i><%= link_to ' トーク画面へ',room_path(instructor_id: @instructor.id)%>
+      <i class="icon far fa-comments"></i><%= link_to 'トークしてみる！',room_path(instructor_id: @instructor.id)%>
     </p>
   </div>
  </div>

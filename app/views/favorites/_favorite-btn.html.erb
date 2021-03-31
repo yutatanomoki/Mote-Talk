@@ -1,13 +1,9 @@
 <% if instructor.favorited_by?(current_user) %>
-    <p>
-        <%= link_to instructor_favorites_path(instructor), method: :delete, remote: true do %>
-            ♥
-        <% end %>
-    </p>
+    <%= link_to instructor_favorites_path(instructor), method: :delete, remote: true do %>
+        <i class="favorite-icon fas fa-heart">お気に入り</i>
+    <% end %>
 <% else %>
-    <p>
-        <%= link_to instructor_favorites_path(instructor), method: :post, remote: true do %>
-            ♡
-        <% end %>
-    </p>
+    <%= link_to instructor_favorites_path(instructor), method: :post, remote: true do %>
+        <i class="not-favorite-icon fas fa-heart">お気に入り</i>
+    <% end %>
 <% end %>
