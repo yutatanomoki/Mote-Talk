@@ -7,6 +7,7 @@ class Public::RoomsController < ApplicationController
   end
 
   def show
+    @instructor = Instructor.find(params[:id])
     # 相手A
     @user = User.find(params[:id])
     # 自分(current_user)の中間テーブル(entry)を全て取り出しpluckメソッドで:room_idを配列にしたものがroom。この時点では相手A以外の人との中間テーブル(entry)も含まれる
