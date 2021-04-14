@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'homes#top'
   get 'homes/about' => 'homes#about'
+  get 'homes/use' => 'homes#use'
   post '/homes/guest_sign_in', to: 'homes#guest_sign_in'
   
   devise_for :users
