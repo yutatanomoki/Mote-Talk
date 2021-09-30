@@ -27,8 +27,6 @@ https://mote-talk.net/
 
 デートや異性と話すときに活かすことができます。
 
-## 設計書
-
 ## 機能一覧
 
 https://docs.google.com/spreadsheets/d/1GwOL7LX8hlbig_iKJ7105J-rfrNsOyZeTrz9snUXmiw/edit#gid=0
@@ -41,3 +39,6 @@ https://docs.google.com/spreadsheets/d/1GwOL7LX8hlbig_iKJ7105J-rfrNsOyZeTrz9snUX
 - JS ライブラリ：jQuery
 - IDE：Cloud9
 GitHubアクション設定済み
+
+### インフラ構成図
+<img width="639" alt="スクリーンショット 2021-09-28 7 44 07" src="https://user-images.githubusercontent.com/74037339/135372229-814a59c4-340e-4baa-94a1-afa1958b23db.png">
