@@ -18,12 +18,20 @@
         <li class="nav-item active">
           <%= link_to ' 講師登録はこちら',new_instructor_path,class: 'nav-link fas fa-link' %>
         </li>
+        <li class="nav-item active">
+          <%= link_to 'ログアウト',destroy_user_session_path,class: 'nav-link fas fa-sign-out-alt' %>
+        </li>
+      <% else %>
+        <li class="nav-item active">
+          <%= link_to "無料登録", new_user_registration_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item active">
+          <%= link_to "ログイン", new_user_session_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item active">
+          <%= link_to "ゲストログイン", homes_guest_sign_in_path, method: :post, class: "nav-link" %>
+        </li>
       <% end %>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <button class="btn btn-outline-info btn-lg my-2 my-sm-0" href="/users/sign_up" type="submit">無料登録</button>
-      <button class="btn btn-outline-info btn-lg my-2 my-sm-0" href="/users/sign_in" type="submit">ログイン</button>
-      <%= link_to 'ゲストログイン', homes_guest_sign_in_path, method: :post, class: "simple-btn" %>
-    </form>
   </div>
 </nav>
