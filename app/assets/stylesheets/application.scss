@@ -18,6 +18,14 @@
  @import 'font-awesome-sprockets';
  @import 'font-awesome';
 
+.navbar-brand {
+  background: url("icon3.png") no-repeat left center;
+  background-size: contain;
+  height: 40px;
+  width: 200px;
+}
+
+
 *,::before,::after {
     box-sizing: border-box;
     border-style: solid;
@@ -2224,11 +2232,7 @@ img#loader-img {
     display: none
 }
 
-@media only screen and (min-width: 640px) {
-    .instructor-upgrade-contents .marker_yellow {
-        font-size:32px
-    }
-}
+
 
 @media only screen and (max-width: 640px) {
     .instructor-upgrade-pay-btn {

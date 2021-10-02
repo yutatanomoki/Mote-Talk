@@ -11,7 +11,11 @@
   </head>
 
   <body>
-    <%= render 'layouts/header' %>
-        <%= yield %>
+    <header>
+      <%= render 'layouts/header' %>
+    </header>
+    <main class="flex-grow-1">
+      <%= yield %>
+    </main>
   </body>
 </html>

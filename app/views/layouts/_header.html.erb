@@ -1,37 +1,29 @@
-<div class="header-wrap">
-  <header class="header">
-    <div class="header-inner">
-      <div class="logo-wrap"><a href="/"><h1 class="logo"><span>フレンタ</span></h1></a></div>
-      <nav id="groval-navi" class="clearfix">
-        <ul class="menu-list">
-            <li><%= link_to ' モテトークって？',homes_about_path,class: 'fas fa-home menu-item' %></li>
-            <!--<li><%#= link_to ' ご利用方法',homes_use_path,class: 'fas fa-home menu-item' %></li>-->
-            <li><%= link_to ' 講師を探す', instructors_path,class: 'fas fa-user-plus menu-item' %></li>
-            <li><%= link_to ' 依頼掲示板', request_boards_path ,class: 'fas fa-clipboard-list menu-item' %></li>
-            <% if user_signed_in? %>
-              <li><%= link_to ' 講師登録はこちら',new_instructor_path,class: 'fas fa-link menu-item' %></li>
-            <% end %>
-        </ul>
-        <% if user_signed_in? %>
-          <div class="my-menu-wrap">
-            <p class="my-menu-btn"><%= attachment_image_tag @user, :profile_image, fallback: "no_image.jpg", class: "my-menu-btn" %></p>
-            <ul class="my-menu">
-              <!--<li class="my-menu-item"><%#= link_to 'トーク一覧', rooms_path(current_user.id) ,class: 'icon far fa-comments' %></li>-->
-              <!--<li class="my-menu-item"><a href="/favorites"><i class="icon far fa-heart"></i>お気に入り一覧</a></li>-->
-              <li class="my-menu-item"><%= link_to '設定', edit_user_path(current_user.id) ,class: 'icon far fa-user-circle' %></li>
-              <li class="my-menu-item"><a data-turbolinks="false" href="/instructors/new"><i class="icon fas fa-user-plus"></i>講師登録する</a></li>
-              <li class="my-menu-item"><a id="logout" rel="nofollow" data-method="delete" href="/users/sign_out"><i class="icon fas fa-sign-out-alt"></i>ログアウト</a></li>
-            </ul>
-          </div>
-        <% else %>
-            <ul class="login-menu">
-              <li class="my-menu-item"><a class="simple-btn" href="/users/sign_up">無料登録</a></li>
-              <li class="my-menu-item"><a class="simple-btn" href="/users/sign_in">ログイン</a></li>
-              <li class="my-menu-item"><%= link_to 'ゲストログイン（閲覧用）', homes_guest_sign_in_path, method: :post, class: "simple-btn" %></li>
-            </ul>
-        <% end %>
-      </nav>
-    </div>
-  </header>
-</div>
-
+<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #d468ae;">
+  <a class="navbar-brand" href="/"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <%= link_to "モテトークって？", homes_about_path, class: "nav-link fas fa-home" %>
+      </li>
+      <li class="nav-item active">
+        <%= link_to "講師を探す", instructors_path, class: "nav-link fas fa-user-plus" %>
+      </li>
+      <li class="nav-item active">
+        <%= link_to "依頼掲示板", request_boards_path, class: "nav-link fas fa-clipboard-list" %>
+      </li>
+      <% if user_signed_in? %>
+        <li class="nav-item active">
+          <%= link_to ' 講師登録はこちら',new_instructor_path,class: 'nav-link fas fa-link' %>
+        </li>
+      <% end %>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <button class="btn btn-outline-info btn-lg my-2 my-sm-0" href="/users/sign_up" type="submit">無料登録</button>
+      <button class="btn btn-outline-info btn-lg my-2 my-sm-0" href="/users/sign_in" type="submit">ログイン</button>
+      <%= link_to 'ゲストログイン', homes_guest_sign_in_path, method: :post, class: "simple-btn" %>
+    </form>
+  </div>
+</nav>
