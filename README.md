@@ -35,7 +35,18 @@ https://mote-talk.net/
 ・画像アップロード機能(Refile)<br>
 
 ## 機能一覧
-
+* 会員機能（devise） 
+  - ゲストログイン
+* 投稿機能
+  - 投稿編集、削除機能
+  - 画像投稿(refile)
+  - コメント機能(Ajax)
+  - いいね機能(Ajax)
+* DM機能 
+* N+1問題への対応
+* UI/UX
+  - レスポンシブデザイン
+詳細は下記よりご確認ください。
 https://docs.google.com/spreadsheets/d/1GwOL7LX8hlbig_iKJ7105J-rfrNsOyZeTrz9snUXmiw/edit#gid=0
 
 ## 開発環境
@@ -46,6 +57,10 @@ https://docs.google.com/spreadsheets/d/1GwOL7LX8hlbig_iKJ7105J-rfrNsOyZeTrz9snUX
 - JS ライブラリ：jQuery
 - IDE：Cloud9
 - GitHubアクション設定済み
+
+### その他使用技術
+* HTTPS接続 (Certbot)
+* ドメイン取得(Route53による反映)
 
 ### インフラ構成図
 <img width="639" alt="スクリーンショット 2021-09-28 7 44 07" src="https://user-images.githubusercontent.com/74037339/135372229-814a59c4-340e-4baa-94a1-afa1958b23db.png">
