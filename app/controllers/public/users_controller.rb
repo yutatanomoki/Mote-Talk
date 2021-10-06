@@ -6,7 +6,8 @@ class Public::UsersController < ApplicationController
   end
 
   def show
-    #@user = User.find(params[:id])
+    @user = User.find(params[:id])
+    @profile_images = @user.profile_images.page(params[:page]).reverse_order
   end
 
   def edit
