@@ -19,7 +19,7 @@
           <%= link_to ' 講師登録はこちら',new_instructor_path,class: 'nav-link fas fa-link' %>
         </li>
         <li class="nav-item active">
-          <%= link_to 'マイページ',user_path(current_user.id),class: 'nav-link far fa-user' %>
+          <%= link_to 'マイページ',edit_user_path(current_user.id),class: 'nav-link far fa-user' %>
         </li>
         <li class="nav-item active">
           <%= link_to 'ログアウト',destroy_user_session_path,class: 'nav-link fas fa-sign-out-alt' %>
