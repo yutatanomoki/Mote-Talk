@@ -48,7 +48,7 @@ https://mote-talk.net/
 詳細は下記よりご確認ください。<br>
 https://docs.google.com/spreadsheets/d/1GwOL7LX8hlbig_iKJ7105J-rfrNsOyZeTrz9snUXmiw/edit#gid=0
 
-### 開発環境
+## 開発環境
 
 - OS：Linux(CentOS)
 - 言語：HTML,CSS,JavaScript,Ruby,SQL
