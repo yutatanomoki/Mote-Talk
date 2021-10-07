@@ -8,14 +8,10 @@
     <%= f.label :"名前" %><br />
     <%= f.text_field :name, autofocus: true, class: "textbox" %>
     </div>
-
-    <!--<div class="field">-->
-    <!--  <%#= f.label :"プロフィール写真" %><br />-->
-    <!--  <%#= f.attachment_field :profile_image, class: "textbox user_image" %>-->
-    <!--</div>-->
     <div class="field">
-      <%= f.label "プロフィール画像" %><br />
-      <%= f.attachment_field :profile_image %>
+      <%= f.label :"プロフィール写真" %><br />
+      <%= attachment_image_tag @user, :profile_image, :fill, 100, 100, fallback: "no_image.jpg"%><br>
+      <%= f.attachment_field :profile_image, class: "textbox user_image" %>
     </div>
 
     <div class="field">
@@ -25,7 +21,7 @@
 
     <div class="field">
       <%= f.label :"更新のためパスワードを入力してください" %><br />
-      <%= f.password_field :password, autocomplete: "current-password", class: "textbox" %>
+      <%= f.password_field :password, class: "textbox" %>
     </div>
 
     <p class="border-line"></p>
