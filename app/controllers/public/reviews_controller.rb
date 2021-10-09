@@ -13,8 +13,8 @@ class Public::ReviewsController < ApplicationController
   end
 
   private
+
   def review_params
     params.permit(:instructor_id, :score, :content)
   end
-
 end

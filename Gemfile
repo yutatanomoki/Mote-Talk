@@ -76,7 +76,6 @@ gem "refile", require: "refile/rails", github: 'manfe/refile'
 gem "refile-mini_magick"
 gem 'activesupport'
 gem 'jquery-ui-rails'
-gem 'dotenv-rails'
 gem 'rubocop-airbnb'
 gem 'mini_magick'
 gem 'aws-sdk-s3', require: false

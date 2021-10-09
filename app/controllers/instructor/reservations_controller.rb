@@ -1,5 +1,4 @@
 class Instructor::ReservationsController < ApplicationController
-
   def index
     @reservations = Reservation.page(params[:page])
   end
@@ -7,5 +6,4 @@ class Instructor::ReservationsController < ApplicationController
   def show
     @reservation = Reservation.find(params[:id])
   end
-
 end

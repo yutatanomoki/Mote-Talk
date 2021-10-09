@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'homes/about' => 'homes#about'
   get 'homes/use' => 'homes#use'
   post '/homes/guest_sign_in', to: 'homes#guest_sign_in'
-  
+
   devise_for :users
   scope module: :public do
     get 'user/quit' => 'users#quit'
@@ -11,7 +11,7 @@ Rails.application.routes.draw do
     resources :users, only: [:show, :edit, :update]
     resources :instructors, only: [:new, :create, :index, :show] do
       resources :favorites, only: [:create, :index, :destroy]
-      resources :reviews, only:[:create, :show]
+      resources :reviews, only: [:create, :show]
     end
     post 'reservations/verification' => 'reservations#verification'
     get 'reservations/done' => 'reservations#done'
@@ -32,6 +32,5 @@ Rails.application.routes.draw do
     end
     resources :rooms, only: [:show, :index]
     resources :direct_messages, only: [:create]
-
   end
 end

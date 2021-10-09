@@ -1,5 +1,4 @@
 class Public::RoomsController < ApplicationController
-
   def index
     room_ids = current_user.user_rooms.pluck(:room_id)
     user_ids = UserRoom.where(room_id: room_ids).where.not(user_id: current_user.id).pluck(:user_id)
@@ -28,5 +27,4 @@ class Public::RoomsController < ApplicationController
     # 自分と相手Aとの部屋のdmの全て
     @dms = @room.messages
   end
-
 end

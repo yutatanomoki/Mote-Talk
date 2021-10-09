@@ -14,7 +14,6 @@ class Public::UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
-
   def update
     user = current_user
     user.update(user_params)
@@ -31,8 +30,8 @@ class Public::UsersController < ApplicationController
     redirect_to root_path
   end
 
-
   private
+
   def user_params
     params.require(:user).permit(:name, :email, :profile_image)
   end

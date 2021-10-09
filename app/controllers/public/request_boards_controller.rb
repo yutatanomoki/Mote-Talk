@@ -4,16 +4,15 @@ class Public::RequestBoardsController < ApplicationController
   end
 
   def index
-
     @request_boards = RequestBoard.page(params[:page]).reverse_order
-    @board_comment = BoardComment.joins("INNER JOIN instructors ON instructors.id = board_comments.instructor_id INNER JOIN users ON instructors.user_id = users.id ")
-                     .where(request_board_id: params[:id]).select("board_comments.*, users.*")
+    @board_comment = BoardComment.joins("INNER JOIN instructors ON instructors.id = board_comments.instructor_id INNER JOIN users ON instructors.user_id = users.id ").
+      where(request_board_id: params[:id]).select("board_comments.*, users.*")
   end
 
   def show
     @request_board = RequestBoard.find(params[:id])
-    @board_comment = BoardComment.joins("INNER JOIN instructors ON instructors.id = board_comments.instructor_id INNER JOIN users ON instructors.user_id = users.id ")
-                     .where(request_board_id: params[:id]).select("board_comments.*, users.*")
+    @board_comment = BoardComment.joins("INNER JOIN instructors ON instructors.id = board_comments.instructor_id INNER JOIN users ON instructors.user_id = users.id ").
+      where(request_board_id: params[:id]).select("board_comments.*, users.*")
   end
 
   def create
@@ -33,5 +32,4 @@ class Public::RequestBoardsController < ApplicationController
   def request_board_params
     params.require(:request_board).permit(:title, :body, :score)
   end
-
 end
