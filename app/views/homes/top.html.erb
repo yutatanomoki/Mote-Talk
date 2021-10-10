@@ -1,65 +1,10 @@
-
-<section class="top-image-wrap">
-    <div class="top-image">
-        <p><span class="main-msg top">女性の「ホンネ」</span><span class="main-msg bottom">聞いてみませんか。</span></p>
-        <picture>
-          <%= image_tag asset_path("image1.jpg") %>
-        </picture>
-    </div>
-</section>
+<main class="container">
+  <%= image_tag asset_path("top-media.png"), class: "img-fluid" %>
 
 <section class="about-mote">
     <p class="about-mote-text"><%= image_tag asset_path("icon3.png") %>は<br>恋愛トーク向上サイトです。</p>
     <p class="about-mote-img"><%= image_tag asset_path("sodan.png") %></p>
 </section>
-
-<div class="contents">
-
-  <section class="mote-feature-wrap">
-    <h2 class="title"><%= image_tag asset_path("icon3.png") %></h2>
-    <p class="border-line"></p>
-    <div id="feature-box-wrap" class="box-wrap">
-      <div class="box-inner-wrap">
-        <div class="box one">
-          <div class="sub-title-wrap">
-            <div class="sub-title-inner-wrap">
-              <span class="step-label"></span>
-              <h2 class="sub-title">自分の恋愛トーク能力がわかる！</h2>
-            </div>
-          </div>
-          <p class="feature-img"><%= image_tag asset_path("school.png") %></p>
-          <p class="comment">経験豊富な女性講師からフィードバックを貰うことにより、
-            自分自身で気づかなかった恋愛トークの改善点に気づくことができます。
-          </p>
-        </div>
-        <div class="box two">
-          <div class="sub-title-wrap">
-            <div class="sub-title-inner-wrap">
-              <span class="step-label"></span>
-              <h2 class="sub-title">女性講師とのミスマッチを防ぐ</h2>
-            </div>
-          </div>
-          <p class="feature-img"><%= image_tag asset_path("sodan.png") %></p>
-          <p class="comment">女性講師それぞれに自己紹介や受講生へのメッセージを掲載しております。そこを確認してから女性講師に依頼することが出来るのでミスマッチを防ぐことができます。</p>
-        </div>
-        <div class="box three">
-          <div class="sub-title-wrap">
-            <div class="sub-title-inner-wrap">
-              <span class="step-label"></span>
-              <h2 class="sub-title">依頼掲示板から恋愛の悩みを投稿できる</h2>
-            </div>
-          </div>
-          <p class="feature-img"><%= image_tag asset_path("e-learning.png") %></p>
-          <p class="comment">依頼掲示板から恋愛におけるお悩みを相談することによって、そのお悩みに対しご対応できる女性講師がコメントします。</p>
-        </div>
-      <!--<div id="swiper-button-prev" class="swiper-button left"><i class="fas fa-chevron-left"></i></div>-->
-      <!--<div id="swiper-button-next" class="swiper-button right"><i class="fas fa-chevron-right"></i></div>-->
-    </div>
-  </section>
-</div>
-
-<main>
-
 
   <!-- Marketing messaging and featurettes
   ================================================== -->
@@ -78,7 +23,7 @@
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
+        
         <h2>見出し</h2>
         <p>その後猫にもだいぶ逢ったがこんな片輪には一度も出会わした事がない。のみならず顔の真中があまりに突起している。そうしてその穴の中から時々ぷうぷうと煙を吹く。</p>
         <p><a class="btn btn-secondary" href="#" role="button">詳しく見る »</a></p>
@@ -91,7 +36,11 @@
         <p><a class="btn btn-secondary" href="#" role="button">詳しく見る »</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
-
+    <div class="d-flex align-items-center p-3 my-3 text-white bg-purple rounded shadow-sm" style="background-color: #d468ae;">
+      <div class="lh-1">
+        <h1 class="h2 mb-0 lh-1">モテトークの特徴</h1>
+      </div>
+    </div>
 
     <!-- START THE FEATURETTES -->
 
@@ -99,12 +48,11 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading">作りかけのヘッダ。<span class="text-muted">あなたの心を圧倒する。</span></h2>
-        <p class="lead">掌の上で少し落ちついて書生の顔を見たのがいわゆる人間というものの見始であろう。この時妙なものだと思った感じが今でも残っている。第一毛をもって装飾されべきはずの顔がつるつるしてまるで薬缶だ。</p>
+        <h2 class="featurette-heading">自分の恋愛トーク能力がわかる！</h2>
+        <p class="lead">経験豊富な女性講師からフィードバックを貰うことにより、自分自身で気づかなかった恋愛トークの改善点に気づくことができます。</p>
       </div>
       <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
+        <%= image_tag asset_path("Remote_call.png"), class: 'featurette-image img-fluid mx-auto', size: '500x500' %>
       </div>
     </div>
 
@@ -112,12 +60,11 @@
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">そう、それでいい。<span class="text-muted">自分を見つめよ。</span></h2>
-        <p class="lead">その後猫にもだいぶ逢ったがこんな片輪には一度も出会わした事がない。のみならず顔の真中があまりに突起している。そうしてその穴の中から時々ぷうぷうと煙を吹く。</p>
+        <h2 class="featurette-heading">女性講師とのミスマッチを防ぐ</h2>
+        <p class="lead">女性講師それぞれに自己紹介や受講生へのメッセージを掲載しております。そこを確認してから女性講師に依頼することが出来るのでミスマッチを防ぐことができます</p>
       </div>
       <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
+        <%= image_tag asset_path("profile.png"), class: 'featurette-image img-fluid mx-auto', size: '500x500' %>
       </div>
     </div>
 
@@ -125,12 +72,11 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading">最後にこれで、<span class="text-muted">チェックメイト。</span></h2>
-        <p class="lead">吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。</p>
+        <h2 class="featurette-heading">依頼掲示板から恋愛の悩みを投稿できる</h2>
+        <p class="lead">依頼掲示板から恋愛におけるお悩みを相談することによって、そのお悩みに対しご対応できる女性講師がコメントします。。</p>
       </div>
       <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
+        <%= image_tag asset_path("boards.png"), class: 'featurette-image img-fluid mx-auto', size: '500x500' %>
       </div>
     </div>
 
@@ -140,10 +86,4 @@
 
   </div><!-- /.container -->
 
-
-  <!-- FOOTER -->
-  <footer class="container">
-    <p class="float-end"><a href="#">トップに戻る</a></p>
-    <p>© 2017-2021 Company, Inc. · <a href="#">プライバシー</a> · <a href="#">利用規約</a></p>
-  </footer>
 </main>

@@ -17,11 +17,26 @@
  @import "bootstrap";
  @import 'font-awesome-sprockets';
  @import 'font-awesome';
+ 
+body {
+    margin: 0
+}
+
+main {
+    display: block
+}
+ 
+ .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
 
 .navbar-brand {
   background: image-url("icon3.png") no-repeat left center;
   background-size: contain;
-  height: 40px;
+  height: 30px;
   width: 200px;
 }
 
@@ -36,24 +51,12 @@ html {
     -webkit-tap-highlight-color: transparent
 }
 
-body {
-    margin: 0
-}
 
-main {
-    display: block
-}
 
 p,table,blockquote,address,pre,iframe,form,figure,dl {
     margin: 0
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-size: inherit;
-    line-height: inherit;
-    font-weight: inherit;
-    margin: 0
-}
 
 ul,ol {
     margin: 0;
