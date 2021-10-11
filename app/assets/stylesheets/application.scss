@@ -34,7 +34,7 @@ main {
 }
 
 .navbar-brand {
-  background: image-url("icon3.png") no-repeat left center;
+  background-image: image-url("icon3.png") no-repeat left center;
   background-size: contain;
   height: 30px;
   width: 200px;
@@ -82,3 +82,60 @@ hr {
     color: inherit
 }
 
+.mote-about-box {
+    margin: 0 0 20px 0;
+}
+
+.question-box-wrap {
+    background: image-url('question_background.png');
+    border-radius: 10px;
+}
+
+.question-box-wrap .question-box {
+    width: 320px;
+    min-height: 315px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.question-box .question-1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 30px;
+    left: 5px;
+    background: image-url('question1.png') no-repeat left center;
+    background-size: contain;
+}
+
+.question-msg-1 {
+    position: absolute;
+    top: 100px;
+    right: 5px;
+    padding: 10px;
+    border: 2px dotted #FC676B;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #FC676B;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.answer-box-wrap {
+    min-height: 315px;
+    background-color: #29ABE2;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.answer-msg {
+    position: relative;
+    text-align: center;
+    padding: 30px;
+    margin: 10px 0 0 0;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.8em;
+    text-align: left;
+}
