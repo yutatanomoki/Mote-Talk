@@ -70,7 +70,7 @@ gem 'devise'
 gem 'bootstrap', '~> 4.5'
 gem 'jquery-rails'
 gem 'font-awesome-sass', '~> 5.13'
-gem 'kaminari','~> 1.2.1'
+gem 'kaminari', '~> 1.2.1'
 gem 'pry-byebug'
 gem "refile", require: "refile/rails", github: 'manfe/refile'
 gem "refile-mini_magick"
