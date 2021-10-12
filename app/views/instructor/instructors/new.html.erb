@@ -1,0 +1,37 @@
+<div class="contents">
+  <div class="order-post">
+    <ul class="description">
+      <li>講師登録するためプロフィール追加情報を登録します</li>
+      <li><span class="marker_yellow">必要事項のご記入をお願い致します。</span></li>
+    </ul>
+
+    <%= form_with model: @instructor, local:true do |f| %>
+      <div class="textbox-wrap">
+        <%= f.label :"年齢" %>
+        <%= f.text_field :age, class: "textbox" %>
+        <p class="error-msg"></p>
+      </div>
+
+      <div class="textbox-wrap">
+        <%= f.label :"性格" %>
+        <%= f.text_field :personality, class: "textbox" %>
+        <p class="error-msg"></p>
+      </div>
+
+      <div class="textarea-wrap">
+        <!--<textarea class="textarea" placeholder="依頼内容" name="bulletin_board[contents]"></textarea>-->
+        <%= f.label :"自己紹介" %>
+        <%= f.text_area :self_introduction, class: "textarea" %>
+        <p class="error-msg"></p>
+      </div>
+
+      <div class="textarea-wrap">
+        <!--<textarea class="textarea" placeholder="依頼内容" name="bulletin_board[contents]"></textarea>-->
+        <%= f.label :"メッセージ" %>
+        <%= f.text_area :message, class: "textarea" %>
+        <p class="error-msg"></p>
+      </div>
+      <%= f.submit  "講師登録する", class: "post-btn" %>
+    <% end %>
+  </div>
+</div>

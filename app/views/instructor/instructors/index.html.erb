@@ -1,0 +1,39 @@
+<article class="subtitle-wrap search-area-wrap">
+  <h2 class="subtitle">
+    <i class="icon fas fa-search"></i>講師を探す</h2>
+</article>
+
+<div class="contents">
+  <div class="instructor-box-wrap sub-header-mergin">
+    <% @instructors.each do |instructor| %>
+      <%= link_to instructor_path(instructor), data: {"turbolinks" => "false"} do %>
+        <div class="instructor-box">
+          <%= attachment_image_tag instructor.user, :profile_image, fallback: "no_image.jpg", class: "instructor-avatar" %>
+          <p class="user-name"><%= instructor.user.name %>
+        
+            <span class="favorite-cnt">
+              <span class="instructorbox_favorite_btn inlink">
+                <i class="not-favorite-icon far fa-heart">
+                  <%= instructor.favorites.count %>
+                </i>
+              </span>
+            </span>
+          </p>
+          <div class="instructor-info">
+            <p><i class="far fa-user"></i><%= instructor.age %>歳</p>
+          </div>
+          <!--<div class="content average-score">-->
+          <!--  <div class="star-rating mb-2">-->
+          <!--    <div class="star-rating-front" style="width: <%#= instructor.review_score_percentage %>%">★★★★★</div>-->
+          <!--    <div class="star-rating-back">★★★★★</div>-->
+          <!--  </div>-->
+          <!--  <div class="average-score-display ml-3 pt-2">-->
+          <!--    <%#= instructor.avg_score %>点（<%#= instructor.reviews.count %>件のレビュー）-->
+          <!--  </div>-->
+          <!--</div>-->
+          <p class="instructor-msg"><%= instructor.message %></p>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
