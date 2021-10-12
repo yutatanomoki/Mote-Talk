@@ -122,6 +122,54 @@ hr {
     line-height: 1.5em;
 }
 
+.question-box .question-2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 30px;
+    left: 5px;
+    background: image-url('question2.png') no-repeat left center;
+    background-size: contain;
+}
+
+.question-msg-2 {
+    position: absolute;
+    top: 100px;
+    right: 5px;
+    padding: 10px;
+    border: 2px dotted #FC676B;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #FC676B;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.question-box .question-3 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 30px;
+    left: 5px;
+    background: image-url('question3.png') no-repeat left center;
+    background-size: contain;
+}
+
+.question-msg-3 {
+    position: absolute;
+    top: 100px;
+    right: 5px;
+    padding: 10px;
+    border: 2px dotted #FC676B;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #FC676B;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
 .answer-box-wrap {
     min-height: 315px;
     background-color: #29ABE2;
