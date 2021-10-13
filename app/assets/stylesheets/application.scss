@@ -19,7 +19,11 @@
  @import 'font-awesome';
  
 body {
-    margin: 0
+    color: #333;
+    font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+    background-color: #F5F1E9;
+    padding: 50px 0 0 0;
+    color: #666;
 }
 
 main {
@@ -80,6 +84,33 @@ hr {
     margin: 0;
     clear: both;
     color: inherit
+}
+
+.textbox {
+    width: 80%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    color: #666;
+    background-color: #fff;
+    text-align: left;
+    font-size: 16px;
+}
+
+.small-btn {
+    width: 24%;
+    min-width: 150px;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 2px solid #0f5e7f;
+    border-radius: 30px;
+    color: #0f5e7f;
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
 }
 
 .mote-about-box {
@@ -243,4 +274,43 @@ hr {
     color: #777;
     font-size: 14px;
     line-height: 1.5em;
+}
+
+.wrap-login-form {
+    max-width: 800px;
+    width: 95%;
+    margin: 10px auto;
+    padding: 30px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.wrap-login-form .title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    color: #fd3c40;
+}
+
+.wrap-login-form .textbox {
+    max-width: 400px;
+    width: 85%;
+    padding: 12px;
+    border-radius: 10px;
+    outline: none;
+    border-color: #fff;
+    background-color: #feebeb;
+}
+
+.wrap-login-form .small-btn {
+    background-color: #fd3c40;
+    border-color: #fd3c40;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.login-link a {
+    color: #666;
 }
