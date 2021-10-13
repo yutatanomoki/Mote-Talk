@@ -37,8 +37,12 @@ main {
     line-height: 1.2;
 }
 
+.row {
+  padding-top: 20px;
+}
+
 .navbar-brand {
-  background-image: image-url("icon3.png") no-repeat left center;
+  background: image-url("icon3.png") no-repeat left center;
   background-size: contain;
   height: 30px;
   width: 200px;
