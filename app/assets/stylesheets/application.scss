@@ -187,3 +187,43 @@ hr {
     line-height: 1.8em;
     text-align: left;
 }
+
+.instructor-box {
+    position: relative;
+    width: 300px;
+    height: 380px;
+    margin: 20px 5px 0 5px;
+    overflow: hidden;
+    border-radius: 5px;
+    // box-shadow: 1px 3px 6px rgb(0 0 0 / 30%);
+    background-color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    text-align: left;
+}
+
+.instructor-box .instructor-avatar {
+    width: 300px;
+    height: 300px;
+}
+
+.user-name {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 225px;
+    background-color: rgba(255,255,255,0.8);
+    font-size: 1.8rem;
+    color: #ff4c4c;
+    padding: 10px 10px 0 5px;
+}
+
+.instructor-msg {
+    position: relative;
+    width: 100%;
+    margin: -3px 0 0 0;
+    padding: 10px;
+    color: #777;
+    font-size: 14px;
+    line-height: 1.5em;
+}

@@ -1,19 +1,21 @@
-<article class="subtitle-wrap search-area-wrap">
-  <h2 class="subtitle">
-    <i class="icon fas fa-search"></i>講師を探す</h2>
-</article>
+<!--<article class="subtitle-wrap search-area-wrap">-->
+<!--  <h2 class="subtitle">-->
+<!--    <i class="icon fas fa-search"></i>講師を探す</h2>-->
+<!--</article>-->
 
-<div class="contents">
-  <div class="instructor-box-wrap sub-header-mergin">
+<div class="container">
+  <div class="row">
     <% @instructors.each do |instructor| %>
       <%= link_to instructor_path(instructor), data: {"turbolinks" => "false"} do %>
-        <div class="instructor-box">
+        <!--<div class="card-deck mb-3 text-center">-->
+        <!--  <div class="card mb-4 box-shadow">-->
+        <div class="instructor-box col-sm-3 col-xs-6">
           <%= attachment_image_tag instructor.user, :profile_image, fallback: "no_image.jpg", class: "instructor-avatar" %>
-          <p class="user-name"><%= instructor.user.name %>
-        
+          <p class="user-name">
+            <%= instructor.user.name %>
             <span class="favorite-cnt">
               <span class="instructorbox_favorite_btn inlink">
-                <i class="not-favorite-icon far fa-heart">
+                <i class="not-favorite-icon fas fa-heart">
                   <%= instructor.favorites.count %>
                 </i>
               </span>
@@ -32,6 +34,7 @@
           <!--  </div>-->
           <!--</div>-->
           <p class="instructor-msg"><%= instructor.message %></p>
+          <!--</div>-->
         </div>
       <% end %>
     <% end %>
