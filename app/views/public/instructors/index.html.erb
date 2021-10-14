@@ -4,11 +4,11 @@
 <!--</article>-->
 
 <div class="container">
-  <div class="row">
+  <div class="row justify-content: center">
     <% @instructors.each do |instructor| %>
       <%= link_to instructor_path(instructor) do %>
-        <div class="card-deck mb-3 text-center">
-          <div class="instructor-box card mb-4 box-shadow">
+        <div class="col-md-4 box-shadow">
+          <div class="instructor-box">
             <%= attachment_image_tag instructor.user, :profile_image, fallback: "no_image.jpg", class: "instructor-avatar" %>
             <div class="user-name">
               <%= instructor.user.name %>
