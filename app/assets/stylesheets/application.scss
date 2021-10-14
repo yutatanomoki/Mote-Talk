@@ -30,7 +30,13 @@ main {
     display: block
 }
  
- .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+a {
+    color: #253240;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: .5rem;
     font-weight: 500;
@@ -317,4 +323,29 @@ hr {
 
 .login-link a {
     color: #666;
+}
+
+.bulletin-board {
+    position: relative;
+    width: 95%;
+    max-width: 640px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px auto 0 auto;
+    border-radius: 5px;
+}
+
+.user {
+    height: 30px;
+    vertical-align: center;
+    text-align: left;
+}
+
+.avatar {
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 1px 0 0;
 }
