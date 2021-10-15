@@ -380,12 +380,22 @@ hr {
 
 .instructor-text-box .instructor-text-title {
     position: relative;
-    padding: 0.6em;
+    padding: 10px;
     background: #29ABE2;
     color: #fff;
-    font-size: 2.1rem;
     margin: 0 0 20px 0;
     border-radius: 3px;
+}
+
+.instructor-text-box .instructor-text-title:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 30px;
+    border: 10px solid transparent;
+    border-top: 10px solid #29ABE2;
+    width: 0;
+    height: 0;
 }
 
 .fix-menu {
