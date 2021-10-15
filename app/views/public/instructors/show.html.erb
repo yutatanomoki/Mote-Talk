@@ -1,11 +1,12 @@
-<div class="container">
-  <div class="row">
+<div class="row-fluid">
     <div class="col-sm-12">
       <div class="instructor-photos-wrap">
         <%= attachment_image_tag @instructor.user, :profile_image, fallback: "no_image.jpg", class: "instructor-photos-wrap-img" %>
       </div>
     </div>
   </div>
+
+<div class="container">
   <div class="row">
     <div class="col-sm-8">
       <div class="instructor-msg-info-wrap">
@@ -21,7 +22,31 @@
       </div>
     </div>
     <div class="col-sm-4">
-      
+      <div class="instructor-side-info-wrap">
+      <div class="instructor-side-info-inner-wrap">
+        <div class="info-box">
+          <h3 class="info-box-title"><i class="icon fas fa-crown"></i>ランキング</h3>
+          <p class="info-box-text">1位</p>
+        </div>
+        <div class="info-box favorite-info">
+          <h3 class="info-box-title"><i class="icon far fa-heart"></i>お気に入り数</h3>
+          <p class="info-box-text">
+            <%= @instructor.favorites.count %>
+          </p>
+        </div>
+        <div class="info-box review-info">
+          <h3 class="info-box-title">レビュー</h3>
+          <p class="info-box-text">
+            <div class="star-rating mb-2">
+              <div class="star-rating-front" style="width: <%= @instructor.review_score_percentage %>%">★★★★★</div>
+            </div>
+            <div class="average-score-display ml-3 pt-2">
+              <%= @instructor.avg_score %>点（<%= @instructor.reviews.count %>件のレビュー）
+            </div>
+          </p>
+        </div>
+      </div>
+    </div>
     </div>
   </div>
   <div class="row">
