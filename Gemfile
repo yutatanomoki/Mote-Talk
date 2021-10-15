@@ -79,3 +79,4 @@ gem 'jquery-ui-rails'
 gem 'rubocop-airbnb'
 gem 'mini_magick'
 gem 'aws-sdk-s3', require: false
+gem 'pry-rails'
