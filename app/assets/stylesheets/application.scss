@@ -485,6 +485,20 @@ hr {
     overflow: hidden;
 }
 
+.left-messege .talk-msg {
+    max-width: 100%;
+    float: left;
+    margin-left: -70px;
+    padding-left: 70px;
+}
+
+.left-messege .talk-msg .talk-msg-text {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    overflow: hidden;
+}
+
 .dm-form {
     max-width: 1098px;
     width: 100%;
