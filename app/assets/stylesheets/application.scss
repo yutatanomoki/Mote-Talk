@@ -471,3 +471,36 @@ hr {
 .review-info .info-box-title {
     background: #FCC667;
 }
+
+.dm-form {
+    max-width: 1098px;
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+    padding: 5px 10px 5px 10px;
+    background-color: #F5F1E9;
+}
+
+
+.dm-form .reservation-btn {
+    position: relative;
+    width: 56px;
+    height: 27px;
+    border-radius: 10px;
+    margin: 0 6px 0 0;
+    cursor: pointer;
+    background-color: #fd3c40;
+}
+
+.dm-form .text-area {
+    width: calc(100% - 60px);
+    height: 26px;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 5px 15px;
+    line-height: 1.2em;
+    border: none;
+    color: #666;
+    margin: 0 10px 0 0;
+}
