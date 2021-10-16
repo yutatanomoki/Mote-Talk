@@ -1,1 +1,1 @@
-$("#instructor_<%= @instructor_.id %> .favorite-btn").html("<%= j(render 'favorites/favorite-btn', instructor: @instructor) %>");
+$("#instructor_<%= @instructor.id %> .favorite-btn").html("<%= j(render 'public/favorites/favorite-btn', instructor: @instructor) %>");
