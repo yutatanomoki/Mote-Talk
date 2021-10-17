@@ -542,3 +542,30 @@ hr {
     cursor: pointer;
     font-size: 14px;
 }
+
+.buy-screen {
+    display: none;
+    position: fixed;
+    overflow: hidden;
+    top: 120px;
+    width: 90%;
+    max-width: 620px;
+    margin: 0 auto;
+    z-index: 4;
+    background: #fff;
+    color: #666;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 0px rgb(0 0 0 / 10%);
+    -webkit-box-shadow: 1px 1px 2px 0px rgb(0 0 0 / 10%);
+    -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.1);
+}
+
+.buy-screen .buy-title {
+    padding: 15px;
+    font-size: 1.8rem;
+    margin: 0 0 10px 0;
+    text-align: center;
+    background-color: #FC676B;
+    color: #fff;
+    letter-spacing: 3px;
+}
