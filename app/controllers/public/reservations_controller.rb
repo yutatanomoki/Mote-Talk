@@ -29,7 +29,6 @@ class Public::ReservationsController < ApplicationController
   end
 
   def done
-    @reservation = Reservation.find(params[:id])
   end
 
   private
