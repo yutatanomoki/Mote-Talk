@@ -485,6 +485,15 @@ hr {
     overflow: hidden;
 }
 
+.right-messege .talk-msg:before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -20px;
+    border: 10px solid transparent;
+    border-left: 10px solid #a3d749;
+}
+
 .left-messege .talk-msg {
     max-width: 100%;
     float: left;
@@ -555,9 +564,6 @@ hr {
     background: #fff;
     color: #666;
     border-radius: 5px;
-    box-shadow: 1px 1px 2px 0px rgb(0 0 0 / 10%);
-    -webkit-box-shadow: 1px 1px 2px 0px rgb(0 0 0 / 10%);
-    -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.1);
 }
 
 .buy-screen .buy-title {
@@ -568,4 +574,94 @@ hr {
     background-color: #FC676B;
     color: #fff;
     letter-spacing: 3px;
+}
+
+.marker_yellow {
+    background: linear-gradient(transparent 50%, #ff6 50%);
+}
+
+.order-post .description {
+    width: 100%;
+    padding: 15px 8px 15px 1.2em;
+    margin: 0 0 20px 0;
+    line-height: 1.5em;
+    border-radius: 3px;
+    background-color: #fff;
+    font-size: 1.4rem;
+    list-style: none;
+}
+
+.reservation-screen {
+    position: fixed;
+    overflow: hidden;
+    width: 90%;
+    max-width: 620px;
+    margin: 0 auto;
+    z-index: 4;
+    background: #fff;
+    color: #666;
+    border-radius: 5px;
+}
+
+
+.reservation-screen .reservation-title {
+    padding: 15px;
+    font-size: 1.8rem;
+    margin: 0 0 10px 0;
+    text-align: center;
+    background-color: #FC676B;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+.reservation-screen .reservation-table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+
+.reservation-screen .send-reservation-btn {
+    background-color: #FC676B;
+    padding: 8px 50px;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    border-bottom: 3px #FB4449 solid;
+    border-right: 3px #FB4449 solid;
+    margin: 0 0 10px 0;
+    cursor: pointer;
+}
+
+.send-reservation-btn2 {
+    text-align: center;
+}
+
+.reservation-screen .reservation-table tr td:first-child {
+    text-align: left;
+}
+
+.reservation-screen .reservation-table td {
+    padding: 6px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.textbox {
+    width: 80%;
+    border: 1px solid #ddd;
+    color: #666;
+}
+
+.buy-messege {
+    width: 80%;
+    max-width: 540px;
+    overflow: hidden;
+    margin: 15px auto;
+    background-color: #fff;
+    color: #666;
+    border-radius: 10px;
+}
+
+.buy-messege table {
+    width: 100%;
 }
