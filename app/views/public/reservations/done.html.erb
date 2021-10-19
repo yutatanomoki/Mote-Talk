@@ -1,33 +1,7 @@
-<div class="row col-xs-12 center-block">
-  <h1>ご予約ありがとうございます！</h1><br>
-  <div class="col-xs-7">
-    <%= link_to "　トップページに戻る　", root_path, class: "glyphicon glyphicon-folder-open btn btn-info pull-right" %>
-  </div>
-</div>
-
-<div class="buy-messege">
-  <p>ご予約ありがとうございます</p>
-  <table class="buy-table">
-    <tbody>
-      <tr>
-        <td>予約日</td>
-        <td><%= @reservation.date.strftime("%Y-%m-%d") %></td>
-      </tr>
-      <tr>
-        <td>開始時間</td>
-        <td><span id="confirm-use-time"></span><%= @reservation.begin_time.strftime("%H:%M") %></td>
-      </tr>
-      <tr>
-        <td>終了時間</td>
-        <td><span id="confirm-use-time"></span><%= @reservation.finish_time.strftime("%H:%M") %></td>
-      </tr>
-      <tr>
-        <td>利用時間</td>
-        <td><span id="confirm-total-price"></span><%= @reservation.total_time %>時間</td>
-      </tr>
-    </tbody>
-    <p class="send-reservation-btn2">
+<div class="wrap-login-form">
+  <h2 class="title">ご予約ありがとうございます</h2>
+    <p class="border-line"></p>
+    <div class="actions">
       <%= link_to "　トップページに戻る　", root_path %>
-    </p>
-  </table>
+    </div>
 </div>
