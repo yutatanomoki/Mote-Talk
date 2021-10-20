@@ -1,11 +1,10 @@
-<div class="row-fluid">
-    <div class="col-sm-12">
-      <div class="instructor-photos-wrap">
-        <%= attachment_image_tag @instructor.user, :profile_image, fallback: "no_image.jpg", class: "instructor-photos-wrap-img" %>
-      </div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="instructor-photos-wrap">
+      <%= attachment_image_tag @instructor.user, :profile_image, fallback: "no_image.jpg", class: "instructor-photos-wrap-img" %>
     </div>
   </div>
-
+</div>
 <div class="container">
   <div class="row">
     <div class="col-sm-8">
