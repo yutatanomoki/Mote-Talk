@@ -22,7 +22,7 @@ body {
     color: #333;
     font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
     background-color: #F5F1E9;
-    padding: 50px 0 0 0;
+    padding: 48px 0 0 0;
     color: #666;
 }
 
@@ -44,7 +44,6 @@ a {
 }
 
 .row {
-  padding-top: 20px;
   justify-content: center;
 }
 
@@ -354,7 +353,7 @@ hr {
 .instructor-photos-wrap {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 400px;
     background-color: #666;
     overflow: hidden;
 }
@@ -364,8 +363,7 @@ hr {
     left: 0;
     right: 0;
     margin: 0 auto;
-    height: 100%;
-    display: none;
+    height: 400px;
     z-index: 1;
 }
 
