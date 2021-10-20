@@ -4,6 +4,16 @@
       <%= attachment_image_tag @instructor.user, :profile_image, fallback: "no_image.jpg", class: "instructor-photos-wrap-img" %>
     </div>
   </div>
+  <div class="row">
+    <div class="instructor-name-photo">
+      <div class="instructor-name-photo-inner clearfix">
+        <div class="instructor-name-wrap">
+          <p class="instructor-name"><%= @instructor.user.name %></p>
+          <p class="instructor-sub-info"><span class="age-sex-info"><i class="icon far fa-user"></i><%= @instructor.age %></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <div class="container">
   <div class="row">
@@ -49,15 +59,13 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-12">
-      <div class="fix-menu fix-menu-bar">
-        <div  class="favorite_btn">
-          <%= render 'public/favorites/favorite-btn', favorite: @favorite, instructor: @instructor %>
-        </div>
-        <p class="talk_btn">
-          <%= link_to 'トークしてみる！',room_path(instructor_id: @instructor.id), class: "icon far fa-comments"%>
-        </p>
+    <div class="fix-menu fix-menu-bar">
+      <div  class="favorite_btn">
+        <%= render 'public/favorites/favorite-btn', favorite: @favorite, instructor: @instructor %>
       </div>
+      <p class="talk_btn">
+        <%= link_to 'トークしてみる！',room_path(instructor_id: @instructor.id), class: "icon far fa-comments"%>
+      </p>
     </div>
   </div>
 </div>
