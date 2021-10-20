@@ -61,9 +61,9 @@
   </div>
   <div class="row">
     <div class="fix-menu fix-menu-bar">
-      <div  class="favorite_btn">
+      <p class="favorite_btn">
         <%= render 'public/favorites/favorite-btn', favorite: @favorite, instructor: @instructor %>
-      </div>
+      </p>
       <p class="talk_btn">
         <%= link_to 'トークしてみる！',room_path(instructor_id: @instructor.id), class: "icon far fa-comments"%>
       </p>
