@@ -1,23 +1,18 @@
 <div class="subtitle-wrap">
-  <h2 class="subtitle"><a href="/request_boards">＜ <i class="icon far fa-window-restore"></i>一覧へ戻る</a><span class="ml5 f-size-8"><span></span></span></h2>
+  <h4 class="subtitle"><a href="/request_boards">＜<i class="icon far fa-window-restore"></i>一覧へ戻る</a><span class="ml5 f-size-8"></span></h4>
 </div>
 <div class="contents">
-
 <div class="bulletin_board-wrap bulletin_board-order-wrap">
   <div class="bulletin-board bulletin_board-order">
-    <div class="info-wrap clearfix">
-
-    </div>
     <div class="title">
       <%= @request_board.title %>
     </div>
     <div class="content">
       <%= @request_board.body %>
     </div>
-
     <div class="user">
       <div class="avatar">
-        <%= attachment_image_tag @request_board.user, :profile_image, fallback: "no_image.jpg" %>
+        <%= attachment_image_tag @request_board.user, :profile_image, fallback: "no_image.jpg", class: "avatar" %>
       </div>
       <div class="name">
         <%= @request_board.user.name %>
@@ -26,7 +21,7 @@
     </div>
   </div>
 
-  <h2 class="subtitle"><i class="icon far fa-comment"></i>講師からのコメント<%= @request_board.board_comments.count %>件</h2>
+  <h4 class="subtitle"><i class="icon far fa-comment"></i>講師からのコメント<%= @request_board.board_comments.count %>件</h4>
   <div class="board_comments">
     <%= render 'board_comments/board_comment', board_comments: @board_comment %>
   </div>
