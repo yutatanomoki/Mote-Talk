@@ -824,6 +824,20 @@ hr {
     text-align: center;
 }
 
+
+.bulletin_board-order-wrap .post-btn {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    padding: 5px 6px;
+    background-color: #1c98cd;
+    color: #fff;
+    border: none;
+    border-bottom: 3px solid #146c91;
+    border-radius: 8px;
+    text-align: center;
+}
+
 .bulletin-board .user>* {
     display: inline-block;
     vertical-align: middle;
