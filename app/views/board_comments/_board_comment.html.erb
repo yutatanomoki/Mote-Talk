@@ -3,7 +3,7 @@
   <div class="instructor-comment">
     <div class="clearfix">
       <div class="avatar">
-        <%#= attachment_image_tag board_comment.profile_image, :profile_image, fallback: "no_image.jpg" %>
+        <%= attachment_image_tag board_comment.instructor.user, :profile_image, fallback: "no_image.jpg", class: "avatar" %>
       </div>
       <div class="name">
         <%= board_comment.name %>
