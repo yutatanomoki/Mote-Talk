@@ -1,6 +1,6 @@
 class Instructor::RequestBoardsController < ApplicationController
   def index
-    @request_boards = RequestBoard.all
+    @request_boards = RequestBoard.includes(:user)
   end
 
   def show
