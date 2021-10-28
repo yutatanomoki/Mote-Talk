@@ -28,18 +28,15 @@
 
   <% if user_signed_in? %>
   <% if current_user.instructor.present?%>
-
-  <div class="bulletin_board-order-wrap">
-    <div class="answer-post">
-      <%= form_with model:[:instructor, @request_board, BoardComment.new] do |f| %>
-        <div class="textarea">
-          <%= f.text_field :comment %>
+    <div class="bulletin_board-order-wrap">
+      <div class="answer-post">
+        <%= form_with model:[:instructor, @request_board, BoardComment.new] do |f| %>
+          <%= f.text_area :comment, class: "textarea" %>
           <p class="error-msg"></p>
-        </div>
-        <%= f.submit  "投稿する", class: "post-btn" %>
-      <% end %>
+          <%= f.submit  "投稿する", class: "post-btn" %>
+        <% end %>
+      </div>
     </div>
   </div>
-</div>
-<% end %>
-<% end %>
+  <% end %>
+  <% end %>
