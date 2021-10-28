@@ -9,14 +9,14 @@
   <%= form_with model:@request_board,local:true do |f| %>
     <div class="textbox-wrap">
       <!--<input class="textbox" placeholder="依頼のタイトル" data-tippy="100字以内で入力してください。" type="text" name="bulletin_board[title]">-->
-      <%= f.label :"依頼のタイトル" %>
+      <%= f.label :"依頼のタイトル" %><br>
       <%= f.text_field :title, class: "textbox" %>
       <p class="error-msg"></p>
     </div>
 
     <div class="textarea-wrap">
       <!--<textarea class="textarea" placeholder="依頼内容" name="bulletin_board[contents]"></textarea>-->
-      <%= f.label :"依頼内容" %><br>
+      <%= f.label :"依頼内容" %>
       <%= f.text_area :body, class: "textarea" %>
       <p class="error-msg"></p>
     </div>
