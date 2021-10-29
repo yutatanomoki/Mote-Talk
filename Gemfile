@@ -80,3 +80,8 @@ gem 'rubocop-airbnb'
 gem 'mini_magick'
 gem 'aws-sdk-s3', require: false
 gem 'pry-rails'
+
+group :development do
+  gem "better_errors"
+  
+end
