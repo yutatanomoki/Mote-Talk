@@ -10,8 +10,6 @@ class Public::FavoritesController < ApplicationController
   def destroy
     @instructor = Instructor.find(params[:instructor_id])
     favorite = @instructor.favorites.find_by(user_id: current_user.id)
-    
     favorite.destroy
-    binding.pry
   end
 end
