@@ -84,4 +84,12 @@ gem 'pry-rails'
 group :development do
   gem "better_errors"
   gem "binding_of_caller"
+  gem "factory_bot_rails"
+end
+
+group :test do
+  gem 'capybara', '>= 2.15'
+  gem 'selenium-webdriver'
+  gem 'rspec-rails'
+  gem 'faker'
 end
