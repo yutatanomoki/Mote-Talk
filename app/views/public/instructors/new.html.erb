@@ -7,13 +7,13 @@
 
     <%= form_with model: @instructor, local:true do |f| %>
       <div class="textbox-wrap">
-        <%= f.label :"年齢" %>
+        <%= f.label :"年齢" %><br>
         <%= f.text_field :age, class: "textbox" %>
         <p class="error-msg"></p>
       </div>
 
       <div class="textbox-wrap">
-        <%= f.label :"性格" %>
+        <%= f.label :"性格" %><br>
         <%= f.text_field :personality, class: "textbox" %>
         <p class="error-msg"></p>
       </div>
