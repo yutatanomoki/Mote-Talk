@@ -50,7 +50,6 @@
     <%= form_with model: @dm, data: {remote: true}, url: direct_messages_path do |f| %>
         <%= f.text_field :message, class: "text-area" %>
         <%= f.hidden_field :room_id %>
-        
         <%= f.button type: "submit", class:"btn green-btn btn-sm" do %><i class="far fa-paper-plane send-btn"></i><% end %>
     <% end %>
   </div>
