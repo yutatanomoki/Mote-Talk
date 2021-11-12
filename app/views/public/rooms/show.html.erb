@@ -45,13 +45,13 @@
     <div class="dm-no-content"></div>
   <% end %>
   </div>
+  <%= form_with model: @dm, data: {remote: true}, url: direct_messages_path do |f| %>
   <div class="dm-form">
-    <p class="reservation-btn"><i class="far fa-calendar-alt"><%= link_to '予約',new_reservation_path(instructor_id: @instructor.id) %></i></p>
-    <%= form_with model: @dm, data: {remote: true}, url: direct_messages_path do |f| %>
-        <%= f.text_field :message, class: "text-area" %>
-        <%= f.hidden_field :room_id %>
-        <%= f.button type: "submit", class:"btn green-btn btn-sm" do %><i class="far fa-paper-plane send-btn"></i><% end %>
-    <% end %>
+  <p class="reservation-btn"><i class="far fa-calendar-alt"><%= link_to '予約',new_reservation_path(instructor_id: @instructor.id) %></i></p>
+    <%= f.text_field :message, class: "text-area" %>
+    <%= f.hidden_field :room_id %>
+    <%= f.button type: "submit", class:"btn green-btn btn-sm" do %><i class="far fa-paper-plane send-btn"></i><% end %>
   </div>
+  <% end %>
 </div>
 
