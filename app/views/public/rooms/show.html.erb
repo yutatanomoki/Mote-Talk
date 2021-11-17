@@ -47,7 +47,7 @@
   </div>
   
   <div class="dm-form">
-    <p class="reservation-btn"><%= link_to '予約',new_reservation_path(instructor_id: @instructor.id), class: "far fa-calendar-alt"%></p>
+    <%= link_to '予約',new_reservation_path(instructor_id: @instructor.id), class: "far fa-calendar-alt reservation-btn"%>
     <%= form_with model: @dm, data: {remote: true}, url: direct_messages_path do |f| %>
       <%= f.text_field :message, class: "text-area" %>
       <%= f.hidden_field :room_id %>
